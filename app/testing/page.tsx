@@ -1,6 +1,6 @@
 "use client";
 import { Button, Text } from "@radix-ui/themes";
-import { fetchGeneration } from "./request";
+import { fetchAllGames } from "./request";
 
 export default function TestingPage() {
   return (
@@ -8,7 +8,7 @@ export default function TestingPage() {
       <Text>Click me big guy bruddah.</Text>
       <Button
         onClick={async () => {
-          const x = await fetchGeneration();
+          const x = await fetchAllGames();
           console.log(x);
         }}
         variant="soft"
