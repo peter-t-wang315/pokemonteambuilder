@@ -4,8 +4,9 @@ import { PokemonAltSprite } from "../data/pokemonAltSprite";
 
 export function PokemonSprite({ pokemonName }: { pokemonName: string }) {
   // Because we're doing things with static images, it is better to not use state here and just deal with the constants directly.
+  const cleanedPokemonName = pokemonName.toLowerCase().replace(/[\s.-]/g, "");
   const pokedexNumber =
-    PokemonAltSprite[pokemonName] || Pokedex[pokemonName].num;
+    PokemonAltSprite[cleanedPokemonName] || Pokedex[cleanedPokemonName].num;
   const width = 40;
   const height = 30;
   const left = (pokedexNumber % 12) * width;

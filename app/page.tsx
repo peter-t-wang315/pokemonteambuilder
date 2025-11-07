@@ -12,7 +12,7 @@ export default function Home() {
     <div>
       <main>
         <Text>Gang gang</Text>
-        <PokemonSprite pokemonName="budew" />
+        <PokemonSprite pokemonName="pikachu" />
       </main>
     </div>
   );
