@@ -41,7 +41,7 @@ export default function TestingPage() {
       >
         {pokemon.map((mon) => {
           return (
-            <div>
+            <div key={mon.pokemon_species.name}>
               {mon.pokemon_species.name}
               <PokemonSprite
                 key={mon.pokemon_species.name}
