@@ -1,5 +1,6 @@
 export async function fetchGamesPokedex(): Promise<any> {
-  const res = await fetch("https://pokeapi.co/api/v2/pokedex/paldea/", {
+  // const res = await fetch("https://pokeapi.co/api/v2/pokedex/paldea/", {
+  const res = await fetch("https://pokeapi.co/api/v2/pokedex/kalos-coastal/", {
     method: "GET",
     // optional: revalidate cache (Next.js App Router)
     next: { revalidate: 60 }, // cache for 1 minute
