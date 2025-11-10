@@ -1,6 +1,10 @@
 "use client";
 import { Button, Text } from "@radix-ui/themes";
-import { fetchAllGames, fetchGamesPokedex } from "./request";
+import {
+  fetchAllGames,
+  fetchGamesPokeAPIPokedexNumbers,
+  fetchGamesPokedex,
+} from "./request";
 import { useEffect, useState } from "react";
 import { PokemonSprite } from "../components/PokemonSprite";
 
@@ -29,6 +33,14 @@ export default function TestingPage() {
         radius="full"
       >
         Here bruh.
+      </Button>
+      <Button
+        onClick={async () => {
+          const x = await fetchGamesPokeAPIPokedexNumbers();
+          console.log(x);
+        }}
+      >
+        Another Button bruh.
       </Button>
       <div
         style={{
