@@ -54,3 +54,5 @@ Underlying mechanics of how code will work:
     - To do this we’ll simply hit Showdown’s sprite library again or something to grab the icons we need one by one. This way we don’t have to hard code anything
       - I also see a lot of websites doing kinda the same thing of just hitting some endpoint for pictures
     - Doing this seriously reduces the amount of hard coding that we otherwise need to do and can change more to purely just hitting the web for things and keeping slightly more hands off.
+- THINGS TO WATCH OUT FOR
+  - When trying to retrieve what pokemon are available in what games, XD and Colloseum have no ability to grab any pokedex. Those will have to be hard coded...
