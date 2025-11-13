@@ -9,11 +9,21 @@ export default function Home() {
     "Kanto, Johto, Hoenn, Sinnoh, Unova, Kalos, Alola, Galar, Paldea",
   ]);
   return (
-    <div>
-      <main>
-        <Text>Gang gang</Text>
-        <PokemonSprite pokemonName="pikachu" />
-      </main>
-    </div>
+    <main
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        padding: "50px",
+      }}
+    >
+      <Text
+        size="9"
+        weight="bold"
+        style={{ width: "100%", marginBottom: "20px", alignSelf: "center" }}
+      >
+        Welcome to the Pok&eacute;mon Easy Team Builder!
+      </Text>
+    </main>
   );
 }
