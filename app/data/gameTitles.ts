@@ -96,7 +96,6 @@ export const GameTitles: IGameTitles = {
     gmax: true,
   },
   sv: {},
-  la: {},
   lza: { mega: true },
   home: { pokeAPIPokedexId: [1], mega: true, gmax: true },
 };
