@@ -37,7 +37,7 @@ export default function Home() {
           justifyItems: "center",
         }}
       >
-        {Object.entries(GameTitles).map(([gameTitle, value]) => (
+        {Object.entries(GameTitles).map(([gameTitle, value], index) => (
           <TitleCard key={gameTitle} title={gameTitle} />
         ))}
       </div>

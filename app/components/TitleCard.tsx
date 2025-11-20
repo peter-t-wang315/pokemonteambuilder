@@ -1,10 +1,18 @@
 "use client";
 import { Card } from "@radix-ui/themes";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export function TitleCard({ title }: { title: string }) {
+  const router = useRouter();
+
   return (
-    <Card style={{ width: 260, height: 100 }}>
+    <Card
+      className={"title-card"}
+      onClick={() => {
+        router.push(`/${title}`);
+      }}
+    >
       <Image
         key={title}
         src={`/gameTitles/${title}.png`}
@@ -20,4 +28,3 @@ export function TitleCard({ title }: { title: string }) {
     </Card>
   );
 }
-``;
