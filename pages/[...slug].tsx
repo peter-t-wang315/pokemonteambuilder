@@ -37,38 +37,36 @@ export default function GamePage() {
     fetchPokedexData();
   }, [path]);
 
-  if (!GameTitles[path]) {
-    return null;
+  if (!GameTitles[path] || gamePokedex.length === 0) {
+    return <div>No pokemon found</div>;
   }
 
   return (
     <div>
-      <div>
-        {gamePokedex.map((pokedex) => (
+      {gamePokedex.map((pokedex) => (
+        <div
+          style={{ display: "flex", flexDirection: "column" }}
+          key={pokedex.id}
+        >
+          <h1>{pokedex.name}</h1>
           <div
-            style={{ display: "flex", flexDirection: "column" }}
-            key={pokedex.id}
+            style={{
+              paddingTop: 16,
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))",
+              gap: 8,
+              alignItems: "start",
+            }}
           >
-            <h1>{pokedex.name}</h1>
-            <div
-              style={{
-                paddingTop: 16,
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))",
-                gap: 8,
-                alignItems: "start",
-              }}
-            >
-              {pokedex.pokemon_entries.map((mon) => (
-                <div key={mon.pokemon_species.name}>
-                  {mon.pokemon_species.name}
-                  <PokemonSprite pokemonName={mon.pokemon_species.name} />
-                </div>
-              ))}
-            </div>
+            {pokedex.pokemon_entries.map((mon) => (
+              <div key={mon.pokemon_species.name}>
+                {mon.pokemon_species.name}
+                <PokemonSprite pokemonName={mon.pokemon_species.name} />
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 }
