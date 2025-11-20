@@ -15,8 +15,8 @@ export default function TestingPage() {
 
   useEffect(() => {
     (async () => {
-      const data = await fetchGamesPokedex();
-      setPokemon(data.pokemon_entries);
+      const data = await fetchGamesPokedex({ pokedexNum: 1 });
+      // setPokemon(data.pokemon_entries);
       console.log(data);
     })();
   }, []);
