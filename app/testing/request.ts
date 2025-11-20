@@ -1,17 +1,48 @@
-export async function fetchGamesPokedex(): Promise<any> {
-  // const res = await fetch("https://pokeapi.co/api/v2/pokedex/paldea/", {
-  const res = await fetch("https://pokeapi.co/api/v2/pokedex/updated-alola/", {
-    method: "GET",
-    // optional: revalidate cache (Next.js App Router)
-    next: { revalidate: 60 }, // cache for 1 minute
-  });
+import { IGamePokedex } from "@/interfaces/IGamePokedex";
 
-  if (!res.ok) {
-    throw new Error(`Failed to fetch generation: ${res.statusText}`);
+export async function fetchGamesPokedex({
+  pokedexNum,
+}: {
+  pokedexNum: number | number[];
+}): Promise<IGamePokedex | IGamePokedex[]> {
+  // If we are getting multiple pokedex's, fetch all at once and return it all.
+  if (Array.isArray(pokedexNum)) {
+    const results = await Promise.all(
+      pokedexNum.map((num) =>
+        fetch(`https://pokeapi.co/api/v2/pokedex/${num}/`, {
+          method: "GET",
+          next: { revalidate: 60 },
+        }).then(async (res) => {
+          if (!res.ok) {
+            throw new Error(
+              `Failed to fetch pokedex ${num}: ${res.statusText}`
+            );
+          }
+          const resData = await res.json();
+          const { id, name, pokemon_entries } = resData;
+          return { id, name, pokemon_entries };
+        })
+      )
+    );
+    return results;
   }
+  // If we're just grabbing the one pokedex.
+  else {
+    const res = await fetch(
+      `https://pokeapi.co/api/v2/pokedex/${pokedexNum}/`,
+      {
+        method: "GET",
+        next: { revalidate: 60 },
+      }
+    );
 
-  const data = await res.json();
-  return data;
+    if (!res.ok) {
+      throw new Error(`Failed to fetch generation: ${res.statusText}`);
+    }
+
+    const data = await res.json();
+    return data;
+  }
 }
 
 // TODO: Need to be able to grab all of the games from the API so that things can be fully automated.
