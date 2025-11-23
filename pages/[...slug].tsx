@@ -23,19 +23,36 @@ export default function GamePage() {
       router.replace("/notfound");
     }
 
-    async function fetchPokedexData() {
-      if (!GameTitles[path]?.pokeAPIPokedexId) {
-        return;
-      }
+    fetchAndFormatPokedexData();
+  }, [path]);
 
-      const data = await fetchGamesPokedex({
-        pokedexNum: GameTitles[path].pokeAPIPokedexId,
-      });
-      setGamePokedex(data as IGamePokedex[]);
+  async function fetchAndFormatPokedexData() {
+    if (!GameTitles[path]?.pokeAPIPokedexId) {
+      return;
     }
 
-    fetchPokedexData();
-  }, [path]);
+    const pokedexData = await fetchGamesPokedex({
+      pokedexNum: GameTitles[path].pokeAPIPokedexId,
+      fetchNationalDex: !!GameTitles[path]?.firstPokedexNumber,
+    });
+
+    // If pokedexData
+    if (!Array.isArray(pokedexData)) {
+      setGamePokedex([pokedexData as IGamePokedex]);
+      return;
+    }
+
+    // Now that we've retrieved the pokedex data, we need to now format the national dex so that it doesn't show duplicate mons from the other dexes.
+    const combinedNonNationalDexes = pokedexData
+      .slice(0, -1)
+      .flatMap((dex: IGamePokedex) => dex.pokemon_entries)
+      .reduce((acc, entry) => {
+        acc[entry.pokemon_species.name] = entry;
+        return acc;
+      }, {} as Record<string, (typeof pokedexData)[0]["pokemon_entries"][0]>);
+
+    setGamePokedex(pokedexData as IGamePokedex[]);
+  }
 
   if (!GameTitles[path] || gamePokedex.length === 0) {
     return <div>No pokemon found</div>;

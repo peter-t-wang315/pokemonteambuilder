@@ -2,11 +2,15 @@ import { IGamePokedex } from "@/interfaces/IGamePokedex";
 
 export async function fetchGamesPokedex({
   pokedexNum,
+  fetchNationalDex = false,
 }: {
   pokedexNum: number | number[];
+  fetchNationalDex?: boolean;
 }): Promise<IGamePokedex | IGamePokedex[]> {
   // If we are getting multiple pokedex's, fetch all at once and return it all.
   if (Array.isArray(pokedexNum)) {
+    // This adds the national dex to the end of the game. This is used for mainline games as all games are backwards compatible.
+    fetchNationalDex && pokedexNum.push(1);
     const results = await Promise.all(
       pokedexNum.map((num) =>
         fetch(`https://pokeapi.co/api/v2/pokedex/${num}/`, {
