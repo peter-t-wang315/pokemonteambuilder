@@ -60,3 +60,36 @@ Underlying mechanics of how code will work:
     - Doing this seriously reduces the amount of hard coding that we otherwise need to do and can change more to purely just hitting the web for things and keeping slightly more hands off.
 - THINGS TO WATCH OUT FOR
   - When trying to retrieve what pokemon are available in what games, XD and Colloseum have no ability to grab any pokedex. Those will have to be hard coded...
+
+# The algo that turned richi3f's pokedex into my current pokedex.
+
+```
+    let lastNum = 0;
+    const allPokedex = Object.values(Pokedex).filter((pokemon) => {
+      if (pokemon.num > lastNum) {
+        lastNum = pokemon.num;
+        return true;
+      }
+    });
+
+    const x = Object.entries(richi3fsPokedexes).reduce(
+      (acc, [dexName, dex]) => {
+        return {
+          ...acc,
+          [dexName]: {
+            name: dex.name,
+            pokemon: Object.values(dex?.order).map((num) => {
+              return {
+                id: num[0][0],
+                name: allPokedex[num[0][0] - 1].name.toLowerCase(),
+              };
+            }),
+          },
+        };
+      },
+      {} as Record<
+        string,
+        { name: string; pokemon: { id: number; name: string }[] }
+      >
+    );
+```
