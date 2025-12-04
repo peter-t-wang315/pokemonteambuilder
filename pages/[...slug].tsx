@@ -1,9 +1,9 @@
 import { useRouter } from "next/router";
-import { GameTitles } from "../app/data/gameTitles";
 import { useEffect, useState } from "react";
-import { fetchGamesPokedex } from "@/app/testing/request";
 import { PokemonSprite } from "@/app/components/PokemonSprite";
 import { IGamePokedex } from "@/interfaces/IGamePokedex";
+import { GameTitles } from "@/app/data/gameTitles";
+import { pokedexes } from "@/app/data/gamePokedexes";
 
 export default function GamePage() {
   const router = useRouter();
@@ -23,66 +23,12 @@ export default function GamePage() {
       router.replace("/notfound");
     }
 
-    fetchAndFormatPokedexData();
+    const dexSlugs = GameTitles[path].dex_slugs;
+    const pokedexData = dexSlugs
+      .map((slug) => pokedexes[slug])
+      .filter((dex): dex is IGamePokedex => dex !== undefined);
+    setGamePokedex(pokedexData);
   }, [path]);
-
-  async function fetchAndFormatPokedexData() {
-    if (!GameTitles[path]?.pokeAPIPokedexId) {
-      return;
-    }
-
-    const pokedexData = await fetchGamesPokedex({
-      pokedexNum: GameTitles[path].pokeAPIPokedexId,
-      fetchNationalDex: !!GameTitles[path]?.firstPokedexNumber,
-    });
-
-    // If pokedexData
-    if (!Array.isArray(pokedexData)) {
-      setGamePokedex([pokedexData as IGamePokedex]);
-      return;
-    }
-
-    // Now that we've retrieved the pokedex data, we need to now format the national dex so that it doesn't show duplicate mons from the other dexes.
-
-    // First we combine the regional dexes into an object for instant lookup.
-    // Key: pokemon name, Value: pokemon entry
-    const combinedNonNationalDexes = pokedexData
-      .slice(0, -1)
-      .flatMap((dex: IGamePokedex) => dex.pokemon_entries)
-      .reduce((acc, entry) => {
-        acc[entry.pokemon_species.name] = entry;
-        return acc;
-      }, {} as Record<string, (typeof pokedexData)[0]["pokemon_entries"][0]>);
-
-    // Second we have to take the first pokedex and ensure that any of the other non national dex mons aren't in it.
-    const nonDupeRegionalDex = pokedexData
-      .slice(1, -1)
-      .map((dex: IGamePokedex) => {
-        const nonDupeEntries = dex.pokemon_entries.filter(
-          (entry) => !combinedNonNationalDexes[entry.pokemon_species.name]
-        );
-        return {
-          ...dex,
-          pokemon_entries: nonDupeEntries,
-        };
-      });
-
-    // Third we filter the national dex to only include mons that aren't already in the combined dex.
-    const nationalDex = pokedexData[pokedexData.length - 1];
-    const nonDupeNationalDexPokemonEntries = nationalDex.pokemon_entries.filter(
-      (entry) => !combinedNonNationalDexes[entry.pokemon_species.name]
-    );
-    const nonDupeNationalDex: IGamePokedex = {
-      ...nationalDex,
-      pokemon_entries: nonDupeNationalDexPokemonEntries,
-    };
-
-    setGamePokedex([
-      pokedexData[0],
-      ...nonDupeRegionalDex,
-      nonDupeNationalDex,
-    ] as IGamePokedex[]);
-  }
 
   if (!GameTitles[path] || gamePokedex.length === 0) {
     return <div>No pokemon found</div>;
@@ -90,11 +36,8 @@ export default function GamePage() {
 
   return (
     <div>
-      {gamePokedex.map((pokedex) => (
-        <div
-          style={{ display: "flex", flexDirection: "column" }}
-          key={pokedex.id}
-        >
+      {gamePokedex.map((pokedex, i) => (
+        <div style={{ display: "flex", flexDirection: "column" }} key={i}>
           <h1>{pokedex.name}</h1>
           <div
             style={{
@@ -105,10 +48,10 @@ export default function GamePage() {
               alignItems: "start",
             }}
           >
-            {pokedex.pokemon_entries.map((mon) => (
-              <div key={mon.pokemon_species.name}>
-                {mon.pokemon_species.name}
-                <PokemonSprite pokemonName={mon.pokemon_species.name} />
+            {pokedex.pokemon.map((mon) => (
+              <div key={mon.name}>
+                {mon.name}
+                <PokemonSprite pokemonName={mon.name} />
               </div>
             ))}
           </div>

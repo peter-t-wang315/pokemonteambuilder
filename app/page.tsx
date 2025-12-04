@@ -3,7 +3,7 @@ import { Text } from "@radix-ui/themes";
 import Image from "next/image";
 import { useState } from "react";
 import { PokemonSprite } from "./components/PokemonSprite";
-import { GameTitles } from "./data/gameTitles";
+import { GameTitles } from "./data/oldGameTitles";
 import { TitleCard } from "./components/TitleCard";
 
 export default function Home() {

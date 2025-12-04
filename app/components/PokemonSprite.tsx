@@ -1,13 +1,13 @@
 "use client";
 import { Pokedex } from "../data/pokedex";
-import { PokemonAltSprite } from "../data/pokemonAltSprite";
 
 export function PokemonSprite({ pokemonName }: { pokemonName: string }) {
   // Because we're doing things with static images, it is better to not use state here and just deal with the constants directly.
-  const cleanedPokemonName = pokemonName.toLowerCase().replace(/[\s.-]/g, "");
-
-  // const pokedexNumber =
-  //   PokemonAltSprite[cleanedPokemonName] || Pokedex[cleanedPokemonName].num;
+  const cleanedPokemonName = pokemonName
+    .normalize("NFD") // separates accents from letters
+    .replace(/[\u0300-\u036f]/g, "") // removes diacritics
+    .toLowerCase()
+    .replace(/[\s.'’`-]/g, "");
   const pokedexNumber = Pokedex[cleanedPokemonName].num;
   if (
     cleanedPokemonName === "luxray" ||
