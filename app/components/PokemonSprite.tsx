@@ -7,16 +7,12 @@ export function PokemonSprite({ pokemonName }: { pokemonName: string }) {
     .normalize("NFD") // separates accents from letters
     .replace(/[\u0300-\u036f]/g, "") // removes diacritics
     .toLowerCase()
-    .replace(/[\s.'’`-]/g, "");
-  const pokedexNumber = Pokedex[cleanedPokemonName].num;
-  if (
-    cleanedPokemonName === "luxray" ||
-    cleanedPokemonName === "budew" ||
-    cleanedPokemonName === "roserade" ||
-    cleanedPokemonName === "cranidos"
-  ) {
-    console.log("Pokedex Number:", pokedexNumber);
+    .replace(/[\s.'’`:-]/g, "");
+  if (!Pokedex[cleanedPokemonName]) {
+    console.log("Why: ", cleanedPokemonName);
+    debugger;
   }
+  const pokedexNumber = Pokedex[cleanedPokemonName].num;
   const width = 40;
   const height = 30;
   const left = (pokedexNumber % 12) * width;
