@@ -1,101 +1,181 @@
 interface IGameTitles {
   [key: string]: {
-    // Thought I would need these. Don't think I will anymore but I already added them soooo they can stay I suppose... Easter eeeeegg.
-    versionGroups?: number[];
-    // This is used to grab the Pokedex for each game from PokeAPI.
-    pokeAPIPokedexId?: number[];
-    // This is used to cut the National dex off at a certain point for each game. Each game has backwards compatability with all previous games,
-    // so this is how we can determine what pokemon are technically available from Home in each game and to just add the national dex up to that point.
-    firstPokedexNumber?: number;
+    dex_slugs: string[];
+    versions?: { slug: string; name: string }[];
     mega?: boolean;
     gmax?: boolean;
+    tera?: boolean;
   };
 }
 
 export const GameTitles: IGameTitles = {
   rby: {
-    versionGroups: [1, 2],
-    pokeAPIPokedexId: [2],
-    firstPokedexNumber: 1,
+    dex_slugs: ["kanto"],
+    versions: [
+      { slug: "red", name: "Red" },
+      { slug: "blue", name: "Blue" },
+      { slug: "yellow", name: "Yellow" },
+    ],
   },
   gsc: {
-    versionGroups: [3, 4],
-    pokeAPIPokedexId: [3],
-    firstPokedexNumber: 152,
+    dex_slugs: ["johto"],
+    versions: [
+      { slug: "gold", name: "Gold" },
+      { slug: "silver", name: "Silver" },
+      { slug: "crystal", name: "Crystal" },
+    ],
   },
   rse: {
-    versionGroups: [5, 6],
-    pokeAPIPokedexId: [4],
-    firstPokedexNumber: 252,
-  },
-  frlg: {
-    versionGroups: [7],
-    pokeAPIPokedexId: [2],
-    firstPokedexNumber: 1,
-  },
-  dpp: {
-    versionGroups: [8, 9],
-    pokeAPIPokedexId: [5, 6],
-    firstPokedexNumber: 387,
-  },
-  hgss: {
-    versionGroups: [10],
-    pokeAPIPokedexId: [7],
-    firstPokedexNumber: 152,
-  },
-  bw: {
-    versionGroups: [11],
-    pokeAPIPokedexId: [8],
-    firstPokedexNumber: 494,
+    dex_slugs: ["hoenn", "national_rse"],
+    versions: [
+      { slug: "ruby", name: "Ruby" },
+      { slug: "sapphire", name: "Sapphire" },
+      { slug: "emerald", name: "Emerald" },
+    ],
   },
   colo: {
-    versionGroups: [12],
+    dex_slugs: ["colo_gift", "colo_snag", "colo_transfer"],
+  },
+  frlg: {
+    dex_slugs: ["kanto", "national_frlg"],
+    versions: [
+      { slug: "firered", name: "FireRed" },
+      { slug: "leafgreen", name: "LeafGreen" },
+    ],
   },
   xd: {
-    versionGroups: [13],
+    dex_slugs: ["xd_gift", "xd_snag", "xd_pokespot", "xd_transfer"],
+  },
+  dppt: {
+    dex_slugs: ["sinnoh", "sinnoh_pt", "national_dppt"],
+    versions: [
+      { slug: "diamond", name: "Diamond" },
+      { slug: "pearl", name: "Pearl" },
+      { slug: "platinum", name: "Platinum" },
+    ],
+  },
+  hgss: {
+    dex_slugs: ["johto_hgss", "national_hgss"],
+    versions: [
+      { slug: "heartgold", name: "HeartGold" },
+      { slug: "soulsilver", name: "SoulSilver" },
+    ],
+  },
+  bw: {
+    dex_slugs: ["unova", "white_forest", "national_bw"],
+    versions: [
+      { slug: "black", name: "Black" },
+      { slug: "white", name: "White" },
+    ],
   },
   b2w2: {
-    versionGroups: [14],
-    pokeAPIPokedexId: [9],
-    firstPokedexNumber: 494,
+    dex_slugs: ["unova_b2w2", "national_b2w2"],
+    versions: [
+      { slug: "black2", name: "Black 2" },
+      { slug: "white2", name: "White 2" },
+    ],
   },
   xy: {
-    versionGroups: [15],
-    pokeAPIPokedexId: [12, 13, 14],
-    firstPokedexNumber: 650,
+    dex_slugs: [
+      "kalos_central",
+      "kalos_coastal",
+      "kalos_mountain",
+      "national_xy",
+    ],
+    versions: [
+      { slug: "x", name: "X" },
+      { slug: "y", name: "Y" },
+    ],
     mega: true,
   },
   oras: {
-    versionGroups: [16],
-    pokeAPIPokedexId: [15],
-    firstPokedexNumber: 252,
+    dex_slugs: ["hoenn_oras", "national_oras"],
+    versions: [
+      { slug: "omega_ruby", name: "Omega Ruby" },
+      { slug: "alpha_sapphire", name: "Alpha Sapphire" },
+    ],
     mega: true,
   },
   sm: {
-    versionGroups: [17],
-    pokeAPIPokedexId: [16, 17, 18, 19, 20],
-    firstPokedexNumber: 722,
+    dex_slugs: ["alola", "alola_scan", "national_sm"],
+    versions: [
+      { slug: "sun", name: "Sun" },
+      { slug: "moon", name: "Moon" },
+    ],
     mega: true,
   },
   usum: {
-    versionGroups: [18],
-    pokeAPIPokedexId: [21, 22, 23, 24, 25],
-    firstPokedexNumber: 722,
+    dex_slugs: [
+      "alola_usum",
+      "alola_scan_usum",
+      "alola_wormhole_usum",
+      "national_usum",
+    ],
+    versions: [
+      { slug: "ultra_sun", name: "Ultra Sun" },
+      { slug: "ultra_moon", name: "Ultra Moon" },
+    ],
     mega: true,
   },
   lgpe: {
-    versionGroups: [19],
-    pokeAPIPokedexId: [26],
-    firstPokedexNumber: 1,
+    dex_slugs: ["kanto_lgpe"],
+    versions: [
+      { slug: "lets_go_pikachu", name: "Let's Go Pikachu!" },
+      { slug: "lets_go_eevee", name: "Let's Go Eevee!" },
+    ],
     mega: true,
   },
   swsh: {
-    versionGroups: [20],
-    pokeAPIPokedexId: [27, 28, 29],
-    firstPokedexNumber: 810,
+    dex_slugs: ["galar", "galar_armor", "galar_crown", "galar_other"],
+    versions: [
+      { slug: "sword", name: "Sword" },
+      { slug: "shield", name: "Shield" },
+    ],
     gmax: true,
   },
-  sv: {},
-  lza: { mega: true },
-  home: { pokeAPIPokedexId: [1], mega: true, gmax: true },
+  bdsp: {
+    dex_slugs: ["sinnoh", "national_bdsp"],
+    versions: [
+      { slug: "brilliant_diamond", name: "Brilliant Diamond" },
+      { slug: "shining_pearl", name: "Shining Pearl" },
+    ],
+  },
+  arceus: {
+    dex_slugs: ["hisui"],
+  },
+  sv: {
+    dex_slugs: [
+      "paldea",
+      "paldea_kitakami",
+      "paldea_blueberry",
+      "paldea_other",
+    ],
+    versions: [
+      { slug: "scarlet", name: "Scarlet" },
+      { slug: "violet", name: "Violet" },
+    ],
+    tera: true,
+  },
+  lza: {
+    dex_slugs: ["lumiose", "lumiose_hyperspace", "lza_transfer"],
+    mega: true,
+  },
+  home: {
+    dex_slugs: [
+      "kanto_home",
+      "johto_home",
+      "hoenn_home",
+      "sinnoh_home",
+      "unova_home",
+      "kalos_home",
+      "alola_home",
+      "galar_home",
+      "hisui_home",
+      "paldea_home",
+      "other_home",
+    ],
+    mega: true,
+    gmax: true,
+    tera: true,
+  },
 };
