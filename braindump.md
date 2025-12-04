@@ -1,5 +1,9 @@
 Functionality of website:
 
+- Ok I'm realizing now that this is like, borderline impossible to do with the pokeapi for determining wehat pokemon are in the game. For instance, Sword and Shield. There are pokemon in here from the regular regional dex, and then from the DLCs. But then you can't import every pokemon from home to this game, only a certain few... PokeAPI has no way of tracking that...
+
+  - Like fricken Melmetal is transferable to this game but PokeAPI doesn't return that data.
+
 - First page lets you choose what game you’re playing so that you have the right pokedex to use
 - Once you’ve selected your game. Much like this team builder you choose what pokemon you want on your team.
   - [https://richi3f.github.io/pokemon-team-planner/](https://richi3f.github.io/pokemon-team-planner/)
