@@ -46,7 +46,7 @@ export const GameTitles: IGameTitles = {
   xd: {
     dex_slugs: ["xd_gift", "xd_snag", "xd_pokespot", "xd_transfer"],
   },
-  dppt: {
+  dpp: {
     dex_slugs: ["sinnoh", "sinnoh_pt", "national_dppt"],
     versions: [
       { slug: "diamond", name: "Diamond" },

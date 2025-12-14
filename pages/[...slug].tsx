@@ -1,14 +1,19 @@
-import { useRouter } from "next/router";
+"use client";
+import { useRouter, useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { PokemonSprite } from "@/app/components/PokemonSprite";
 import { IGamePokedex } from "@/interfaces/IGamePokedex";
 import { GameTitles } from "@/app/data/gameTitles";
 import { pokedexes } from "@/app/data/gamePokedexes";
+import { Spinner } from "@radix-ui/themes";
 
 export default function GamePage() {
   const router = useRouter();
-  const { slug } = router.query;
-  const path = Array.isArray(slug) ? slug.join("/") : slug || "";
+  const params = useParams();
+
+  const slug = params?.slug;
+  const path = Array.isArray(slug) ? slug.join("/") : slug ?? "";
+  // const path = Array.isArray(slug) ? slug.join("/") : slug || "";
   const [gamePokedex, setGamePokedex] = useState<IGamePokedex[]>([]);
 
   useEffect(() => {
@@ -29,6 +34,20 @@ export default function GamePage() {
       .filter((dex): dex is IGamePokedex => dex !== undefined);
     setGamePokedex(pokedexData);
   }, [path]);
+
+  return (
+    <div
+      style={{
+        gap: "4",
+        width: "100%",
+        height: "100%",
+        justifyContent: "center",
+      }}
+    >
+      Bro please why
+      <Spinner size="3" style={{ width: 24, height: 24 }} />
+    </div>
+  );
 
   if (!GameTitles[path] || gamePokedex.length === 0) {
     return <div>No pokemon found</div>;
