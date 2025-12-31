@@ -1,4 +1,5 @@
-@import "tailwindcss";
+/* Is tailwind messing this up? */
+/* @import "tailwindcss/utilities.css"; */
 
 :root {
   --background: #ffffff;
