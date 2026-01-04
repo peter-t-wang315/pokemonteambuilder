@@ -36,8 +36,9 @@ export default function GamePage() {
   }, [path]);
 
   return (
-    <div
+    <main
       style={{
+        display: "flex",
         gap: "4",
         width: "100%",
         height: "100%",
@@ -45,8 +46,8 @@ export default function GamePage() {
       }}
     >
       Bro please why
-      <Spinner size="3" style={{ width: 24, height: 24 }} />
-    </div>
+      <Spinner style={{ width: "50px", height: "50px", color: "green" }} />
+    </main>
   );
 
   if (!GameTitles[path] || gamePokedex.length === 0) {
