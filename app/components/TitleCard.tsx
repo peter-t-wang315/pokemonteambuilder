@@ -12,19 +12,26 @@ export function TitleCard({ title }: { title: string }) {
       onClick={() => {
         router.push(`/${title}`);
       }}
+      style={{
+        padding: "10px",
+      }}
     >
-      <Image
-        key={title}
-        src={`/gameTitles/${title}.png`}
-        alt={title}
-        fill
+      {/* This div helps with the image's padding in the card. Doing this allows the card to set the padding and then
+      the div takes the remainder of the height and width and lets the image fill that space. */}
+      <div
         style={{
-          objectFit: "contain",
-          maxWidth: "100%",
-          maxHeight: "100%",
-          padding: "20px 50px",
+          position: "relative",
+          width: "100%",
+          height: "100%",
         }}
-      />
+      >
+        <Image
+          src={`/gameTitles/${title}.png`}
+          alt={title}
+          fill
+          style={{ objectFit: "contain" }}
+        />
+      </div>
     </Card>
   );
 }
