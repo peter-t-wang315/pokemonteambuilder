@@ -58,16 +58,18 @@ export default function GamePage() {
   }
 
   return (
-    <div>
+    <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 52 }}>
       {gamePokedex.map((pokedex, i) => (
-        <div style={{ display: "flex", flexDirection: "column" }} key={i}>
+        <div
+          style={{ display: "flex", flexDirection: "column", flex: 1 }}
+          key={i}
+        >
           <Heading>{pokedex.name}</Heading>
           <div
             style={{
-              paddingTop: 16,
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))",
-              gap: 8,
+              gap: 4,
               alignItems: "start",
             }}
           >
