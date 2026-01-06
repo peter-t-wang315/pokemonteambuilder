@@ -30,9 +30,10 @@ export default function Home() {
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(3, 1fr)",
+          gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
           gap: 16,
-          width: "70%",
+          width: "100%",
+          maxWidth: "900px",
           justifyItems: "center",
         }}
       >
