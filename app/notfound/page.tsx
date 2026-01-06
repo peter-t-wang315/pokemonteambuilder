@@ -1,7 +1,10 @@
+"use client";
+import { Heading } from "@radix-ui/themes";
+
 export default function PageNotFound() {
   return (
-    <div>
-      <h1>404 - Page Not Found</h1>
+    <div className="page-went-wrong">
+      <Heading>404 - Page Not Found</Heading>
     </div>
   );
 }

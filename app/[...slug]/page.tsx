@@ -15,6 +15,7 @@ export default function GamePage() {
   const path = Array.isArray(slug) ? slug.join("/") : slug ?? "";
   // const path = Array.isArray(slug) ? slug.join("/") : slug || "";
   const [gamePokedex, setGamePokedex] = useState<IGamePokedex[]>([]);
+  const [dataLoaded, setDataLoaded] = useState(false);
 
   useEffect(() => {
     // Have to make sure the path is there because on first load, router.query takes a second to correctly
@@ -34,38 +35,22 @@ export default function GamePage() {
       .map((slug) => pokedexes[slug])
       .filter((dex): dex is IGamePokedex => dex !== undefined);
     setGamePokedex(pokedexData);
+    setDataLoaded(true);
   }, [path]);
 
   // If we are just loading the information
-  if (!GameTitles[path]) {
+  if (!GameTitles[path] || !dataLoaded) {
     return (
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100vh",
-          gap: 8,
-        }}
-      >
+      <div className="page-went-wrong">
         <Heading>Loading Pokemon...</Heading>
-        <Spinner />
+        <Spinner size={"3"} />
       </div>
     );
   }
 
   if (gamePokedex.length === 0) {
     return (
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100vh",
-          gap: 2,
-        }}
-      >
+      <div className="page-went-wrong" style={{ flexDirection: "column" }}>
         <Heading>Errrm something went wrong...</Heading>
         <Text>Don't look at me try refreshing the page Idk.</Text>
       </div>
