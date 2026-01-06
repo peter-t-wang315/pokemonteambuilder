@@ -1,11 +1,11 @@
 "use client";
-import { useRouter, useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { PokemonSprite } from "@/app/components/PokemonSprite";
 import { IGamePokedex } from "@/interfaces/IGamePokedex";
 import { GameTitles } from "@/app/data/gameTitles";
 import { pokedexes } from "@/app/data/gamePokedexes";
-import { Spinner } from "@radix-ui/themes";
+import { Heading, Spinner, Text } from "@radix-ui/themes";
+import { useParams, useRouter } from "next/navigation";
 
 export default function GamePage() {
   const router = useRouter();
@@ -26,6 +26,7 @@ export default function GamePage() {
 
     if (!GameTitles[path]) {
       router.replace("/notfound");
+      return;
     }
 
     const dexSlugs = GameTitles[path].dex_slugs;
@@ -35,15 +36,47 @@ export default function GamePage() {
     setGamePokedex(pokedexData);
   }, [path]);
 
-  if (!GameTitles[path] || gamePokedex.length === 0) {
-    return <div>No pokemon found</div>;
+  // If we are just loading the information
+  if (!GameTitles[path]) {
+    return (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+          gap: 8,
+        }}
+      >
+        <Heading>Loading Pokemon...</Heading>
+        <Spinner />
+      </div>
+    );
+  }
+
+  if (gamePokedex.length === 0) {
+    return (
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+          gap: 2,
+        }}
+      >
+        <Heading>Errrm something went wrong...</Heading>
+        <Text>Don't look at me try refreshing the page Idk.</Text>
+      </div>
+    );
   }
 
   return (
     <div>
       {gamePokedex.map((pokedex, i) => (
         <div style={{ display: "flex", flexDirection: "column" }} key={i}>
-          <h1>{pokedex.name}</h1>
+          <Heading>{pokedex.name}</Heading>
           <div
             style={{
               paddingTop: 16,
