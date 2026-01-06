@@ -24,9 +24,9 @@ body {
 } */
 
 .page-went-wrong {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
   gap: 8px;
 }

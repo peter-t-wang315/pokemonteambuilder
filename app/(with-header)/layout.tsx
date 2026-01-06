@@ -18,7 +18,6 @@ export default function WithHeaderLayout({
         boxSizing: "border-box",
       }}
     >
-      {/* Header centered */}
       <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
         <Button asChild variant="outline" style={{ padding: 40 }}>
           <Link href="/">
@@ -27,8 +26,7 @@ export default function WithHeaderLayout({
         </Button>
       </div>
 
-      {/* Page content stretches full width */}
-      <div style={{ flex: 1, width: "100%" }}>{children}</div>
+      <div style={{ flex: 1, display: "flex" }}>{children}</div>
     </div>
   );
 }
