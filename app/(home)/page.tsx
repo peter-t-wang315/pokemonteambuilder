@@ -1,11 +1,10 @@
 "use client";
 import { Text } from "@radix-ui/themes";
-import Image from "next/image";
-import { useState } from "react";
-import { PokemonSprite } from "../components/PokemonSprite";
 import { GameTitles } from "../data/oldGameTitles";
 import { TitleCard } from "../components/TitleCard";
 
+// This is the home page's page code. This uses the straight up default layout.tsx for it's layout and therefore doesn't have the button like
+// the other pages that rely on the other layout.
 export default function Home() {
   return (
     <main

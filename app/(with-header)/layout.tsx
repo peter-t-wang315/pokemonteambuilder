@@ -1,6 +1,8 @@
 import { Button, Heading, Link } from "@radix-ui/themes";
 
-// This layout makes it so that every other page outside of home now has a special layout(with header).
+// This layout is the layout for the rest of the pages(slug + not found). This layout takes the base layout and simply adds a header to each page
+// layout. This button can be used to navigate back to the home page.
+// IF YOU DECIDE TO ADD A FOOTER THAT SHOULD BE DONE AT THE BASE LAYOUT AS THAT STILL EXISTS.
 export default function WithHeaderLayout({
   children,
 }: {
