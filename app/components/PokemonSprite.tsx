@@ -1,17 +1,19 @@
 "use client";
 import { Pokedex } from "../data/pokedex";
 
-export function PokemonSprite({ pokemonName }: { pokemonName: string }) {
-  // Because we're doing things with static images, it is better to not use state here and just deal with the constants directly.
+export function PokemonSprite({
+  pokemonName,
+  scale = 1,
+}: {
+  pokemonName: string;
+  scale?: number;
+}) {
   const cleanedPokemonName = pokemonName
-    .normalize("NFD") // separates accents from letters
-    .replace(/[\u0300-\u036f]/g, "") // removes diacritics
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .replace(/[\s.'’`:-]/g, "");
-  if (!Pokedex[cleanedPokemonName]) {
-    console.log("Why: ", cleanedPokemonName);
-    debugger;
-  }
+
   const pokedexNumber = Pokedex[cleanedPokemonName].num;
   const width = 40;
   const height = 30;
@@ -19,20 +21,24 @@ export function PokemonSprite({ pokemonName }: { pokemonName: string }) {
   const top = Math.floor(pokedexNumber / 12) * height;
 
   return (
-    <span
+    <div
       style={{
-        display: "inline-block",
-        background: `
-          transparent 
-          url(/pokemonicons-sheet.png) 
-          no-repeat 
-          scroll 
-          -${left}px -${top}px
-        `,
-        width,
-        height,
-        overflow: "visible",
+        width: width * scale,
+        height: height * scale,
+        overflow: "hidden",
       }}
-    />
+    >
+      <span
+        style={{
+          display: "inline-block",
+          width,
+          height,
+          background: `url(/pokemonicons-sheet.png) no-repeat -${left}px -${top}px`,
+          imageRendering: "pixelated",
+          transform: `scale(${scale})`,
+          transformOrigin: "top left",
+        }}
+      />
+    </div>
   );
 }
