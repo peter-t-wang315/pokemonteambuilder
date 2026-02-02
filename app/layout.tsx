@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "@radix-ui/themes/styles.css";
 import "./css/TitleCardCSS.css";
+import "./css/PokemonCard.css";
 import { Theme } from "@radix-ui/themes";
 
 const geistSans = Geist({

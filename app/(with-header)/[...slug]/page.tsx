@@ -6,13 +6,14 @@ import { GameTitles } from "@/app/data/gameTitles";
 import { pokedexes } from "@/app/data/gamePokedexes";
 import { Heading, Spinner, Text } from "@radix-ui/themes";
 import { useParams, useRouter } from "next/navigation";
+import { PokemonCard } from "@/app/components/PokemonCard";
 
 export default function GamePage() {
   const router = useRouter();
   const params = useParams();
 
   const slug = params?.slug;
-  const path = Array.isArray(slug) ? slug.join("/") : slug ?? "";
+  const path = Array.isArray(slug) ? slug.join("/") : (slug ?? "");
   // const path = Array.isArray(slug) ? slug.join("/") : slug || "";
   const [gamePokedex, setGamePokedex] = useState<IGamePokedex[]>([]);
   const [dataLoaded, setDataLoaded] = useState(false);
@@ -69,15 +70,12 @@ export default function GamePage() {
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))",
-              gap: 4,
+              gap: 16,
               alignItems: "start",
             }}
           >
             {pokedex.pokemon.map((mon) => (
-              <div key={mon.name}>
-                {mon.name}
-                <PokemonSprite pokemonName={mon.name} />
-              </div>
+              <PokemonCard PokemonDetails={mon} key={mon.name} />
             ))}
           </div>
         </div>
