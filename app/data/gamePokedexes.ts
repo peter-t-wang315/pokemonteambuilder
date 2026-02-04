@@ -19,6 +19,10 @@ export const pokedexes: {
         name: "venusaur",
       },
       {
+        id: 3,
+        name: "venusaur-mega",
+      },
+      {
         id: 4,
         name: "charmander",
       },
@@ -31,6 +35,14 @@ export const pokedexes: {
         name: "charizard",
       },
       {
+        id: 6,
+        name: "charizard-mega-x",
+      },
+      {
+        id: 6,
+        name: "charizard-mega-y",
+      },
+      {
         id: 7,
         name: "squirtle",
       },
@@ -41,6 +53,10 @@ export const pokedexes: {
       {
         id: 9,
         name: "blastoise",
+      },
+      {
+        id: 9,
+        name: "blastoise-mega",
       },
       {
         id: 10,
@@ -67,6 +83,10 @@ export const pokedexes: {
         name: "beedrill",
       },
       {
+        id: 15,
+        name: "beedrill-mega",
+      },
+      {
         id: 16,
         name: "pidgey",
       },
@@ -79,12 +99,24 @@ export const pokedexes: {
         name: "pidgeot",
       },
       {
+        id: 18,
+        name: "pidgeot-mega",
+      },
+      {
         id: 19,
         name: "rattata",
       },
       {
+        id: 19,
+        name: "rattata-alola",
+      },
+      {
         id: 20,
         name: "raticate",
+      },
+      {
+        id: 20,
+        name: "raticate-alola",
       },
       {
         id: 21,
@@ -111,12 +143,24 @@ export const pokedexes: {
         name: "raichu",
       },
       {
+        id: 26,
+        name: "raichu-alola",
+      },
+      {
         id: 27,
         name: "sandshrew",
       },
       {
+        id: 27,
+        name: "sandshrew-alola",
+      },
+      {
         id: 28,
         name: "sandslash",
+      },
+      {
+        id: 28,
+        name: "sandslash-alola",
       },
       {
         id: 29,
@@ -155,8 +199,16 @@ export const pokedexes: {
         name: "vulpix",
       },
       {
+        id: 37,
+        name: "vulpix-alola",
+      },
+      {
         id: 38,
         name: "ninetales",
+      },
+      {
+        id: 38,
+        name: "ninetales-alola",
       },
       {
         id: 39,
@@ -207,16 +259,36 @@ export const pokedexes: {
         name: "diglett",
       },
       {
+        id: 50,
+        name: "diglett-alola",
+      },
+      {
         id: 51,
         name: "dugtrio",
+      },
+      {
+        id: 51,
+        name: "dugtrio-alola",
       },
       {
         id: 52,
         name: "meowth",
       },
       {
+        id: 52,
+        name: "meowth-alola",
+      },
+      {
+        id: 52,
+        name: "meowth-galar",
+      },
+      {
         id: 53,
         name: "persian",
+      },
+      {
+        id: 53,
+        name: "persian-alola",
       },
       {
         id: 54,
@@ -239,8 +311,16 @@ export const pokedexes: {
         name: "growlithe",
       },
       {
+        id: 58,
+        name: "growlithe-hisui",
+      },
+      {
         id: 59,
         name: "arcanine",
+      },
+      {
+        id: 59,
+        name: "arcanine-hisui",
       },
       {
         id: 60,
@@ -265,6 +345,10 @@ export const pokedexes: {
       {
         id: 65,
         name: "alakazam",
+      },
+      {
+        id: 65,
+        name: "alakazam-mega",
       },
       {
         id: 66,
@@ -303,28 +387,60 @@ export const pokedexes: {
         name: "geodude",
       },
       {
+        id: 74,
+        name: "geodude-alola",
+      },
+      {
         id: 75,
         name: "graveler",
+      },
+      {
+        id: 75,
+        name: "graveler-alola",
       },
       {
         id: 76,
         name: "golem",
       },
       {
+        id: 76,
+        name: "golem-alola",
+      },
+      {
         id: 77,
         name: "ponyta",
+      },
+      {
+        id: 77,
+        name: "ponyta-galar",
       },
       {
         id: 78,
         name: "rapidash",
       },
       {
+        id: 78,
+        name: "rapidash-galar",
+      },
+      {
         id: 79,
         name: "slowpoke",
       },
       {
+        id: 79,
+        name: "slowpoke-galar",
+      },
+      {
         id: 80,
         name: "slowbro",
+      },
+      {
+        id: 80,
+        name: "slowbro-mega",
+      },
+      {
+        id: 80,
+        name: "slowbro-galar",
       },
       {
         id: 81,
@@ -337,6 +453,10 @@ export const pokedexes: {
       {
         id: 83,
         name: "farfetch’d",
+      },
+      {
+        id: 83,
+        name: "farfetch’d-galar",
       },
       {
         id: 84,
@@ -359,8 +479,16 @@ export const pokedexes: {
         name: "grimer",
       },
       {
+        id: 88,
+        name: "grimer-alola",
+      },
+      {
         id: 89,
         name: "muk",
+      },
+      {
+        id: 89,
+        name: "muk-alola",
       },
       {
         id: 90,
@@ -381,6 +509,10 @@ export const pokedexes: {
       {
         id: 94,
         name: "gengar",
+      },
+      {
+        id: 94,
+        name: "gengar-mega",
       },
       {
         id: 95,
@@ -407,8 +539,16 @@ export const pokedexes: {
         name: "voltorb",
       },
       {
+        id: 100,
+        name: "voltorb-hisui",
+      },
+      {
         id: 101,
         name: "electrode",
+      },
+      {
+        id: 101,
+        name: "electrode-hisui",
       },
       {
         id: 102,
@@ -419,12 +559,20 @@ export const pokedexes: {
         name: "exeggutor",
       },
       {
+        id: 103,
+        name: "exeggutor-alola",
+      },
+      {
         id: 104,
         name: "cubone",
       },
       {
         id: 105,
         name: "marowak",
+      },
+      {
+        id: 105,
+        name: "marowak-alola",
       },
       {
         id: 106,
@@ -447,6 +595,10 @@ export const pokedexes: {
         name: "weezing",
       },
       {
+        id: 110,
+        name: "weezing-galar",
+      },
+      {
         id: 111,
         name: "rhyhorn",
       },
@@ -465,6 +617,10 @@ export const pokedexes: {
       {
         id: 115,
         name: "kangaskhan",
+      },
+      {
+        id: 115,
+        name: "kangaskhan-mega",
       },
       {
         id: 116,
@@ -495,6 +651,10 @@ export const pokedexes: {
         name: "mr. mime",
       },
       {
+        id: 122,
+        name: "mr. mime-galar",
+      },
+      {
         id: 123,
         name: "scyther",
       },
@@ -515,8 +675,24 @@ export const pokedexes: {
         name: "pinsir",
       },
       {
+        id: 127,
+        name: "pinsir-mega",
+      },
+      {
         id: 128,
         name: "tauros",
+      },
+      {
+        id: 128,
+        name: "tauros-paldea-combat",
+      },
+      {
+        id: 128,
+        name: "tauros-paldea-blaze",
+      },
+      {
+        id: 128,
+        name: "tauros-paldea-aqua",
       },
       {
         id: 129,
@@ -525,6 +701,10 @@ export const pokedexes: {
       {
         id: 130,
         name: "gyarados",
+      },
+      {
+        id: 130,
+        name: "gyarados-mega",
       },
       {
         id: 131,
@@ -575,6 +755,10 @@ export const pokedexes: {
         name: "aerodactyl",
       },
       {
+        id: 142,
+        name: "aerodactyl-mega",
+      },
+      {
         id: 143,
         name: "snorlax",
       },
@@ -583,12 +767,24 @@ export const pokedexes: {
         name: "articuno",
       },
       {
+        id: 144,
+        name: "articuno-galar",
+      },
+      {
         id: 145,
         name: "zapdos",
       },
       {
+        id: 145,
+        name: "zapdos-galar",
+      },
+      {
         id: 146,
         name: "moltres",
+      },
+      {
+        id: 146,
+        name: "moltres-galar",
       },
       {
         id: 147,
@@ -605,6 +801,14 @@ export const pokedexes: {
       {
         id: 150,
         name: "mewtwo",
+      },
+      {
+        id: 150,
+        name: "mewtwo-mega-x",
+      },
+      {
+        id: 150,
+        name: "mewtwo-mega-y",
       },
       {
         id: 151,
@@ -638,6 +842,10 @@ export const pokedexes: {
       {
         id: 157,
         name: "typhlosion",
+      },
+      {
+        id: 157,
+        name: "typhlosion-hisui",
       },
       {
         id: 158,
@@ -736,6 +944,10 @@ export const pokedexes: {
         name: "ampharos",
       },
       {
+        id: 181,
+        name: "ampharos-mega",
+      },
+      {
         id: 182,
         name: "bellossom",
       },
@@ -788,6 +1000,10 @@ export const pokedexes: {
         name: "wooper",
       },
       {
+        id: 194,
+        name: "wooper-paldea",
+      },
+      {
         id: 195,
         name: "quagsire",
       },
@@ -806,6 +1022,10 @@ export const pokedexes: {
       {
         id: 199,
         name: "slowking",
+      },
+      {
+        id: 199,
+        name: "slowking-galar",
       },
       {
         id: 200,
@@ -844,6 +1064,10 @@ export const pokedexes: {
         name: "steelix",
       },
       {
+        id: 208,
+        name: "steelix-mega",
+      },
+      {
         id: 209,
         name: "snubbull",
       },
@@ -856,8 +1080,16 @@ export const pokedexes: {
         name: "qwilfish",
       },
       {
+        id: 211,
+        name: "qwilfish-hisui",
+      },
+      {
         id: 212,
         name: "scizor",
+      },
+      {
+        id: 212,
+        name: "scizor-mega",
       },
       {
         id: 213,
@@ -868,8 +1100,16 @@ export const pokedexes: {
         name: "heracross",
       },
       {
+        id: 214,
+        name: "heracross-mega",
+      },
+      {
         id: 215,
         name: "sneasel",
+      },
+      {
+        id: 215,
+        name: "sneasel-hisui",
       },
       {
         id: 216,
@@ -900,6 +1140,10 @@ export const pokedexes: {
         name: "corsola",
       },
       {
+        id: 222,
+        name: "corsola-galar",
+      },
+      {
         id: 223,
         name: "remoraid",
       },
@@ -926,6 +1170,10 @@ export const pokedexes: {
       {
         id: 229,
         name: "houndoom",
+      },
+      {
+        id: 229,
+        name: "houndoom-mega",
       },
       {
         id: 230,
@@ -1004,6 +1252,10 @@ export const pokedexes: {
         name: "tyranitar",
       },
       {
+        id: 248,
+        name: "tyranitar-mega",
+      },
+      {
         id: 249,
         name: "lugia",
       },
@@ -1033,6 +1285,10 @@ export const pokedexes: {
         name: "sceptile",
       },
       {
+        id: 254,
+        name: "sceptile-mega",
+      },
+      {
         id: 255,
         name: "torchic",
       },
@@ -1043,6 +1299,10 @@ export const pokedexes: {
       {
         id: 257,
         name: "blaziken",
+      },
+      {
+        id: 257,
+        name: "blaziken-mega",
       },
       {
         id: 258,
@@ -1057,6 +1317,10 @@ export const pokedexes: {
         name: "swampert",
       },
       {
+        id: 260,
+        name: "swampert-mega",
+      },
+      {
         id: 261,
         name: "poochyena",
       },
@@ -1069,8 +1333,16 @@ export const pokedexes: {
         name: "zigzagoon",
       },
       {
+        id: 263,
+        name: "zigzagoon-galar",
+      },
+      {
         id: 264,
         name: "linoone",
+      },
+      {
+        id: 264,
+        name: "linoone-galar",
       },
       {
         id: 265,
@@ -1143,6 +1415,10 @@ export const pokedexes: {
       {
         id: 282,
         name: "gardevoir",
+      },
+      {
+        id: 282,
+        name: "gardevoir-mega",
       },
       {
         id: 283,
@@ -1225,8 +1501,16 @@ export const pokedexes: {
         name: "sableye",
       },
       {
+        id: 302,
+        name: "sableye-mega",
+      },
+      {
         id: 303,
         name: "mawile",
+      },
+      {
+        id: 303,
+        name: "mawile-mega",
       },
       {
         id: 304,
@@ -1241,6 +1525,10 @@ export const pokedexes: {
         name: "aggron",
       },
       {
+        id: 306,
+        name: "aggron-mega",
+      },
+      {
         id: 307,
         name: "meditite",
       },
@@ -1249,12 +1537,20 @@ export const pokedexes: {
         name: "medicham",
       },
       {
+        id: 308,
+        name: "medicham-mega",
+      },
+      {
         id: 309,
         name: "electrike",
       },
       {
         id: 310,
         name: "manectric",
+      },
+      {
+        id: 310,
+        name: "manectric-mega",
       },
       {
         id: 311,
@@ -1293,6 +1589,10 @@ export const pokedexes: {
         name: "sharpedo",
       },
       {
+        id: 319,
+        name: "sharpedo-mega",
+      },
+      {
         id: 320,
         name: "wailmer",
       },
@@ -1307,6 +1607,10 @@ export const pokedexes: {
       {
         id: 323,
         name: "camerupt",
+      },
+      {
+        id: 323,
+        name: "camerupt-mega",
       },
       {
         id: 324,
@@ -1351,6 +1655,10 @@ export const pokedexes: {
       {
         id: 334,
         name: "altaria",
+      },
+      {
+        id: 334,
+        name: "altaria-mega",
       },
       {
         id: 335,
@@ -1421,6 +1729,18 @@ export const pokedexes: {
         name: "castform",
       },
       {
+        id: 351,
+        name: "castform-sunny",
+      },
+      {
+        id: 351,
+        name: "castform-rainy",
+      },
+      {
+        id: 351,
+        name: "castform-snowy",
+      },
+      {
         id: 352,
         name: "kecleon",
       },
@@ -1431,6 +1751,10 @@ export const pokedexes: {
       {
         id: 354,
         name: "banette",
+      },
+      {
+        id: 354,
+        name: "banette-mega",
       },
       {
         id: 355,
@@ -1453,6 +1777,10 @@ export const pokedexes: {
         name: "absol",
       },
       {
+        id: 359,
+        name: "absol-mega",
+      },
+      {
         id: 360,
         name: "wynaut",
       },
@@ -1463,6 +1791,10 @@ export const pokedexes: {
       {
         id: 362,
         name: "glalie",
+      },
+      {
+        id: 362,
+        name: "glalie-mega",
       },
       {
         id: 363,
@@ -1509,6 +1841,10 @@ export const pokedexes: {
         name: "salamence",
       },
       {
+        id: 373,
+        name: "salamence-mega",
+      },
+      {
         id: 374,
         name: "beldum",
       },
@@ -1519,6 +1855,10 @@ export const pokedexes: {
       {
         id: 376,
         name: "metagross",
+      },
+      {
+        id: 376,
+        name: "metagross-mega",
       },
       {
         id: 377,
@@ -1537,20 +1877,40 @@ export const pokedexes: {
         name: "latias",
       },
       {
+        id: 380,
+        name: "latias-mega",
+      },
+      {
         id: 381,
         name: "latios",
+      },
+      {
+        id: 381,
+        name: "latios-mega",
       },
       {
         id: 382,
         name: "kyogre",
       },
       {
+        id: 382,
+        name: "kyogre-primal",
+      },
+      {
         id: 383,
         name: "groudon",
       },
       {
+        id: 383,
+        name: "groudon-primal",
+      },
+      {
         id: 384,
         name: "rayquaza",
+      },
+      {
+        id: 384,
+        name: "rayquaza-mega",
       },
       {
         id: 385,
@@ -1559,6 +1919,18 @@ export const pokedexes: {
       {
         id: 386,
         name: "deoxys",
+      },
+      {
+        id: 386,
+        name: "deoxys-attack",
+      },
+      {
+        id: 386,
+        name: "deoxys-defense",
+      },
+      {
+        id: 386,
+        name: "deoxys-speed",
       },
     ],
   },
@@ -1674,6 +2046,14 @@ export const pokedexes: {
         name: "wormadam",
       },
       {
+        id: 413,
+        name: "wormadam-sandy",
+      },
+      {
+        id: 413,
+        name: "wormadam-trash",
+      },
+      {
         id: 414,
         name: "mothim",
       },
@@ -1706,6 +2086,10 @@ export const pokedexes: {
         name: "cherrim",
       },
       {
+        id: 421,
+        name: "cherrim-sunshine",
+      },
+      {
         id: 422,
         name: "shellos",
       },
@@ -1732,6 +2116,10 @@ export const pokedexes: {
       {
         id: 428,
         name: "lopunny",
+      },
+      {
+        id: 428,
+        name: "lopunny-mega",
       },
       {
         id: 429,
@@ -1802,6 +2190,10 @@ export const pokedexes: {
         name: "garchomp",
       },
       {
+        id: 445,
+        name: "garchomp-mega",
+      },
+      {
         id: 446,
         name: "munchlax",
       },
@@ -1812,6 +2204,10 @@ export const pokedexes: {
       {
         id: 448,
         name: "lucario",
+      },
+      {
+        id: 448,
+        name: "lucario-mega",
       },
       {
         id: 449,
@@ -1860,6 +2256,10 @@ export const pokedexes: {
       {
         id: 460,
         name: "abomasnow",
+      },
+      {
+        id: 460,
+        name: "abomasnow-mega",
       },
       {
         id: 461,
@@ -1922,6 +2322,10 @@ export const pokedexes: {
         name: "gallade",
       },
       {
+        id: 475,
+        name: "gallade-mega",
+      },
+      {
         id: 476,
         name: "probopass",
       },
@@ -1936,6 +2340,26 @@ export const pokedexes: {
       {
         id: 479,
         name: "rotom",
+      },
+      {
+        id: 479,
+        name: "rotom-heat",
+      },
+      {
+        id: 479,
+        name: "rotom-wash",
+      },
+      {
+        id: 479,
+        name: "rotom-frost",
+      },
+      {
+        id: 479,
+        name: "rotom-fan",
+      },
+      {
+        id: 479,
+        name: "rotom-mow",
       },
       {
         id: 480,
@@ -1954,8 +2378,16 @@ export const pokedexes: {
         name: "dialga",
       },
       {
+        id: 483,
+        name: "dialga-origin",
+      },
+      {
         id: 484,
         name: "palkia",
+      },
+      {
+        id: 484,
+        name: "palkia-origin",
       },
       {
         id: 485,
@@ -1968,6 +2400,10 @@ export const pokedexes: {
       {
         id: 487,
         name: "giratina",
+      },
+      {
+        id: 487,
+        name: "giratina-origin",
       },
       {
         id: 488,
@@ -1990,8 +2426,80 @@ export const pokedexes: {
         name: "shaymin",
       },
       {
+        id: 492,
+        name: "shaymin-sky",
+      },
+      {
         id: 493,
         name: "arceus",
+      },
+      {
+        id: 493,
+        name: "arceus-fighting",
+      },
+      {
+        id: 493,
+        name: "arceus-flying",
+      },
+      {
+        id: 493,
+        name: "arceus-poison",
+      },
+      {
+        id: 493,
+        name: "arceus-ground",
+      },
+      {
+        id: 493,
+        name: "arceus-rock",
+      },
+      {
+        id: 493,
+        name: "arceus-bug",
+      },
+      {
+        id: 493,
+        name: "arceus-ghost",
+      },
+      {
+        id: 493,
+        name: "arceus-steel",
+      },
+      {
+        id: 493,
+        name: "arceus-fire",
+      },
+      {
+        id: 493,
+        name: "arceus-water",
+      },
+      {
+        id: 493,
+        name: "arceus-grass",
+      },
+      {
+        id: 493,
+        name: "arceus-electric",
+      },
+      {
+        id: 493,
+        name: "arceus-psychic",
+      },
+      {
+        id: 493,
+        name: "arceus-ice",
+      },
+      {
+        id: 493,
+        name: "arceus-dragon",
+      },
+      {
+        id: 493,
+        name: "arceus-dark",
+      },
+      {
+        id: 493,
+        name: "arceus-fairy",
       },
     ],
   },
@@ -2037,6 +2545,10 @@ export const pokedexes: {
       {
         id: 503,
         name: "samurott",
+      },
+      {
+        id: 503,
+        name: "samurott-hisui",
       },
       {
         id: 504,
@@ -2151,6 +2663,10 @@ export const pokedexes: {
         name: "audino",
       },
       {
+        id: 531,
+        name: "audino-mega",
+      },
+      {
         id: 532,
         name: "timburr",
       },
@@ -2223,8 +2739,20 @@ export const pokedexes: {
         name: "lilligant",
       },
       {
+        id: 549,
+        name: "lilligant-hisui",
+      },
+      {
         id: 550,
         name: "basculin",
+      },
+      {
+        id: 550,
+        name: "basculin-blue-striped",
+      },
+      {
+        id: 550,
+        name: "basculin-white-striped",
       },
       {
         id: 551,
@@ -2243,8 +2771,24 @@ export const pokedexes: {
         name: "darumaka",
       },
       {
+        id: 554,
+        name: "darumaka-galar",
+      },
+      {
         id: 555,
         name: "darmanitan",
+      },
+      {
+        id: 555,
+        name: "darmanitan-zen",
+      },
+      {
+        id: 555,
+        name: "darmanitan-galar",
+      },
+      {
+        id: 555,
+        name: "darmanitan-galar-zen",
       },
       {
         id: 556,
@@ -2273,6 +2817,10 @@ export const pokedexes: {
       {
         id: 562,
         name: "yamask",
+      },
+      {
+        id: 562,
+        name: "yamask-galar",
       },
       {
         id: 563,
@@ -2307,8 +2855,16 @@ export const pokedexes: {
         name: "zorua",
       },
       {
+        id: 570,
+        name: "zorua-hisui",
+      },
+      {
         id: 571,
         name: "zoroark",
+      },
+      {
+        id: 571,
+        name: "zoroark-hisui",
       },
       {
         id: 572,
@@ -2499,6 +3055,10 @@ export const pokedexes: {
         name: "stunfisk",
       },
       {
+        id: 618,
+        name: "stunfisk-galar",
+      },
+      {
         id: 619,
         name: "mienfoo",
       },
@@ -2537,6 +3097,10 @@ export const pokedexes: {
       {
         id: 628,
         name: "braviary",
+      },
+      {
+        id: 628,
+        name: "braviary-hisui",
       },
       {
         id: 629,
@@ -2591,8 +3155,16 @@ export const pokedexes: {
         name: "tornadus",
       },
       {
+        id: 641,
+        name: "tornadus-therian",
+      },
+      {
         id: 642,
         name: "thundurus",
+      },
+      {
+        id: 642,
+        name: "thundurus-therian",
       },
       {
         id: 643,
@@ -2607,16 +3179,36 @@ export const pokedexes: {
         name: "landorus",
       },
       {
+        id: 645,
+        name: "landorus-therian",
+      },
+      {
         id: 646,
         name: "kyurem",
+      },
+      {
+        id: 646,
+        name: "kyurem-white",
+      },
+      {
+        id: 646,
+        name: "kyurem-black",
       },
       {
         id: 647,
         name: "keldeo",
       },
       {
+        id: 647,
+        name: "keldeo-resolute",
+      },
+      {
         id: 648,
         name: "meloetta",
+      },
+      {
+        id: 648,
+        name: "meloetta-pirouette",
       },
       {
         id: 649,
@@ -2664,6 +3256,10 @@ export const pokedexes: {
         name: "greninja",
       },
       {
+        id: 658,
+        name: "greninja-ash",
+      },
+      {
         id: 659,
         name: "bunnelby",
       },
@@ -2684,16 +3280,16 @@ export const pokedexes: {
         name: "talonflame",
       },
       {
-        id: 664,
-        name: "scatterbug",
-      },
-      {
-        id: 665,
-        name: "spewpa",
+        id: 666,
+        name: "vivillon",
       },
       {
         id: 666,
-        name: "vivillon",
+        name: "vivillon-fancy",
+      },
+      {
+        id: 666,
+        name: "vivillon-pokeball",
       },
       {
         id: 667,
@@ -2744,6 +3340,10 @@ export const pokedexes: {
         name: "meowstic",
       },
       {
+        id: 678,
+        name: "meowstic-f",
+      },
+      {
         id: 679,
         name: "honedge",
       },
@@ -2754,6 +3354,10 @@ export const pokedexes: {
       {
         id: 681,
         name: "aegislash",
+      },
+      {
+        id: 681,
+        name: "aegislash-blade",
       },
       {
         id: 682,
@@ -2852,8 +3456,16 @@ export const pokedexes: {
         name: "sliggoo",
       },
       {
+        id: 705,
+        name: "sliggoo-hisui",
+      },
+      {
         id: 706,
         name: "goodra",
+      },
+      {
+        id: 706,
+        name: "goodra-hisui",
       },
       {
         id: 707,
@@ -2884,6 +3496,10 @@ export const pokedexes: {
         name: "avalugg",
       },
       {
+        id: 713,
+        name: "avalugg-hisui",
+      },
+      {
         id: 714,
         name: "noibat",
       },
@@ -2904,12 +3520,28 @@ export const pokedexes: {
         name: "zygarde",
       },
       {
+        id: 718,
+        name: "zygarde-10%",
+      },
+      {
+        id: 718,
+        name: "zygarde-complete",
+      },
+      {
         id: 719,
         name: "diancie",
       },
       {
+        id: 719,
+        name: "diancie-mega",
+      },
+      {
         id: 720,
         name: "hoopa",
+      },
+      {
+        id: 720,
+        name: "hoopa-unbound",
       },
       {
         id: 721,
@@ -2931,6 +3563,10 @@ export const pokedexes: {
       {
         id: 724,
         name: "decidueye",
+      },
+      {
+        id: 724,
+        name: "decidueye-hisui",
       },
       {
         id: 725,
@@ -3001,6 +3637,18 @@ export const pokedexes: {
         name: "oricorio",
       },
       {
+        id: 741,
+        name: "oricorio-pom-pom",
+      },
+      {
+        id: 741,
+        name: "oricorio-pa'u",
+      },
+      {
+        id: 741,
+        name: "oricorio-sensu",
+      },
+      {
         id: 742,
         name: "cutiefly",
       },
@@ -3017,8 +3665,20 @@ export const pokedexes: {
         name: "lycanroc",
       },
       {
+        id: 745,
+        name: "lycanroc-midnight",
+      },
+      {
+        id: 745,
+        name: "lycanroc-dusk",
+      },
+      {
         id: 746,
         name: "wishiwashi",
+      },
+      {
+        id: 746,
+        name: "wishiwashi-school",
       },
       {
         id: 747,
@@ -3129,6 +3789,74 @@ export const pokedexes: {
         name: "silvally",
       },
       {
+        id: 773,
+        name: "silvally-fighting",
+      },
+      {
+        id: 773,
+        name: "silvally-flying",
+      },
+      {
+        id: 773,
+        name: "silvally-poison",
+      },
+      {
+        id: 773,
+        name: "silvally-ground",
+      },
+      {
+        id: 773,
+        name: "silvally-rock",
+      },
+      {
+        id: 773,
+        name: "silvally-bug",
+      },
+      {
+        id: 773,
+        name: "silvally-ghost",
+      },
+      {
+        id: 773,
+        name: "silvally-steel",
+      },
+      {
+        id: 773,
+        name: "silvally-fire",
+      },
+      {
+        id: 773,
+        name: "silvally-water",
+      },
+      {
+        id: 773,
+        name: "silvally-grass",
+      },
+      {
+        id: 773,
+        name: "silvally-electric",
+      },
+      {
+        id: 773,
+        name: "silvally-psychic",
+      },
+      {
+        id: 773,
+        name: "silvally-ice",
+      },
+      {
+        id: 773,
+        name: "silvally-dragon",
+      },
+      {
+        id: 773,
+        name: "silvally-dark",
+      },
+      {
+        id: 773,
+        name: "silvally-fairy",
+      },
+      {
         id: 774,
         name: "minior",
       },
@@ -3237,8 +3965,24 @@ export const pokedexes: {
         name: "necrozma",
       },
       {
+        id: 800,
+        name: "necrozma-dusk-mane",
+      },
+      {
+        id: 800,
+        name: "necrozma-dawn-wings",
+      },
+      {
+        id: 800,
+        name: "necrozma-ultra",
+      },
+      {
         id: 801,
         name: "magearna",
+      },
+      {
+        id: 801,
+        name: "magearna-original",
       },
       {
         id: 802,
@@ -3443,6 +4187,10 @@ export const pokedexes: {
         name: "toxtricity",
       },
       {
+        id: 849,
+        name: "toxtricity-low-key",
+      },
+      {
         id: 850,
         name: "sizzlipede",
       },
@@ -3547,12 +4295,24 @@ export const pokedexes: {
         name: "eiscue",
       },
       {
+        id: 875,
+        name: "eiscue-noice",
+      },
+      {
         id: 876,
         name: "indeedee",
       },
       {
+        id: 876,
+        name: "indeedee-f",
+      },
+      {
         id: 877,
         name: "morpeko",
+      },
+      {
+        id: 877,
+        name: "morpeko-hangry",
       },
       {
         id: 878,
@@ -3599,12 +4359,24 @@ export const pokedexes: {
         name: "zacian",
       },
       {
+        id: 888,
+        name: "zacian-crowned",
+      },
+      {
         id: 889,
         name: "zamazenta",
       },
       {
+        id: 889,
+        name: "zamazenta-crowned",
+      },
+      {
         id: 890,
         name: "eternatus",
+      },
+      {
+        id: 890,
+        name: "eternatus-eternamax",
       },
       {
         id: 891,
@@ -3613,6 +4385,10 @@ export const pokedexes: {
       {
         id: 892,
         name: "urshifu",
+      },
+      {
+        id: 892,
+        name: "urshifu-rapid-strike",
       },
       {
         id: 893,
@@ -3637,6 +4413,14 @@ export const pokedexes: {
       {
         id: 898,
         name: "calyrex",
+      },
+      {
+        id: 898,
+        name: "calyrex-ice",
+      },
+      {
+        id: 898,
+        name: "calyrex-shadow",
       },
     ],
   },
@@ -3720,16 +4504,16 @@ export const pokedexes: {
         name: "pidgeot",
       },
       {
-        id: 664,
-        name: "scatterbug",
-      },
-      {
-        id: 665,
-        name: "spewpa",
+        id: 666,
+        name: "vivillon",
       },
       {
         id: 666,
-        name: "vivillon",
+        name: "vivillon-fancy",
+      },
+      {
+        id: 666,
+        name: "vivillon-pokeball",
       },
       {
         id: 10,
@@ -3824,6 +4608,14 @@ export const pokedexes: {
         name: "wormadam",
       },
       {
+        id: 413,
+        name: "wormadam-sandy",
+      },
+      {
+        id: 413,
+        name: "wormadam-trash",
+      },
+      {
         id: 414,
         name: "mothim",
       },
@@ -3842,6 +4634,10 @@ export const pokedexes: {
       {
         id: 130,
         name: "gyarados",
+      },
+      {
+        id: 130,
+        name: "gyarados-mega",
       },
       {
         id: 341,
@@ -3896,6 +4692,10 @@ export const pokedexes: {
         name: "lucario",
       },
       {
+        id: 448,
+        name: "lucario-mega",
+      },
+      {
         id: 280,
         name: "ralts",
       },
@@ -3906,6 +4706,10 @@ export const pokedexes: {
       {
         id: 282,
         name: "gardevoir",
+      },
+      {
+        id: 282,
+        name: "gardevoir-mega",
       },
       {
         id: 475,
@@ -3972,6 +4776,10 @@ export const pokedexes: {
         name: "venusaur",
       },
       {
+        id: 3,
+        name: "venusaur-mega",
+      },
+      {
         id: 4,
         name: "charmander",
       },
@@ -3984,6 +4792,14 @@ export const pokedexes: {
         name: "charizard",
       },
       {
+        id: 6,
+        name: "charizard-mega-x",
+      },
+      {
+        id: 6,
+        name: "charizard-mega-y",
+      },
+      {
         id: 7,
         name: "squirtle",
       },
@@ -3994,6 +4810,10 @@ export const pokedexes: {
       {
         id: 9,
         name: "blastoise",
+      },
+      {
+        id: 9,
+        name: "blastoise-mega",
       },
       {
         id: 672,
@@ -4060,6 +4880,10 @@ export const pokedexes: {
         name: "alakazam",
       },
       {
+        id: 65,
+        name: "alakazam-mega",
+      },
+      {
         id: 43,
         name: "oddish",
       },
@@ -4104,6 +4928,10 @@ export const pokedexes: {
         name: "meowstic",
       },
       {
+        id: 678,
+        name: "meowstic-f",
+      },
+      {
         id: 352,
         name: "kecleon",
       },
@@ -4118,6 +4946,10 @@ export const pokedexes: {
       {
         id: 681,
         name: "aegislash",
+      },
+      {
+        id: 681,
+        name: "aegislash-blade",
       },
       {
         id: 543,
@@ -4220,6 +5052,10 @@ export const pokedexes: {
         name: "medicham",
       },
       {
+        id: 308,
+        name: "medicham-mega",
+      },
+      {
         id: 41,
         name: "zubat",
       },
@@ -4295,6 +5131,10 @@ export const pokedexes: {
       {
         id: 359,
         name: "absol",
+      },
+      {
+        id: 359,
+        name: "absol-mega",
       },
       {
         id: 686,
@@ -4509,8 +5349,16 @@ export const pokedexes: {
         name: "kangaskhan",
       },
       {
+        id: 115,
+        name: "kangaskhan-mega",
+      },
+      {
         id: 303,
         name: "mawile",
+      },
+      {
+        id: 303,
+        name: "mawile-mega",
       },
       {
         id: 696,
@@ -4531,6 +5379,10 @@ export const pokedexes: {
       {
         id: 142,
         name: "aerodactyl",
+      },
+      {
+        id: 142,
+        name: "aerodactyl-mega",
       },
       {
         id: 597,
@@ -4557,12 +5409,20 @@ export const pokedexes: {
         name: "manectric",
       },
       {
+        id: 310,
+        name: "manectric-mega",
+      },
+      {
         id: 228,
         name: "houndour",
       },
       {
         id: 229,
         name: "houndoom",
+      },
+      {
+        id: 229,
+        name: "houndoom-mega",
       },
       {
         id: 133,
@@ -4777,12 +5637,24 @@ export const pokedexes: {
         name: "ampharos",
       },
       {
+        id: 181,
+        name: "ampharos-mega",
+      },
+      {
         id: 127,
         name: "pinsir",
       },
       {
+        id: 127,
+        name: "pinsir-mega",
+      },
+      {
         id: 214,
         name: "heracross",
+      },
+      {
+        id: 214,
+        name: "heracross-mega",
       },
       {
         id: 417,
@@ -4910,6 +5782,10 @@ export const pokedexes: {
         name: "garchomp",
       },
       {
+        id: 445,
+        name: "garchomp-mega",
+      },
+      {
         id: 74,
         name: "geodude",
       },
@@ -5004,6 +5880,10 @@ export const pokedexes: {
       {
         id: 94,
         name: "gengar",
+      },
+      {
+        id: 94,
+        name: "gengar-mega",
       },
       {
         id: 60,
@@ -5118,6 +5998,10 @@ export const pokedexes: {
         name: "basculin",
       },
       {
+        id: 550,
+        name: "basculin-blue-striped",
+      },
+      {
         id: 708,
         name: "phantump",
       },
@@ -5130,8 +6014,32 @@ export const pokedexes: {
         name: "pumpkaboo",
       },
       {
+        id: 710,
+        name: "pumpkaboo-small",
+      },
+      {
+        id: 710,
+        name: "pumpkaboo-large",
+      },
+      {
+        id: 710,
+        name: "pumpkaboo-super",
+      },
+      {
         id: 711,
         name: "gourgeist",
+      },
+      {
+        id: 711,
+        name: "gourgeist-small",
+      },
+      {
+        id: 711,
+        name: "gourgeist-large",
+      },
+      {
+        id: 711,
+        name: "gourgeist-super",
       },
       {
         id: 607,
@@ -5148,6 +6056,26 @@ export const pokedexes: {
       {
         id: 479,
         name: "rotom",
+      },
+      {
+        id: 479,
+        name: "rotom-heat",
+      },
+      {
+        id: 479,
+        name: "rotom-wash",
+      },
+      {
+        id: 479,
+        name: "rotom-frost",
+      },
+      {
+        id: 479,
+        name: "rotom-fan",
+      },
+      {
+        id: 479,
+        name: "rotom-mow",
       },
       {
         id: 81,
@@ -5234,6 +6162,10 @@ export const pokedexes: {
         name: "abomasnow",
       },
       {
+        id: 460,
+        name: "abomasnow-mega",
+      },
+      {
         id: 225,
         name: "delibird",
       },
@@ -5282,6 +6214,10 @@ export const pokedexes: {
         name: "aggron",
       },
       {
+        id: 306,
+        name: "aggron-mega",
+      },
+      {
         id: 246,
         name: "larvitar",
       },
@@ -5292,6 +6228,10 @@ export const pokedexes: {
       {
         id: 248,
         name: "tyranitar",
+      },
+      {
+        id: 248,
+        name: "tyranitar-mega",
       },
       {
         id: 631,
@@ -5370,6 +6310,10 @@ export const pokedexes: {
         name: "banette",
       },
       {
+        id: 354,
+        name: "banette-mega",
+      },
+      {
         id: 570,
         name: "zorua",
       },
@@ -5424,6 +6368,10 @@ export const pokedexes: {
       {
         id: 212,
         name: "scizor",
+      },
+      {
+        id: 212,
+        name: "scizor-mega",
       },
       {
         id: 132,
@@ -5481,6 +6429,14 @@ export const pokedexes: {
         id: 150,
         name: "mewtwo",
       },
+      {
+        id: 150,
+        name: "mewtwo-mega-x",
+      },
+      {
+        id: 150,
+        name: "mewtwo-mega-y",
+      },
     ],
   },
   hoenn_oras: {
@@ -5499,6 +6455,10 @@ export const pokedexes: {
         name: "sceptile",
       },
       {
+        id: 254,
+        name: "sceptile-mega",
+      },
+      {
         id: 255,
         name: "torchic",
       },
@@ -5511,6 +6471,10 @@ export const pokedexes: {
         name: "blaziken",
       },
       {
+        id: 257,
+        name: "blaziken-mega",
+      },
+      {
         id: 258,
         name: "mudkip",
       },
@@ -5521,6 +6485,10 @@ export const pokedexes: {
       {
         id: 260,
         name: "swampert",
+      },
+      {
+        id: 260,
+        name: "swampert-mega",
       },
       {
         id: 261,
@@ -5611,8 +6579,16 @@ export const pokedexes: {
         name: "gardevoir",
       },
       {
+        id: 282,
+        name: "gardevoir-mega",
+      },
+      {
         id: 475,
         name: "gallade",
+      },
+      {
+        id: 475,
+        name: "gallade-mega",
       },
       {
         id: 283,
@@ -5653,6 +6629,10 @@ export const pokedexes: {
       {
         id: 65,
         name: "alakazam",
+      },
+      {
+        id: 65,
+        name: "alakazam-mega",
       },
       {
         id: 290,
@@ -5701,6 +6681,10 @@ export const pokedexes: {
       {
         id: 130,
         name: "gyarados",
+      },
+      {
+        id: 130,
+        name: "gyarados-mega",
       },
       {
         id: 298,
@@ -5767,8 +6751,16 @@ export const pokedexes: {
         name: "sableye",
       },
       {
+        id: 302,
+        name: "sableye-mega",
+      },
+      {
         id: 303,
         name: "mawile",
+      },
+      {
+        id: 303,
+        name: "mawile-mega",
       },
       {
         id: 304,
@@ -5781,6 +6773,10 @@ export const pokedexes: {
       {
         id: 306,
         name: "aggron",
+      },
+      {
+        id: 306,
+        name: "aggron-mega",
       },
       {
         id: 66,
@@ -5803,12 +6799,20 @@ export const pokedexes: {
         name: "medicham",
       },
       {
+        id: 308,
+        name: "medicham-mega",
+      },
+      {
         id: 309,
         name: "electrike",
       },
       {
         id: 310,
         name: "manectric",
+      },
+      {
+        id: 310,
+        name: "manectric-mega",
       },
       {
         id: 311,
@@ -5899,6 +6903,10 @@ export const pokedexes: {
         name: "sharpedo",
       },
       {
+        id: 319,
+        name: "sharpedo-mega",
+      },
+      {
         id: 320,
         name: "wailmer",
       },
@@ -5913,6 +6921,10 @@ export const pokedexes: {
       {
         id: 323,
         name: "camerupt",
+      },
+      {
+        id: 323,
+        name: "camerupt-mega",
       },
       {
         id: 218,
@@ -5995,6 +7007,10 @@ export const pokedexes: {
         name: "altaria",
       },
       {
+        id: 334,
+        name: "altaria-mega",
+      },
+      {
         id: 335,
         name: "zangoose",
       },
@@ -6075,6 +7091,18 @@ export const pokedexes: {
         name: "castform",
       },
       {
+        id: 351,
+        name: "castform-sunny",
+      },
+      {
+        id: 351,
+        name: "castform-rainy",
+      },
+      {
+        id: 351,
+        name: "castform-snowy",
+      },
+      {
         id: 120,
         name: "staryu",
       },
@@ -6093,6 +7121,10 @@ export const pokedexes: {
       {
         id: 354,
         name: "banette",
+      },
+      {
+        id: 354,
+        name: "banette-mega",
       },
       {
         id: 355,
@@ -6121,6 +7153,10 @@ export const pokedexes: {
       {
         id: 359,
         name: "absol",
+      },
+      {
+        id: 359,
+        name: "absol-mega",
       },
       {
         id: 37,
@@ -6183,8 +7219,16 @@ export const pokedexes: {
         name: "pinsir",
       },
       {
+        id: 127,
+        name: "pinsir-mega",
+      },
+      {
         id: 214,
         name: "heracross",
+      },
+      {
+        id: 214,
+        name: "heracross-mega",
       },
       {
         id: 111,
@@ -6205,6 +7249,10 @@ export const pokedexes: {
       {
         id: 362,
         name: "glalie",
+      },
+      {
+        id: 362,
+        name: "glalie-mega",
       },
       {
         id: 478,
@@ -6279,6 +7327,10 @@ export const pokedexes: {
         name: "salamence",
       },
       {
+        id: 373,
+        name: "salamence-mega",
+      },
+      {
         id: 374,
         name: "beldum",
       },
@@ -6289,6 +7341,10 @@ export const pokedexes: {
       {
         id: 376,
         name: "metagross",
+      },
+      {
+        id: 376,
+        name: "metagross-mega",
       },
       {
         id: 377,
@@ -6307,20 +7363,40 @@ export const pokedexes: {
         name: "latias",
       },
       {
+        id: 380,
+        name: "latias-mega",
+      },
+      {
         id: 381,
         name: "latios",
+      },
+      {
+        id: 381,
+        name: "latios-mega",
       },
       {
         id: 382,
         name: "kyogre",
       },
       {
+        id: 382,
+        name: "kyogre-primal",
+      },
+      {
         id: 383,
         name: "groudon",
       },
       {
+        id: 383,
+        name: "groudon-primal",
+      },
+      {
         id: 384,
         name: "rayquaza",
+      },
+      {
+        id: 384,
+        name: "rayquaza-mega",
       },
       {
         id: 385,
@@ -6329,6 +7405,18 @@ export const pokedexes: {
       {
         id: 386,
         name: "deoxys",
+      },
+      {
+        id: 386,
+        name: "deoxys-attack",
+      },
+      {
+        id: 386,
+        name: "deoxys-defense",
+      },
+      {
+        id: 386,
+        name: "deoxys-speed",
       },
     ],
   },
@@ -6393,11 +7481,11 @@ export const pokedexes: {
       },
       {
         id: 19,
-        name: "rattata",
+        name: "rattata-alola",
       },
       {
         id: 20,
-        name: "raticate",
+        name: "raticate-alola",
       },
       {
         id: 10,
@@ -6437,7 +7525,7 @@ export const pokedexes: {
       },
       {
         id: 26,
-        name: "raichu",
+        name: "raichu-alola",
       },
       {
         id: 736,
@@ -6488,6 +7576,10 @@ export const pokedexes: {
         name: "slowbro",
       },
       {
+        id: 80,
+        name: "slowbro-mega",
+      },
+      {
         id: 199,
         name: "slowking",
       },
@@ -6512,12 +7604,16 @@ export const pokedexes: {
         name: "alakazam",
       },
       {
+        id: 65,
+        name: "alakazam-mega",
+      },
+      {
         id: 52,
-        name: "meowth",
+        name: "meowth-alola",
       },
       {
         id: 53,
-        name: "persian",
+        name: "persian-alola",
       },
       {
         id: 81,
@@ -6533,11 +7629,11 @@ export const pokedexes: {
       },
       {
         id: 88,
-        name: "grimer",
+        name: "grimer-alola",
       },
       {
         id: 89,
-        name: "muk",
+        name: "muk-alola",
       },
       {
         id: 58,
@@ -6588,6 +7684,10 @@ export const pokedexes: {
         name: "gengar",
       },
       {
+        id: 94,
+        name: "gengar-mega",
+      },
+      {
         id: 425,
         name: "drifloon",
       },
@@ -6617,11 +7717,11 @@ export const pokedexes: {
       },
       {
         id: 50,
-        name: "diglett",
+        name: "diglett-alola",
       },
       {
         id: 51,
-        name: "dugtrio",
+        name: "dugtrio-alola",
       },
       {
         id: 21,
@@ -6664,6 +7764,18 @@ export const pokedexes: {
         name: "oricorio",
       },
       {
+        id: 741,
+        name: "oricorio-pom-pom",
+      },
+      {
+        id: 741,
+        name: "oricorio-pa'u",
+      },
+      {
+        id: 741,
+        name: "oricorio-sensu",
+      },
+      {
         id: 742,
         name: "cutiefly",
       },
@@ -6702,6 +7814,10 @@ export const pokedexes: {
       {
         id: 130,
         name: "gyarados",
+      },
+      {
+        id: 130,
+        name: "gyarados-mega",
       },
       {
         id: 339,
@@ -6744,12 +7860,20 @@ export const pokedexes: {
         name: "sableye",
       },
       {
+        id: 302,
+        name: "sableye-mega",
+      },
+      {
         id: 744,
         name: "rockruff",
       },
       {
         id: 745,
         name: "lycanroc",
+      },
+      {
+        id: 745,
+        name: "lycanroc-midnight",
       },
       {
         id: 327,
@@ -6774,6 +7898,10 @@ export const pokedexes: {
       {
         id: 746,
         name: "wishiwashi",
+      },
+      {
+        id: 746,
+        name: "wishiwashi-school",
       },
       {
         id: 370,
@@ -6810,6 +7938,10 @@ export const pokedexes: {
       {
         id: 373,
         name: "salamence",
+      },
+      {
+        id: 373,
+        name: "salamence-mega",
       },
       {
         id: 506,
@@ -6989,11 +8121,15 @@ export const pokedexes: {
       },
       {
         id: 105,
-        name: "marowak",
+        name: "marowak-alola",
       },
       {
         id: 115,
         name: "kangaskhan",
+      },
+      {
+        id: 115,
+        name: "kangaskhan-mega",
       },
       {
         id: 240,
@@ -7036,6 +8172,10 @@ export const pokedexes: {
         name: "pinsir",
       },
       {
+        id: 127,
+        name: "pinsir-mega",
+      },
+      {
         id: 765,
         name: "oranguru",
       },
@@ -7058,6 +8198,18 @@ export const pokedexes: {
       {
         id: 351,
         name: "castform",
+      },
+      {
+        id: 351,
+        name: "castform-sunny",
+      },
+      {
+        id: 351,
+        name: "castform-rainy",
+      },
+      {
+        id: 351,
+        name: "castform-snowy",
       },
       {
         id: 767,
@@ -7152,8 +8304,84 @@ export const pokedexes: {
         name: "silvally",
       },
       {
+        id: 773,
+        name: "silvally-fighting",
+      },
+      {
+        id: 773,
+        name: "silvally-flying",
+      },
+      {
+        id: 773,
+        name: "silvally-poison",
+      },
+      {
+        id: 773,
+        name: "silvally-ground",
+      },
+      {
+        id: 773,
+        name: "silvally-rock",
+      },
+      {
+        id: 773,
+        name: "silvally-bug",
+      },
+      {
+        id: 773,
+        name: "silvally-ghost",
+      },
+      {
+        id: 773,
+        name: "silvally-steel",
+      },
+      {
+        id: 773,
+        name: "silvally-fire",
+      },
+      {
+        id: 773,
+        name: "silvally-water",
+      },
+      {
+        id: 773,
+        name: "silvally-grass",
+      },
+      {
+        id: 773,
+        name: "silvally-electric",
+      },
+      {
+        id: 773,
+        name: "silvally-psychic",
+      },
+      {
+        id: 773,
+        name: "silvally-ice",
+      },
+      {
+        id: 773,
+        name: "silvally-dragon",
+      },
+      {
+        id: 773,
+        name: "silvally-dark",
+      },
+      {
+        id: 773,
+        name: "silvally-fairy",
+      },
+      {
         id: 718,
         name: "zygarde",
+      },
+      {
+        id: 718,
+        name: "zygarde-10%",
+      },
+      {
+        id: 718,
+        name: "zygarde-complete",
       },
       {
         id: 568,
@@ -7198,6 +8426,10 @@ export const pokedexes: {
       {
         id: 376,
         name: "metagross",
+      },
+      {
+        id: 376,
+        name: "metagross-mega",
       },
       {
         id: 137,
@@ -7249,15 +8481,15 @@ export const pokedexes: {
       },
       {
         id: 74,
-        name: "geodude",
+        name: "geodude-alola",
       },
       {
         id: 75,
-        name: "graveler",
+        name: "graveler-alola",
       },
       {
         id: 76,
-        name: "golem",
+        name: "golem-alola",
       },
       {
         id: 551,
@@ -7296,6 +8528,10 @@ export const pokedexes: {
         name: "garchomp",
       },
       {
+        id: 445,
+        name: "garchomp-mega",
+      },
+      {
         id: 707,
         name: "klefki",
       },
@@ -7316,12 +8552,20 @@ export const pokedexes: {
         name: "absol",
       },
       {
+        id: 359,
+        name: "absol-mega",
+      },
+      {
         id: 361,
         name: "snorunt",
       },
       {
         id: 362,
         name: "glalie",
+      },
+      {
+        id: 362,
+        name: "glalie-mega",
       },
       {
         id: 478,
@@ -7337,19 +8581,19 @@ export const pokedexes: {
       },
       {
         id: 27,
-        name: "sandshrew",
+        name: "sandshrew-alola",
       },
       {
         id: 28,
-        name: "sandslash",
+        name: "sandslash-alola",
       },
       {
         id: 37,
-        name: "vulpix",
+        name: "vulpix-alola",
       },
       {
         id: 38,
-        name: "ninetales",
+        name: "ninetales-alola",
       },
       {
         id: 582,
@@ -7372,14 +8616,6 @@ export const pokedexes: {
         name: "granbull",
       },
       {
-        id: 422,
-        name: "shellos",
-      },
-      {
-        id: 423,
-        name: "gastrodon",
-      },
-      {
         id: 369,
         name: "relicanth",
       },
@@ -7394,6 +8630,10 @@ export const pokedexes: {
       {
         id: 319,
         name: "sharpedo",
+      },
+      {
+        id: 319,
+        name: "sharpedo-mega",
       },
       {
         id: 320,
@@ -7413,7 +8653,7 @@ export const pokedexes: {
       },
       {
         id: 103,
-        name: "exeggutor",
+        name: "exeggutor-alola",
       },
       {
         id: 782,
@@ -7440,6 +8680,10 @@ export const pokedexes: {
         name: "scizor",
       },
       {
+        id: 212,
+        name: "scizor-mega",
+      },
+      {
         id: 198,
         name: "murkrow",
       },
@@ -7456,6 +8700,10 @@ export const pokedexes: {
         name: "lucario",
       },
       {
+        id: 448,
+        name: "lucario-mega",
+      },
+      {
         id: 147,
         name: "dratini",
       },
@@ -7470,6 +8718,10 @@ export const pokedexes: {
       {
         id: 142,
         name: "aerodactyl",
+      },
+      {
+        id: 142,
+        name: "aerodactyl-mega",
       },
       {
         id: 785,
@@ -7667,6 +8919,10 @@ export const pokedexes: {
       {
         id: 681,
         name: "aegislash",
+      },
+      {
+        id: 681,
+        name: "aegislash-blade",
       },
       {
         id: 543,
@@ -7947,11 +9203,11 @@ export const pokedexes: {
       },
       {
         id: 19,
-        name: "rattata",
+        name: "rattata-alola",
       },
       {
         id: 20,
-        name: "raticate",
+        name: "raticate-alola",
       },
       {
         id: 10,
@@ -7990,6 +9246,10 @@ export const pokedexes: {
         name: "lopunny",
       },
       {
+        id: 428,
+        name: "lopunny-mega",
+      },
+      {
         id: 686,
         name: "inkay",
       },
@@ -8019,7 +9279,7 @@ export const pokedexes: {
       },
       {
         id: 26,
-        name: "raichu",
+        name: "raichu-alola",
       },
       {
         id: 736,
@@ -8070,6 +9330,10 @@ export const pokedexes: {
         name: "slowbro",
       },
       {
+        id: 80,
+        name: "slowbro-mega",
+      },
+      {
         id: 199,
         name: "slowking",
       },
@@ -8094,12 +9358,16 @@ export const pokedexes: {
         name: "alakazam",
       },
       {
+        id: 65,
+        name: "alakazam-mega",
+      },
+      {
         id: 52,
-        name: "meowth",
+        name: "meowth-alola",
       },
       {
         id: 53,
-        name: "persian",
+        name: "persian-alola",
       },
       {
         id: 81,
@@ -8115,11 +9383,11 @@ export const pokedexes: {
       },
       {
         id: 88,
-        name: "grimer",
+        name: "grimer-alola",
       },
       {
         id: 89,
-        name: "muk",
+        name: "muk-alola",
       },
       {
         id: 439,
@@ -8190,6 +9458,10 @@ export const pokedexes: {
         name: "gengar",
       },
       {
+        id: 94,
+        name: "gengar-mega",
+      },
+      {
         id: 425,
         name: "drifloon",
       },
@@ -8227,11 +9499,11 @@ export const pokedexes: {
       },
       {
         id: 50,
-        name: "diglett",
+        name: "diglett-alola",
       },
       {
         id: 51,
-        name: "dugtrio",
+        name: "dugtrio-alola",
       },
       {
         id: 21,
@@ -8276,6 +9548,18 @@ export const pokedexes: {
       {
         id: 741,
         name: "oricorio",
+      },
+      {
+        id: 741,
+        name: "oricorio-pom-pom",
+      },
+      {
+        id: 741,
+        name: "oricorio-pa'u",
+      },
+      {
+        id: 741,
+        name: "oricorio-sensu",
       },
       {
         id: 742,
@@ -8338,6 +9622,10 @@ export const pokedexes: {
         name: "gyarados",
       },
       {
+        id: 130,
+        name: "gyarados-mega",
+      },
+      {
         id: 339,
         name: "barboach",
       },
@@ -8386,8 +9674,16 @@ export const pokedexes: {
         name: "sableye",
       },
       {
+        id: 302,
+        name: "sableye-mega",
+      },
+      {
         id: 303,
         name: "mawile",
+      },
+      {
+        id: 303,
+        name: "mawile-mega",
       },
       {
         id: 744,
@@ -8396,6 +9692,14 @@ export const pokedexes: {
       {
         id: 745,
         name: "lycanroc",
+      },
+      {
+        id: 745,
+        name: "lycanroc-midnight",
+      },
+      {
+        id: 745,
+        name: "lycanroc-dusk",
       },
       {
         id: 327,
@@ -8420,6 +9724,10 @@ export const pokedexes: {
       {
         id: 746,
         name: "wishiwashi",
+      },
+      {
+        id: 746,
+        name: "wishiwashi-school",
       },
       {
         id: 370,
@@ -8486,6 +9794,10 @@ export const pokedexes: {
         name: "salamence",
       },
       {
+        id: 373,
+        name: "salamence-mega",
+      },
+      {
         id: 506,
         name: "lillipup",
       },
@@ -8544,6 +9856,10 @@ export const pokedexes: {
       {
         id: 181,
         name: "ampharos",
+      },
+      {
+        id: 181,
+        name: "ampharos-mega",
       },
       {
         id: 749,
@@ -8642,6 +9958,10 @@ export const pokedexes: {
         name: "basculin",
       },
       {
+        id: 550,
+        name: "basculin-blue-striped",
+      },
+      {
         id: 349,
         name: "feebas",
       },
@@ -8679,11 +9999,15 @@ export const pokedexes: {
       },
       {
         id: 105,
-        name: "marowak",
+        name: "marowak-alola",
       },
       {
         id: 115,
         name: "kangaskhan",
+      },
+      {
+        id: 115,
+        name: "kangaskhan-mega",
       },
       {
         id: 240,
@@ -8734,6 +10058,10 @@ export const pokedexes: {
         name: "pinsir",
       },
       {
+        id: 127,
+        name: "pinsir-mega",
+      },
+      {
         id: 163,
         name: "hoothoot",
       },
@@ -8768,6 +10096,18 @@ export const pokedexes: {
       {
         id: 351,
         name: "castform",
+      },
+      {
+        id: 351,
+        name: "castform-sunny",
+      },
+      {
+        id: 351,
+        name: "castform-rainy",
+      },
+      {
+        id: 351,
+        name: "castform-snowy",
       },
       {
         id: 767,
@@ -8886,6 +10226,10 @@ export const pokedexes: {
         name: "tyranitar",
       },
       {
+        id: 248,
+        name: "tyranitar-mega",
+      },
+      {
         id: 708,
         name: "phantump",
       },
@@ -8930,6 +10274,74 @@ export const pokedexes: {
         name: "silvally",
       },
       {
+        id: 773,
+        name: "silvally-fighting",
+      },
+      {
+        id: 773,
+        name: "silvally-flying",
+      },
+      {
+        id: 773,
+        name: "silvally-poison",
+      },
+      {
+        id: 773,
+        name: "silvally-ground",
+      },
+      {
+        id: 773,
+        name: "silvally-rock",
+      },
+      {
+        id: 773,
+        name: "silvally-bug",
+      },
+      {
+        id: 773,
+        name: "silvally-ghost",
+      },
+      {
+        id: 773,
+        name: "silvally-steel",
+      },
+      {
+        id: 773,
+        name: "silvally-fire",
+      },
+      {
+        id: 773,
+        name: "silvally-water",
+      },
+      {
+        id: 773,
+        name: "silvally-grass",
+      },
+      {
+        id: 773,
+        name: "silvally-electric",
+      },
+      {
+        id: 773,
+        name: "silvally-psychic",
+      },
+      {
+        id: 773,
+        name: "silvally-ice",
+      },
+      {
+        id: 773,
+        name: "silvally-dragon",
+      },
+      {
+        id: 773,
+        name: "silvally-dark",
+      },
+      {
+        id: 773,
+        name: "silvally-fairy",
+      },
+      {
         id: 803,
         name: "poipole",
       },
@@ -8940,6 +10352,14 @@ export const pokedexes: {
       {
         id: 718,
         name: "zygarde",
+      },
+      {
+        id: 718,
+        name: "zygarde-10%",
+      },
+      {
+        id: 718,
+        name: "zygarde-complete",
       },
       {
         id: 568,
@@ -9010,6 +10430,10 @@ export const pokedexes: {
         name: "metagross",
       },
       {
+        id: 376,
+        name: "metagross-mega",
+      },
+      {
         id: 137,
         name: "porygon",
       },
@@ -9050,6 +10474,10 @@ export const pokedexes: {
         name: "houndoom",
       },
       {
+        id: 229,
+        name: "houndoom-mega",
+      },
+      {
         id: 702,
         name: "dedenne",
       },
@@ -9066,6 +10494,10 @@ export const pokedexes: {
         name: "manectric",
       },
       {
+        id: 310,
+        name: "manectric-mega",
+      },
+      {
         id: 239,
         name: "elekid",
       },
@@ -9079,15 +10511,15 @@ export const pokedexes: {
       },
       {
         id: 74,
-        name: "geodude",
+        name: "geodude-alola",
       },
       {
         id: 75,
-        name: "graveler",
+        name: "graveler-alola",
       },
       {
         id: 76,
-        name: "golem",
+        name: "golem-alola",
       },
       {
         id: 551,
@@ -9126,6 +10558,10 @@ export const pokedexes: {
         name: "garchomp",
       },
       {
+        id: 445,
+        name: "garchomp-mega",
+      },
+      {
         id: 343,
         name: "baltoy",
       },
@@ -9158,6 +10594,10 @@ export const pokedexes: {
         name: "banette",
       },
       {
+        id: 354,
+        name: "banette-mega",
+      },
+      {
         id: 592,
         name: "frillish",
       },
@@ -9178,12 +10618,20 @@ export const pokedexes: {
         name: "absol",
       },
       {
+        id: 359,
+        name: "absol-mega",
+      },
+      {
         id: 361,
         name: "snorunt",
       },
       {
         id: 362,
         name: "glalie",
+      },
+      {
+        id: 362,
+        name: "glalie-mega",
       },
       {
         id: 478,
@@ -9199,19 +10647,19 @@ export const pokedexes: {
       },
       {
         id: 27,
-        name: "sandshrew",
+        name: "sandshrew-alola",
       },
       {
         id: 28,
-        name: "sandslash",
+        name: "sandslash-alola",
       },
       {
         id: 37,
-        name: "vulpix",
+        name: "vulpix-alola",
       },
       {
         id: 38,
-        name: "ninetales",
+        name: "ninetales-alola",
       },
       {
         id: 582,
@@ -9250,14 +10698,6 @@ export const pokedexes: {
         name: "granbull",
       },
       {
-        id: 422,
-        name: "shellos",
-      },
-      {
-        id: 423,
-        name: "gastrodon",
-      },
-      {
         id: 369,
         name: "relicanth",
       },
@@ -9272,6 +10712,10 @@ export const pokedexes: {
       {
         id: 319,
         name: "sharpedo",
+      },
+      {
+        id: 319,
+        name: "sharpedo-mega",
       },
       {
         id: 690,
@@ -9311,7 +10755,7 @@ export const pokedexes: {
       },
       {
         id: 103,
-        name: "exeggutor",
+        name: "exeggutor-alola",
       },
       {
         id: 341,
@@ -9354,8 +10798,16 @@ export const pokedexes: {
         name: "scizor",
       },
       {
+        id: 212,
+        name: "scizor-mega",
+      },
+      {
         id: 214,
         name: "heracross",
+      },
+      {
+        id: 214,
+        name: "heracross-mega",
       },
       {
         id: 190,
@@ -9402,6 +10854,10 @@ export const pokedexes: {
         name: "lucario",
       },
       {
+        id: 448,
+        name: "lucario-mega",
+      },
+      {
         id: 147,
         name: "dratini",
       },
@@ -9416,6 +10872,10 @@ export const pokedexes: {
       {
         id: 142,
         name: "aerodactyl",
+      },
+      {
+        id: 142,
+        name: "aerodactyl-mega",
       },
       {
         id: 785,
@@ -9490,6 +10950,18 @@ export const pokedexes: {
         name: "necrozma",
       },
       {
+        id: 800,
+        name: "necrozma-dusk-mane",
+      },
+      {
+        id: 800,
+        name: "necrozma-dawn-wings",
+      },
+      {
+        id: 800,
+        name: "necrozma-ultra",
+      },
+      {
         id: 801,
         name: "magearna",
       },
@@ -9519,6 +10991,10 @@ export const pokedexes: {
         name: "venusaur",
       },
       {
+        id: 3,
+        name: "venusaur-mega",
+      },
+      {
         id: 4,
         name: "charmander",
       },
@@ -9529,6 +11005,14 @@ export const pokedexes: {
       {
         id: 6,
         name: "charizard",
+      },
+      {
+        id: 6,
+        name: "charizard-mega-x",
+      },
+      {
+        id: 6,
+        name: "charizard-mega-y",
       },
       {
         id: 7,
@@ -9543,12 +11027,20 @@ export const pokedexes: {
         name: "blastoise",
       },
       {
+        id: 9,
+        name: "blastoise-mega",
+      },
+      {
         id: 95,
         name: "onix",
       },
       {
         id: 208,
         name: "steelix",
+      },
+      {
+        id: 208,
+        name: "steelix-mega",
       },
       {
         id: 116,
@@ -9575,14 +11067,6 @@ export const pokedexes: {
         name: "chandelure",
       },
       {
-        id: 664,
-        name: "scatterbug",
-      },
-      {
-        id: 665,
-        name: "spewpa",
-      },
-      {
         id: 666,
         name: "vivillon",
       },
@@ -9599,6 +11083,10 @@ export const pokedexes: {
         name: "beedrill",
       },
       {
+        id: 15,
+        name: "beedrill-mega",
+      },
+      {
         id: 252,
         name: "treecko",
       },
@@ -9609,6 +11097,10 @@ export const pokedexes: {
       {
         id: 254,
         name: "sceptile",
+      },
+      {
+        id: 254,
+        name: "sceptile-mega",
       },
       {
         id: 255,
@@ -9623,6 +11115,10 @@ export const pokedexes: {
         name: "blaziken",
       },
       {
+        id: 257,
+        name: "blaziken-mega",
+      },
+      {
         id: 258,
         name: "mudkip",
       },
@@ -9633,6 +11129,10 @@ export const pokedexes: {
       {
         id: 260,
         name: "swampert",
+      },
+      {
+        id: 260,
+        name: "swampert-mega",
       },
       {
         id: 280,
@@ -9647,8 +11147,16 @@ export const pokedexes: {
         name: "gardevoir",
       },
       {
+        id: 282,
+        name: "gardevoir-mega",
+      },
+      {
         id: 475,
         name: "gallade",
+      },
+      {
+        id: 475,
+        name: "gallade-mega",
       },
       {
         id: 363,
@@ -9675,6 +11183,10 @@ export const pokedexes: {
         name: "aegislash",
       },
       {
+        id: 681,
+        name: "aegislash-blade",
+      },
+      {
         id: 16,
         name: "pidgey",
       },
@@ -9685,6 +11197,10 @@ export const pokedexes: {
       {
         id: 18,
         name: "pidgeot",
+      },
+      {
+        id: 18,
+        name: "pidgeot-mega",
       },
       {
         id: 111,
@@ -9771,8 +11287,32 @@ export const pokedexes: {
         name: "aggron",
       },
       {
+        id: 306,
+        name: "aggron-mega",
+      },
+      {
         id: 479,
         name: "rotom",
+      },
+      {
+        id: 479,
+        name: "rotom-heat",
+      },
+      {
+        id: 479,
+        name: "rotom-wash",
+      },
+      {
+        id: 479,
+        name: "rotom-frost",
+      },
+      {
+        id: 479,
+        name: "rotom-fan",
+      },
+      {
+        id: 479,
+        name: "rotom-mow",
       },
       {
         id: 540,
@@ -9834,6 +11374,10 @@ export const pokedexes: {
         id: 658,
         name: "greninja",
       },
+      {
+        id: 658,
+        name: "greninja-ash",
+      },
     ],
   },
   alola_wormhole_usum: {
@@ -9874,6 +11418,14 @@ export const pokedexes: {
       {
         id: 150,
         name: "mewtwo",
+      },
+      {
+        id: 150,
+        name: "mewtwo-mega-x",
+      },
+      {
+        id: 150,
+        name: "mewtwo-mega-y",
       },
       {
         id: 193,
@@ -9960,6 +11512,10 @@ export const pokedexes: {
         name: "medicham",
       },
       {
+        id: 308,
+        name: "medicham-mega",
+      },
+      {
         id: 325,
         name: "spoink",
       },
@@ -9974,6 +11530,10 @@ export const pokedexes: {
       {
         id: 334,
         name: "altaria",
+      },
+      {
+        id: 334,
+        name: "altaria-mega",
       },
       {
         id: 377,
@@ -9992,20 +11552,40 @@ export const pokedexes: {
         name: "latias",
       },
       {
+        id: 380,
+        name: "latias-mega",
+      },
+      {
         id: 381,
         name: "latios",
+      },
+      {
+        id: 381,
+        name: "latios-mega",
       },
       {
         id: 382,
         name: "kyogre",
       },
       {
+        id: 382,
+        name: "kyogre-primal",
+      },
+      {
         id: 383,
         name: "groudon",
       },
       {
+        id: 383,
+        name: "groudon-primal",
+      },
+      {
         id: 384,
         name: "rayquaza",
+      },
+      {
+        id: 384,
+        name: "rayquaza-mega",
       },
       {
         id: 418,
@@ -10040,6 +11620,10 @@ export const pokedexes: {
         name: "abomasnow",
       },
       {
+        id: 460,
+        name: "abomasnow-mega",
+      },
+      {
         id: 480,
         name: "uxie",
       },
@@ -10072,12 +11656,20 @@ export const pokedexes: {
         name: "giratina",
       },
       {
+        id: 487,
+        name: "giratina-origin",
+      },
+      {
         id: 488,
         name: "cresselia",
       },
       {
         id: 531,
         name: "audino",
+      },
+      {
+        id: 531,
+        name: "audino-mega",
       },
       {
         id: 557,
@@ -10120,8 +11712,16 @@ export const pokedexes: {
         name: "tornadus",
       },
       {
+        id: 641,
+        name: "tornadus-therian",
+      },
+      {
         id: 642,
         name: "thundurus",
+      },
+      {
+        id: 642,
+        name: "thundurus-therian",
       },
       {
         id: 643,
@@ -10136,8 +11736,20 @@ export const pokedexes: {
         name: "landorus",
       },
       {
+        id: 645,
+        name: "landorus-therian",
+      },
+      {
         id: 646,
         name: "kyurem",
+      },
+      {
+        id: 646,
+        name: "kyurem-white",
+      },
+      {
+        id: 646,
+        name: "kyurem-black",
       },
       {
         id: 688,
@@ -10181,6 +11793,10 @@ export const pokedexes: {
         name: "venusaur",
       },
       {
+        id: 3,
+        name: "venusaur-mega",
+      },
+      {
         id: 4,
         name: "charmander",
       },
@@ -10193,6 +11809,14 @@ export const pokedexes: {
         name: "charizard",
       },
       {
+        id: 6,
+        name: "charizard-mega-x",
+      },
+      {
+        id: 6,
+        name: "charizard-mega-y",
+      },
+      {
         id: 7,
         name: "squirtle",
       },
@@ -10203,6 +11827,10 @@ export const pokedexes: {
       {
         id: 9,
         name: "blastoise",
+      },
+      {
+        id: 9,
+        name: "blastoise-mega",
       },
       {
         id: 10,
@@ -10229,6 +11857,10 @@ export const pokedexes: {
         name: "beedrill",
       },
       {
+        id: 15,
+        name: "beedrill-mega",
+      },
+      {
         id: 16,
         name: "pidgey",
       },
@@ -10241,12 +11873,24 @@ export const pokedexes: {
         name: "pidgeot",
       },
       {
+        id: 18,
+        name: "pidgeot-mega",
+      },
+      {
         id: 19,
         name: "rattata",
       },
       {
+        id: 19,
+        name: "rattata-alola",
+      },
+      {
         id: 20,
         name: "raticate",
+      },
+      {
+        id: 20,
+        name: "raticate-alola",
       },
       {
         id: 21,
@@ -10273,12 +11917,24 @@ export const pokedexes: {
         name: "raichu",
       },
       {
+        id: 26,
+        name: "raichu-alola",
+      },
+      {
         id: 27,
         name: "sandshrew",
       },
       {
+        id: 27,
+        name: "sandshrew-alola",
+      },
+      {
         id: 28,
         name: "sandslash",
+      },
+      {
+        id: 28,
+        name: "sandslash-alola",
       },
       {
         id: 29,
@@ -10317,8 +11973,16 @@ export const pokedexes: {
         name: "vulpix",
       },
       {
+        id: 37,
+        name: "vulpix-alola",
+      },
+      {
         id: 38,
         name: "ninetales",
+      },
+      {
+        id: 38,
+        name: "ninetales-alola",
       },
       {
         id: 39,
@@ -10369,16 +12033,32 @@ export const pokedexes: {
         name: "diglett",
       },
       {
+        id: 50,
+        name: "diglett-alola",
+      },
+      {
         id: 51,
         name: "dugtrio",
+      },
+      {
+        id: 51,
+        name: "dugtrio-alola",
       },
       {
         id: 52,
         name: "meowth",
       },
       {
+        id: 52,
+        name: "meowth-alola",
+      },
+      {
         id: 53,
         name: "persian",
+      },
+      {
+        id: 53,
+        name: "persian-alola",
       },
       {
         id: 54,
@@ -10429,6 +12109,10 @@ export const pokedexes: {
         name: "alakazam",
       },
       {
+        id: 65,
+        name: "alakazam-mega",
+      },
+      {
         id: 66,
         name: "machop",
       },
@@ -10465,12 +12149,24 @@ export const pokedexes: {
         name: "geodude",
       },
       {
+        id: 74,
+        name: "geodude-alola",
+      },
+      {
         id: 75,
         name: "graveler",
       },
       {
+        id: 75,
+        name: "graveler-alola",
+      },
+      {
         id: 76,
         name: "golem",
+      },
+      {
+        id: 76,
+        name: "golem-alola",
       },
       {
         id: 77,
@@ -10487,6 +12183,10 @@ export const pokedexes: {
       {
         id: 80,
         name: "slowbro",
+      },
+      {
+        id: 80,
+        name: "slowbro-mega",
       },
       {
         id: 81,
@@ -10521,8 +12221,16 @@ export const pokedexes: {
         name: "grimer",
       },
       {
+        id: 88,
+        name: "grimer-alola",
+      },
+      {
         id: 89,
         name: "muk",
+      },
+      {
+        id: 89,
+        name: "muk-alola",
       },
       {
         id: 90,
@@ -10543,6 +12251,10 @@ export const pokedexes: {
       {
         id: 94,
         name: "gengar",
+      },
+      {
+        id: 94,
+        name: "gengar-mega",
       },
       {
         id: 95,
@@ -10581,12 +12293,20 @@ export const pokedexes: {
         name: "exeggutor",
       },
       {
+        id: 103,
+        name: "exeggutor-alola",
+      },
+      {
         id: 104,
         name: "cubone",
       },
       {
         id: 105,
         name: "marowak",
+      },
+      {
+        id: 105,
+        name: "marowak-alola",
       },
       {
         id: 106,
@@ -10627,6 +12347,10 @@ export const pokedexes: {
       {
         id: 115,
         name: "kangaskhan",
+      },
+      {
+        id: 115,
+        name: "kangaskhan-mega",
       },
       {
         id: 116,
@@ -10677,6 +12401,10 @@ export const pokedexes: {
         name: "pinsir",
       },
       {
+        id: 127,
+        name: "pinsir-mega",
+      },
+      {
         id: 128,
         name: "tauros",
       },
@@ -10687,6 +12415,10 @@ export const pokedexes: {
       {
         id: 130,
         name: "gyarados",
+      },
+      {
+        id: 130,
+        name: "gyarados-mega",
       },
       {
         id: 131,
@@ -10737,6 +12469,10 @@ export const pokedexes: {
         name: "aerodactyl",
       },
       {
+        id: 142,
+        name: "aerodactyl-mega",
+      },
+      {
         id: 143,
         name: "snorlax",
       },
@@ -10767,6 +12503,14 @@ export const pokedexes: {
       {
         id: 150,
         name: "mewtwo",
+      },
+      {
+        id: 150,
+        name: "mewtwo-mega-x",
+      },
+      {
+        id: 150,
+        name: "mewtwo-mega-y",
       },
       {
         id: 151,
@@ -10907,11 +12651,11 @@ export const pokedexes: {
       },
       {
         id: 263,
-        name: "zigzagoon",
+        name: "zigzagoon-galar",
       },
       {
         id: 264,
-        name: "linoone",
+        name: "linoone-galar",
       },
       {
         id: 862,
@@ -11302,6 +13046,10 @@ export const pokedexes: {
         name: "cherrim",
       },
       {
+        id: 421,
+        name: "cherrim-sunshine",
+      },
+      {
         id: 434,
         name: "stunky",
       },
@@ -11402,8 +13150,16 @@ export const pokedexes: {
         name: "basculin",
       },
       {
+        id: 550,
+        name: "basculin-blue-striped",
+      },
+      {
         id: 746,
         name: "wishiwashi",
+      },
+      {
+        id: 746,
+        name: "wishiwashi-school",
       },
       {
         id: 771,
@@ -11514,6 +13270,10 @@ export const pokedexes: {
         name: "meowth",
       },
       {
+        id: 52,
+        name: "meowth-galar",
+      },
+      {
         id: 863,
         name: "perrserker",
       },
@@ -11622,6 +13382,10 @@ export const pokedexes: {
         name: "meowstic",
       },
       {
+        id: 678,
+        name: "meowstic-f",
+      },
+      {
         id: 684,
         name: "swirlix",
       },
@@ -11655,7 +13419,7 @@ export const pokedexes: {
       },
       {
         id: 83,
-        name: "farfetch’d",
+        name: "farfetch’d-galar",
       },
       {
         id: 865,
@@ -11687,7 +13451,7 @@ export const pokedexes: {
       },
       {
         id: 618,
-        name: "stunfisk",
+        name: "stunfisk-galar",
       },
       {
         id: 213,
@@ -11700,14 +13464,6 @@ export const pokedexes: {
       {
         id: 340,
         name: "whiscash",
-      },
-      {
-        id: 422,
-        name: "shellos",
-      },
-      {
-        id: 423,
-        name: "gastrodon",
       },
       {
         id: 767,
@@ -11727,7 +13483,7 @@ export const pokedexes: {
       },
       {
         id: 222,
-        name: "corsola",
+        name: "corsola-galar",
       },
       {
         id: 864,
@@ -11787,7 +13543,7 @@ export const pokedexes: {
       },
       {
         id: 110,
-        name: "weezing",
+        name: "weezing-galar",
       },
       {
         id: 438,
@@ -12030,6 +13786,10 @@ export const pokedexes: {
         name: "toxtricity",
       },
       {
+        id: 849,
+        name: "toxtricity-low-key",
+      },
+      {
         id: 843,
         name: "silicobra",
       },
@@ -12094,6 +13854,10 @@ export const pokedexes: {
         name: "yamask",
       },
       {
+        id: 562,
+        name: "yamask-galar",
+      },
+      {
         id: 867,
         name: "runerigus",
       },
@@ -12114,12 +13878,16 @@ export const pokedexes: {
         name: "aegislash",
       },
       {
+        id: 681,
+        name: "aegislash-blade",
+      },
+      {
         id: 77,
-        name: "ponyta",
+        name: "ponyta-galar",
       },
       {
         id: 78,
-        name: "rapidash",
+        name: "rapidash-galar",
       },
       {
         id: 854,
@@ -12132,6 +13900,10 @@ export const pokedexes: {
       {
         id: 876,
         name: "indeedee",
+      },
+      {
+        id: 876,
+        name: "indeedee-f",
       },
       {
         id: 708,
@@ -12160,6 +13932,10 @@ export const pokedexes: {
       {
         id: 877,
         name: "morpeko",
+      },
+      {
+        id: 877,
+        name: "morpeko-hangry",
       },
       {
         id: 870,
@@ -12246,16 +14022,24 @@ export const pokedexes: {
         name: "mr. mime",
       },
       {
+        id: 122,
+        name: "mr. mime-galar",
+      },
+      {
         id: 866,
         name: "mr. rime",
       },
       {
         id: 554,
-        name: "darumaka",
+        name: "darumaka-galar",
       },
       {
         id: 555,
-        name: "darmanitan",
+        name: "darmanitan-galar",
+      },
+      {
+        id: 555,
+        name: "darmanitan-galar-zen",
       },
       {
         id: 874,
@@ -12266,12 +14050,36 @@ export const pokedexes: {
         name: "eiscue",
       },
       {
+        id: 875,
+        name: "eiscue-noice",
+      },
+      {
         id: 884,
         name: "duraludon",
       },
       {
         id: 479,
         name: "rotom",
+      },
+      {
+        id: 479,
+        name: "rotom-heat",
+      },
+      {
+        id: 479,
+        name: "rotom-wash",
+      },
+      {
+        id: 479,
+        name: "rotom-frost",
+      },
+      {
+        id: 479,
+        name: "rotom-fan",
+      },
+      {
+        id: 479,
+        name: "rotom-mow",
       },
       {
         id: 132,
@@ -12312,6 +14120,74 @@ export const pokedexes: {
       {
         id: 773,
         name: "silvally",
+      },
+      {
+        id: 773,
+        name: "silvally-fighting",
+      },
+      {
+        id: 773,
+        name: "silvally-flying",
+      },
+      {
+        id: 773,
+        name: "silvally-poison",
+      },
+      {
+        id: 773,
+        name: "silvally-ground",
+      },
+      {
+        id: 773,
+        name: "silvally-rock",
+      },
+      {
+        id: 773,
+        name: "silvally-bug",
+      },
+      {
+        id: 773,
+        name: "silvally-ghost",
+      },
+      {
+        id: 773,
+        name: "silvally-steel",
+      },
+      {
+        id: 773,
+        name: "silvally-fire",
+      },
+      {
+        id: 773,
+        name: "silvally-water",
+      },
+      {
+        id: 773,
+        name: "silvally-grass",
+      },
+      {
+        id: 773,
+        name: "silvally-electric",
+      },
+      {
+        id: 773,
+        name: "silvally-psychic",
+      },
+      {
+        id: 773,
+        name: "silvally-ice",
+      },
+      {
+        id: 773,
+        name: "silvally-dragon",
+      },
+      {
+        id: 773,
+        name: "silvally-dark",
+      },
+      {
+        id: 773,
+        name: "silvally-fairy",
       },
       {
         id: 246,
@@ -12378,12 +14254,24 @@ export const pokedexes: {
         name: "zacian",
       },
       {
+        id: 888,
+        name: "zacian-crowned",
+      },
+      {
         id: 889,
         name: "zamazenta",
       },
       {
+        id: 889,
+        name: "zamazenta-crowned",
+      },
+      {
         id: 890,
         name: "eternatus",
+      },
+      {
+        id: 890,
+        name: "eternatus-eternamax",
       },
     ],
   },
@@ -12395,12 +14283,24 @@ export const pokedexes: {
         name: "slowpoke",
       },
       {
+        id: 79,
+        name: "slowpoke-galar",
+      },
+      {
         id: 80,
         name: "slowbro",
       },
       {
+        id: 80,
+        name: "slowbro-galar",
+      },
+      {
         id: 199,
         name: "slowking",
+      },
+      {
+        id: 199,
+        name: "slowking-galar",
       },
       {
         id: 427,
@@ -12568,7 +14468,7 @@ export const pokedexes: {
       },
       {
         id: 26,
-        name: "raichu",
+        name: "raichu-alola",
       },
       {
         id: 570,
@@ -12593,6 +14493,10 @@ export const pokedexes: {
       {
         id: 892,
         name: "urshifu",
+      },
+      {
+        id: 892,
+        name: "urshifu-rapid-strike",
       },
       {
         id: 587,
@@ -12727,6 +14631,14 @@ export const pokedexes: {
         name: "lycanroc",
       },
       {
+        id: 745,
+        name: "lycanroc-midnight",
+      },
+      {
+        id: 745,
+        name: "lycanroc-dusk",
+      },
+      {
         id: 619,
         name: "mienfoo",
       },
@@ -12739,8 +14651,16 @@ export const pokedexes: {
         name: "sandshrew",
       },
       {
+        id: 27,
+        name: "sandshrew-alola",
+      },
+      {
         id: 28,
         name: "sandslash",
+      },
+      {
+        id: 28,
+        name: "sandslash-alola",
       },
       {
         id: 104,
@@ -12749,6 +14669,10 @@ export const pokedexes: {
       {
         id: 105,
         name: "marowak",
+      },
+      {
+        id: 105,
+        name: "marowak-alola",
       },
       {
         id: 115,
@@ -12817,6 +14741,10 @@ export const pokedexes: {
       {
         id: 103,
         name: "exeggutor",
+      },
+      {
+        id: 103,
+        name: "exeggutor-alola",
       },
       {
         id: 137,
@@ -12946,6 +14874,10 @@ export const pokedexes: {
       {
         id: 555,
         name: "darmanitan",
+      },
+      {
+        id: 555,
+        name: "darmanitan-zen",
       },
       {
         id: 77,
@@ -13128,12 +15060,24 @@ export const pokedexes: {
         name: "articuno",
       },
       {
+        id: 144,
+        name: "articuno-galar",
+      },
+      {
         id: 145,
         name: "zapdos",
       },
       {
+        id: 145,
+        name: "zapdos-galar",
+      },
+      {
         id: 146,
         name: "moltres",
+      },
+      {
+        id: 146,
+        name: "moltres-galar",
       },
       {
         id: 638,
@@ -13159,6 +15103,14 @@ export const pokedexes: {
         id: 898,
         name: "calyrex",
       },
+      {
+        id: 898,
+        name: "calyrex-ice",
+      },
+      {
+        id: 898,
+        name: "calyrex-shadow",
+      },
     ],
   },
   galar_other: {
@@ -13166,27 +15118,27 @@ export const pokedexes: {
     pokemon: [
       {
         id: 37,
-        name: "vulpix",
+        name: "vulpix-alola",
       },
       {
         id: 38,
-        name: "ninetales",
+        name: "ninetales-alola",
       },
       {
         id: 50,
-        name: "diglett",
+        name: "diglett-alola",
       },
       {
         id: 51,
-        name: "dugtrio",
+        name: "dugtrio-alola",
       },
       {
         id: 52,
-        name: "meowth",
+        name: "meowth-alola",
       },
       {
         id: 53,
-        name: "persian",
+        name: "persian-alola",
       },
       {
         id: 83,
@@ -13333,6 +15285,10 @@ export const pokedexes: {
         name: "giratina",
       },
       {
+        id: 487,
+        name: "giratina-origin",
+      },
+      {
         id: 488,
         name: "cresselia",
       },
@@ -13349,8 +15305,16 @@ export const pokedexes: {
         name: "tornadus",
       },
       {
+        id: 641,
+        name: "tornadus-therian",
+      },
+      {
         id: 642,
         name: "thundurus",
+      },
+      {
+        id: 642,
+        name: "thundurus-therian",
       },
       {
         id: 643,
@@ -13365,12 +15329,28 @@ export const pokedexes: {
         name: "landorus",
       },
       {
+        id: 645,
+        name: "landorus-therian",
+      },
+      {
         id: 646,
         name: "kyurem",
       },
       {
+        id: 646,
+        name: "kyurem-white",
+      },
+      {
+        id: 646,
+        name: "kyurem-black",
+      },
+      {
         id: 647,
         name: "keldeo",
+      },
+      {
+        id: 647,
+        name: "keldeo-resolute",
       },
       {
         id: 649,
@@ -13387,6 +15367,14 @@ export const pokedexes: {
       {
         id: 718,
         name: "zygarde",
+      },
+      {
+        id: 718,
+        name: "zygarde-10%",
+      },
+      {
+        id: 718,
+        name: "zygarde-complete",
       },
       {
         id: 719,
@@ -13497,8 +15485,20 @@ export const pokedexes: {
         name: "necrozma",
       },
       {
+        id: 800,
+        name: "necrozma-dusk-mane",
+      },
+      {
+        id: 800,
+        name: "necrozma-dawn-wings",
+      },
+      {
         id: 801,
         name: "magearna",
+      },
+      {
+        id: 801,
+        name: "magearna-original",
       },
       {
         id: 802,
@@ -13547,7 +15547,7 @@ export const pokedexes: {
       },
       {
         id: 724,
-        name: "decidueye",
+        name: "decidueye-hisui",
       },
       {
         id: 155,
@@ -13559,7 +15559,7 @@ export const pokedexes: {
       },
       {
         id: 157,
-        name: "typhlosion",
+        name: "typhlosion-hisui",
       },
       {
         id: 501,
@@ -13571,7 +15571,7 @@ export const pokedexes: {
       },
       {
         id: 503,
-        name: "samurott",
+        name: "samurott-hisui",
       },
       {
         id: 399,
@@ -13714,6 +15714,14 @@ export const pokedexes: {
         name: "wormadam",
       },
       {
+        id: 413,
+        name: "wormadam-sandy",
+      },
+      {
+        id: 413,
+        name: "wormadam-trash",
+      },
+      {
         id: 414,
         name: "mothim",
       },
@@ -13806,6 +15814,10 @@ export const pokedexes: {
         name: "cherrim",
       },
       {
+        id: 421,
+        name: "cherrim-sunshine",
+      },
+      {
         id: 54,
         name: "psyduck",
       },
@@ -13871,7 +15883,7 @@ export const pokedexes: {
       },
       {
         id: 211,
-        name: "qwilfish",
+        name: "qwilfish-hisui",
       },
       {
         id: 904,
@@ -13911,7 +15923,7 @@ export const pokedexes: {
       },
       {
         id: 549,
-        name: "lilligant",
+        name: "lilligant-hisui",
       },
       {
         id: 114,
@@ -13999,11 +16011,11 @@ export const pokedexes: {
       },
       {
         id: 705,
-        name: "sliggoo",
+        name: "sliggoo-hisui",
       },
       {
         id: 706,
-        name: "goodra",
+        name: "goodra-hisui",
       },
       {
         id: 95,
@@ -14135,11 +16147,11 @@ export const pokedexes: {
       },
       {
         id: 58,
-        name: "growlithe",
+        name: "growlithe-hisui",
       },
       {
         id: 59,
-        name: "arcanine",
+        name: "arcanine-hisui",
       },
       {
         id: 431,
@@ -14199,19 +16211,31 @@ export const pokedexes: {
       },
       {
         id: 550,
-        name: "basculin",
+        name: "basculin-white-striped",
       },
       {
         id: 902,
         name: "basculegion",
       },
       {
+        id: 902,
+        name: "basculegion-f",
+      },
+      {
         id: 37,
         name: "vulpix",
       },
       {
+        id: 37,
+        name: "vulpix-alola",
+      },
+      {
         id: 38,
         name: "ninetales",
+      },
+      {
+        id: 38,
+        name: "ninetales-alola",
       },
       {
         id: 72,
@@ -14303,15 +16327,35 @@ export const pokedexes: {
       },
       {
         id: 100,
-        name: "voltorb",
+        name: "voltorb-hisui",
       },
       {
         id: 101,
-        name: "electrode",
+        name: "electrode-hisui",
       },
       {
         id: 479,
         name: "rotom",
+      },
+      {
+        id: 479,
+        name: "rotom-heat",
+      },
+      {
+        id: 479,
+        name: "rotom-wash",
+      },
+      {
+        id: 479,
+        name: "rotom-frost",
+      },
+      {
+        id: 479,
+        name: "rotom-fan",
+      },
+      {
+        id: 479,
+        name: "rotom-mow",
       },
       {
         id: 433,
@@ -14344,6 +16388,10 @@ export const pokedexes: {
       {
         id: 215,
         name: "sneasel",
+      },
+      {
+        id: 215,
+        name: "sneasel-hisui",
       },
       {
         id: 903,
@@ -14399,7 +16447,7 @@ export const pokedexes: {
       },
       {
         id: 713,
-        name: "avalugg",
+        name: "avalugg-hisui",
       },
       {
         id: 459,
@@ -14411,11 +16459,11 @@ export const pokedexes: {
       },
       {
         id: 570,
-        name: "zorua",
+        name: "zorua-hisui",
       },
       {
         id: 571,
-        name: "zoroark",
+        name: "zoroark-hisui",
       },
       {
         id: 627,
@@ -14423,7 +16471,7 @@ export const pokedexes: {
       },
       {
         id: 628,
-        name: "braviary",
+        name: "braviary-hisui",
       },
       {
         id: 447,
@@ -14462,28 +16510,56 @@ export const pokedexes: {
         name: "tornadus",
       },
       {
+        id: 641,
+        name: "tornadus-therian",
+      },
+      {
         id: 642,
         name: "thundurus",
+      },
+      {
+        id: 642,
+        name: "thundurus-therian",
       },
       {
         id: 645,
         name: "landorus",
       },
       {
+        id: 645,
+        name: "landorus-therian",
+      },
+      {
         id: 905,
         name: "enamorus",
+      },
+      {
+        id: 905,
+        name: "enamorus-therian",
       },
       {
         id: 483,
         name: "dialga",
       },
       {
+        id: 483,
+        name: "dialga-origin",
+      },
+      {
         id: 484,
         name: "palkia",
       },
       {
+        id: 484,
+        name: "palkia-origin",
+      },
+      {
         id: 487,
         name: "giratina",
+      },
+      {
+        id: 487,
+        name: "giratina-origin",
       },
       {
         id: 489,
@@ -14498,12 +16574,84 @@ export const pokedexes: {
         name: "arceus",
       },
       {
+        id: 493,
+        name: "arceus-fighting",
+      },
+      {
+        id: 493,
+        name: "arceus-flying",
+      },
+      {
+        id: 493,
+        name: "arceus-poison",
+      },
+      {
+        id: 493,
+        name: "arceus-ground",
+      },
+      {
+        id: 493,
+        name: "arceus-rock",
+      },
+      {
+        id: 493,
+        name: "arceus-bug",
+      },
+      {
+        id: 493,
+        name: "arceus-ghost",
+      },
+      {
+        id: 493,
+        name: "arceus-steel",
+      },
+      {
+        id: 493,
+        name: "arceus-fire",
+      },
+      {
+        id: 493,
+        name: "arceus-water",
+      },
+      {
+        id: 493,
+        name: "arceus-grass",
+      },
+      {
+        id: 493,
+        name: "arceus-electric",
+      },
+      {
+        id: 493,
+        name: "arceus-psychic",
+      },
+      {
+        id: 493,
+        name: "arceus-ice",
+      },
+      {
+        id: 493,
+        name: "arceus-dragon",
+      },
+      {
+        id: 493,
+        name: "arceus-dark",
+      },
+      {
+        id: 493,
+        name: "arceus-fairy",
+      },
+      {
         id: 491,
         name: "darkrai",
       },
       {
         id: 492,
         name: "shaymin",
+      },
+      {
+        id: 492,
+        name: "shaymin-sky",
       },
     ],
   },
@@ -14523,8 +16671,16 @@ export const pokedexes: {
         name: "ursaluna",
       },
       {
+        id: 901,
+        name: "ursaluna-bloodmoon",
+      },
+      {
         id: 902,
         name: "basculegion",
+      },
+      {
+        id: 902,
+        name: "basculegion-f",
       },
       {
         id: 903,
@@ -14537,6 +16693,10 @@ export const pokedexes: {
       {
         id: 905,
         name: "enamorus",
+      },
+      {
+        id: 905,
+        name: "enamorus-therian",
       },
     ],
   },
@@ -16730,6 +18890,18 @@ export const pokedexes: {
         name: "castform",
       },
       {
+        id: 351,
+        name: "castform-sunny",
+      },
+      {
+        id: 351,
+        name: "castform-rainy",
+      },
+      {
+        id: 351,
+        name: "castform-snowy",
+      },
+      {
         id: 120,
         name: "staryu",
       },
@@ -16968,6 +19140,10 @@ export const pokedexes: {
       {
         id: 386,
         name: "deoxys",
+      },
+      {
+        id: 386,
+        name: "deoxys-speed",
       },
     ],
   },
@@ -18516,6 +20692,18 @@ export const pokedexes: {
         name: "castform",
       },
       {
+        id: 351,
+        name: "castform-sunny",
+      },
+      {
+        id: 351,
+        name: "castform-rainy",
+      },
+      {
+        id: 351,
+        name: "castform-snowy",
+      },
+      {
         id: 352,
         name: "kecleon",
       },
@@ -18653,7 +20841,11 @@ export const pokedexes: {
       },
       {
         id: 386,
-        name: "deoxys",
+        name: "deoxys-attack",
+      },
+      {
+        id: 386,
+        name: "deoxys-defense",
       },
     ],
   },
@@ -18845,6 +21037,14 @@ export const pokedexes: {
         name: "wormadam",
       },
       {
+        id: 413,
+        name: "wormadam-sandy",
+      },
+      {
+        id: 413,
+        name: "wormadam-trash",
+      },
+      {
         id: 414,
         name: "mothim",
       },
@@ -18895,6 +21095,10 @@ export const pokedexes: {
       {
         id: 421,
         name: "cherrim",
+      },
+      {
+        id: 421,
+        name: "cherrim-sunshine",
       },
       {
         id: 422,
@@ -19274,6 +21478,26 @@ export const pokedexes: {
         name: "rotom",
       },
       {
+        id: 479,
+        name: "rotom-heat",
+      },
+      {
+        id: 479,
+        name: "rotom-wash",
+      },
+      {
+        id: 479,
+        name: "rotom-frost",
+      },
+      {
+        id: 479,
+        name: "rotom-fan",
+      },
+      {
+        id: 479,
+        name: "rotom-mow",
+      },
+      {
         id: 207,
         name: "gligar",
       },
@@ -19504,6 +21728,10 @@ export const pokedexes: {
       {
         id: 487,
         name: "giratina",
+      },
+      {
+        id: 487,
+        name: "giratina-origin",
       },
     ],
   },
@@ -20503,6 +22731,18 @@ export const pokedexes: {
         name: "castform",
       },
       {
+        id: 351,
+        name: "castform-sunny",
+      },
+      {
+        id: 351,
+        name: "castform-rainy",
+      },
+      {
+        id: 351,
+        name: "castform-snowy",
+      },
+      {
         id: 352,
         name: "kecleon",
       },
@@ -20615,6 +22855,18 @@ export const pokedexes: {
         name: "deoxys",
       },
       {
+        id: 386,
+        name: "deoxys-attack",
+      },
+      {
+        id: 386,
+        name: "deoxys-defense",
+      },
+      {
+        id: 386,
+        name: "deoxys-speed",
+      },
+      {
         id: 485,
         name: "heatran",
       },
@@ -20639,8 +22891,76 @@ export const pokedexes: {
         name: "shaymin",
       },
       {
+        id: 492,
+        name: "shaymin-sky",
+      },
+      {
         id: 493,
         name: "arceus",
+      },
+      {
+        id: 493,
+        name: "arceus-fighting",
+      },
+      {
+        id: 493,
+        name: "arceus-flying",
+      },
+      {
+        id: 493,
+        name: "arceus-poison",
+      },
+      {
+        id: 493,
+        name: "arceus-ground",
+      },
+      {
+        id: 493,
+        name: "arceus-rock",
+      },
+      {
+        id: 493,
+        name: "arceus-bug",
+      },
+      {
+        id: 493,
+        name: "arceus-ghost",
+      },
+      {
+        id: 493,
+        name: "arceus-steel",
+      },
+      {
+        id: 493,
+        name: "arceus-fire",
+      },
+      {
+        id: 493,
+        name: "arceus-water",
+      },
+      {
+        id: 493,
+        name: "arceus-grass",
+      },
+      {
+        id: 493,
+        name: "arceus-electric",
+      },
+      {
+        id: 493,
+        name: "arceus-psychic",
+      },
+      {
+        id: 493,
+        name: "arceus-ice",
+      },
+      {
+        id: 493,
+        name: "arceus-dragon",
+      },
+      {
+        id: 493,
+        name: "arceus-dark",
       },
     ],
   },
@@ -22077,6 +24397,18 @@ export const pokedexes: {
         name: "castform",
       },
       {
+        id: 351,
+        name: "castform-sunny",
+      },
+      {
+        id: 351,
+        name: "castform-rainy",
+      },
+      {
+        id: 351,
+        name: "castform-snowy",
+      },
+      {
         id: 352,
         name: "kecleon",
       },
@@ -22217,6 +24549,18 @@ export const pokedexes: {
         name: "deoxys",
       },
       {
+        id: 386,
+        name: "deoxys-attack",
+      },
+      {
+        id: 386,
+        name: "deoxys-defense",
+      },
+      {
+        id: 386,
+        name: "deoxys-speed",
+      },
+      {
         id: 387,
         name: "turtwig",
       },
@@ -22325,6 +24669,14 @@ export const pokedexes: {
         name: "wormadam",
       },
       {
+        id: 413,
+        name: "wormadam-sandy",
+      },
+      {
+        id: 413,
+        name: "wormadam-trash",
+      },
+      {
         id: 414,
         name: "mothim",
       },
@@ -22355,6 +24707,10 @@ export const pokedexes: {
       {
         id: 421,
         name: "cherrim",
+      },
+      {
+        id: 421,
+        name: "cherrim-sunshine",
       },
       {
         id: 422,
@@ -22569,6 +24925,26 @@ export const pokedexes: {
         name: "rotom",
       },
       {
+        id: 479,
+        name: "rotom-heat",
+      },
+      {
+        id: 479,
+        name: "rotom-wash",
+      },
+      {
+        id: 479,
+        name: "rotom-frost",
+      },
+      {
+        id: 479,
+        name: "rotom-fan",
+      },
+      {
+        id: 479,
+        name: "rotom-mow",
+      },
+      {
         id: 480,
         name: "uxie",
       },
@@ -22601,6 +24977,10 @@ export const pokedexes: {
         name: "giratina",
       },
       {
+        id: 487,
+        name: "giratina-origin",
+      },
+      {
         id: 488,
         name: "cresselia",
       },
@@ -22621,8 +25001,76 @@ export const pokedexes: {
         name: "shaymin",
       },
       {
+        id: 492,
+        name: "shaymin-sky",
+      },
+      {
         id: 493,
         name: "arceus",
+      },
+      {
+        id: 493,
+        name: "arceus-fighting",
+      },
+      {
+        id: 493,
+        name: "arceus-flying",
+      },
+      {
+        id: 493,
+        name: "arceus-poison",
+      },
+      {
+        id: 493,
+        name: "arceus-ground",
+      },
+      {
+        id: 493,
+        name: "arceus-rock",
+      },
+      {
+        id: 493,
+        name: "arceus-bug",
+      },
+      {
+        id: 493,
+        name: "arceus-ghost",
+      },
+      {
+        id: 493,
+        name: "arceus-steel",
+      },
+      {
+        id: 493,
+        name: "arceus-fire",
+      },
+      {
+        id: 493,
+        name: "arceus-water",
+      },
+      {
+        id: 493,
+        name: "arceus-grass",
+      },
+      {
+        id: 493,
+        name: "arceus-electric",
+      },
+      {
+        id: 493,
+        name: "arceus-psychic",
+      },
+      {
+        id: 493,
+        name: "arceus-ice",
+      },
+      {
+        id: 493,
+        name: "arceus-dragon",
+      },
+      {
+        id: 493,
+        name: "arceus-dark",
       },
     ],
   },
@@ -22858,6 +25306,10 @@ export const pokedexes: {
         name: "basculin",
       },
       {
+        id: 550,
+        name: "basculin-blue-striped",
+      },
+      {
         id: 551,
         name: "sandile",
       },
@@ -22876,6 +25328,10 @@ export const pokedexes: {
       {
         id: 555,
         name: "darmanitan",
+      },
+      {
+        id: 555,
+        name: "darmanitan-zen",
       },
       {
         id: 556,
@@ -23248,6 +25704,10 @@ export const pokedexes: {
       {
         id: 648,
         name: "meloetta",
+      },
+      {
+        id: 648,
+        name: "meloetta-pirouette",
       },
       {
         id: 649,
@@ -24339,6 +26799,18 @@ export const pokedexes: {
         name: "castform",
       },
       {
+        id: 351,
+        name: "castform-sunny",
+      },
+      {
+        id: 351,
+        name: "castform-rainy",
+      },
+      {
+        id: 351,
+        name: "castform-snowy",
+      },
+      {
         id: 352,
         name: "kecleon",
       },
@@ -24467,6 +26939,18 @@ export const pokedexes: {
         name: "deoxys",
       },
       {
+        id: 386,
+        name: "deoxys-attack",
+      },
+      {
+        id: 386,
+        name: "deoxys-defense",
+      },
+      {
+        id: 386,
+        name: "deoxys-speed",
+      },
+      {
         id: 387,
         name: "turtwig",
       },
@@ -24543,6 +27027,14 @@ export const pokedexes: {
         name: "wormadam",
       },
       {
+        id: 413,
+        name: "wormadam-sandy",
+      },
+      {
+        id: 413,
+        name: "wormadam-trash",
+      },
+      {
         id: 414,
         name: "mothim",
       },
@@ -24573,6 +27065,10 @@ export const pokedexes: {
       {
         id: 421,
         name: "cherrim",
+      },
+      {
+        id: 421,
+        name: "cherrim-sunshine",
       },
       {
         id: 422,
@@ -24775,6 +27271,26 @@ export const pokedexes: {
         name: "rotom",
       },
       {
+        id: 479,
+        name: "rotom-heat",
+      },
+      {
+        id: 479,
+        name: "rotom-wash",
+      },
+      {
+        id: 479,
+        name: "rotom-frost",
+      },
+      {
+        id: 479,
+        name: "rotom-fan",
+      },
+      {
+        id: 479,
+        name: "rotom-mow",
+      },
+      {
         id: 480,
         name: "uxie",
       },
@@ -24807,6 +27323,10 @@ export const pokedexes: {
         name: "giratina",
       },
       {
+        id: 487,
+        name: "giratina-origin",
+      },
+      {
         id: 488,
         name: "cresselia",
       },
@@ -24827,8 +27347,76 @@ export const pokedexes: {
         name: "shaymin",
       },
       {
+        id: 492,
+        name: "shaymin-sky",
+      },
+      {
         id: 493,
         name: "arceus",
+      },
+      {
+        id: 493,
+        name: "arceus-fighting",
+      },
+      {
+        id: 493,
+        name: "arceus-flying",
+      },
+      {
+        id: 493,
+        name: "arceus-poison",
+      },
+      {
+        id: 493,
+        name: "arceus-ground",
+      },
+      {
+        id: 493,
+        name: "arceus-rock",
+      },
+      {
+        id: 493,
+        name: "arceus-bug",
+      },
+      {
+        id: 493,
+        name: "arceus-ghost",
+      },
+      {
+        id: 493,
+        name: "arceus-steel",
+      },
+      {
+        id: 493,
+        name: "arceus-fire",
+      },
+      {
+        id: 493,
+        name: "arceus-water",
+      },
+      {
+        id: 493,
+        name: "arceus-grass",
+      },
+      {
+        id: 493,
+        name: "arceus-electric",
+      },
+      {
+        id: 493,
+        name: "arceus-psychic",
+      },
+      {
+        id: 493,
+        name: "arceus-ice",
+      },
+      {
+        id: 493,
+        name: "arceus-dragon",
+      },
+      {
+        id: 493,
+        name: "arceus-dark",
       },
     ],
   },
@@ -25252,8 +27840,16 @@ export const pokedexes: {
         name: "darmanitan",
       },
       {
+        id: 555,
+        name: "darmanitan-zen",
+      },
+      {
         id: 550,
         name: "basculin",
+      },
+      {
+        id: 550,
+        name: "basculin-blue-striped",
       },
       {
         id: 568,
@@ -25492,6 +28088,18 @@ export const pokedexes: {
         name: "castform",
       },
       {
+        id: 351,
+        name: "castform-sunny",
+      },
+      {
+        id: 351,
+        name: "castform-rainy",
+      },
+      {
+        id: 351,
+        name: "castform-snowy",
+      },
+      {
         id: 299,
         name: "nosepass",
       },
@@ -25632,12 +28240,24 @@ export const pokedexes: {
         name: "tornadus",
       },
       {
+        id: 641,
+        name: "tornadus-therian",
+      },
+      {
         id: 642,
         name: "thundurus",
       },
       {
+        id: 642,
+        name: "thundurus-therian",
+      },
+      {
         id: 645,
         name: "landorus",
+      },
+      {
+        id: 645,
+        name: "landorus-therian",
       },
       {
         id: 451,
@@ -26028,12 +28648,28 @@ export const pokedexes: {
         name: "kyurem",
       },
       {
+        id: 646,
+        name: "kyurem-white",
+      },
+      {
+        id: 646,
+        name: "kyurem-black",
+      },
+      {
         id: 647,
         name: "keldeo",
       },
       {
+        id: 647,
+        name: "keldeo-resolute",
+      },
+      {
         id: 648,
         name: "meloetta",
+      },
+      {
+        id: 648,
+        name: "meloetta-pirouette",
       },
       {
         id: 649,
@@ -27137,6 +29773,18 @@ export const pokedexes: {
         name: "deoxys",
       },
       {
+        id: 386,
+        name: "deoxys-attack",
+      },
+      {
+        id: 386,
+        name: "deoxys-defense",
+      },
+      {
+        id: 386,
+        name: "deoxys-speed",
+      },
+      {
         id: 387,
         name: "turtwig",
       },
@@ -27237,6 +29885,14 @@ export const pokedexes: {
         name: "wormadam",
       },
       {
+        id: 413,
+        name: "wormadam-sandy",
+      },
+      {
+        id: 413,
+        name: "wormadam-trash",
+      },
+      {
         id: 414,
         name: "mothim",
       },
@@ -27251,6 +29907,10 @@ export const pokedexes: {
       {
         id: 421,
         name: "cherrim",
+      },
+      {
+        id: 421,
+        name: "cherrim-sunshine",
       },
       {
         id: 422,
@@ -27381,6 +30041,26 @@ export const pokedexes: {
         name: "rotom",
       },
       {
+        id: 479,
+        name: "rotom-heat",
+      },
+      {
+        id: 479,
+        name: "rotom-wash",
+      },
+      {
+        id: 479,
+        name: "rotom-frost",
+      },
+      {
+        id: 479,
+        name: "rotom-fan",
+      },
+      {
+        id: 479,
+        name: "rotom-mow",
+      },
+      {
         id: 480,
         name: "uxie",
       },
@@ -27413,6 +30093,10 @@ export const pokedexes: {
         name: "giratina",
       },
       {
+        id: 487,
+        name: "giratina-origin",
+      },
+      {
         id: 488,
         name: "cresselia",
       },
@@ -27433,8 +30117,76 @@ export const pokedexes: {
         name: "shaymin",
       },
       {
+        id: 492,
+        name: "shaymin-sky",
+      },
+      {
         id: 493,
         name: "arceus",
+      },
+      {
+        id: 493,
+        name: "arceus-fighting",
+      },
+      {
+        id: 493,
+        name: "arceus-flying",
+      },
+      {
+        id: 493,
+        name: "arceus-poison",
+      },
+      {
+        id: 493,
+        name: "arceus-ground",
+      },
+      {
+        id: 493,
+        name: "arceus-rock",
+      },
+      {
+        id: 493,
+        name: "arceus-bug",
+      },
+      {
+        id: 493,
+        name: "arceus-ghost",
+      },
+      {
+        id: 493,
+        name: "arceus-steel",
+      },
+      {
+        id: 493,
+        name: "arceus-fire",
+      },
+      {
+        id: 493,
+        name: "arceus-water",
+      },
+      {
+        id: 493,
+        name: "arceus-grass",
+      },
+      {
+        id: 493,
+        name: "arceus-electric",
+      },
+      {
+        id: 493,
+        name: "arceus-psychic",
+      },
+      {
+        id: 493,
+        name: "arceus-ice",
+      },
+      {
+        id: 493,
+        name: "arceus-dragon",
+      },
+      {
+        id: 493,
+        name: "arceus-dark",
       },
     ],
   },
@@ -28179,6 +30931,10 @@ export const pokedexes: {
         name: "blaziken",
       },
       {
+        id: 257,
+        name: "blaziken-mega",
+      },
+      {
         id: 258,
         name: "mudkip",
       },
@@ -28295,6 +31051,18 @@ export const pokedexes: {
         name: "castform",
       },
       {
+        id: 351,
+        name: "castform-sunny",
+      },
+      {
+        id: 351,
+        name: "castform-rainy",
+      },
+      {
+        id: 351,
+        name: "castform-snowy",
+      },
+      {
         id: 355,
         name: "duskull",
       },
@@ -28355,8 +31123,16 @@ export const pokedexes: {
         name: "latias",
       },
       {
+        id: 380,
+        name: "latias-mega",
+      },
+      {
         id: 381,
         name: "latios",
+      },
+      {
+        id: 381,
+        name: "latios-mega",
       },
       {
         id: 382,
@@ -28377,6 +31153,18 @@ export const pokedexes: {
       {
         id: 386,
         name: "deoxys",
+      },
+      {
+        id: 386,
+        name: "deoxys-attack",
+      },
+      {
+        id: 386,
+        name: "deoxys-defense",
+      },
+      {
+        id: 386,
+        name: "deoxys-speed",
       },
       {
         id: 387,
@@ -28457,6 +31245,10 @@ export const pokedexes: {
       {
         id: 421,
         name: "cherrim",
+      },
+      {
+        id: 421,
+        name: "cherrim-sunshine",
       },
       {
         id: 422,
@@ -28575,6 +31367,10 @@ export const pokedexes: {
         name: "giratina",
       },
       {
+        id: 487,
+        name: "giratina-origin",
+      },
+      {
         id: 488,
         name: "cresselia",
       },
@@ -28595,8 +31391,80 @@ export const pokedexes: {
         name: "shaymin",
       },
       {
+        id: 492,
+        name: "shaymin-sky",
+      },
+      {
         id: 493,
         name: "arceus",
+      },
+      {
+        id: 493,
+        name: "arceus-fighting",
+      },
+      {
+        id: 493,
+        name: "arceus-flying",
+      },
+      {
+        id: 493,
+        name: "arceus-poison",
+      },
+      {
+        id: 493,
+        name: "arceus-ground",
+      },
+      {
+        id: 493,
+        name: "arceus-rock",
+      },
+      {
+        id: 493,
+        name: "arceus-bug",
+      },
+      {
+        id: 493,
+        name: "arceus-ghost",
+      },
+      {
+        id: 493,
+        name: "arceus-steel",
+      },
+      {
+        id: 493,
+        name: "arceus-fire",
+      },
+      {
+        id: 493,
+        name: "arceus-water",
+      },
+      {
+        id: 493,
+        name: "arceus-grass",
+      },
+      {
+        id: 493,
+        name: "arceus-electric",
+      },
+      {
+        id: 493,
+        name: "arceus-psychic",
+      },
+      {
+        id: 493,
+        name: "arceus-ice",
+      },
+      {
+        id: 493,
+        name: "arceus-dragon",
+      },
+      {
+        id: 493,
+        name: "arceus-dark",
+      },
+      {
+        id: 493,
+        name: "arceus-fairy",
       },
       {
         id: 494,
@@ -28735,6 +31603,10 @@ export const pokedexes: {
         name: "darmanitan",
       },
       {
+        id: 555,
+        name: "darmanitan-zen",
+      },
+      {
         id: 556,
         name: "maractus",
       },
@@ -28871,8 +31743,16 @@ export const pokedexes: {
         name: "tornadus",
       },
       {
+        id: 641,
+        name: "tornadus-therian",
+      },
+      {
         id: 642,
         name: "thundurus",
+      },
+      {
+        id: 642,
+        name: "thundurus-therian",
       },
       {
         id: 643,
@@ -28887,16 +31767,36 @@ export const pokedexes: {
         name: "landorus",
       },
       {
+        id: 645,
+        name: "landorus-therian",
+      },
+      {
         id: 646,
         name: "kyurem",
+      },
+      {
+        id: 646,
+        name: "kyurem-white",
+      },
+      {
+        id: 646,
+        name: "kyurem-black",
       },
       {
         id: 647,
         name: "keldeo",
       },
       {
+        id: 647,
+        name: "keldeo-resolute",
+      },
+      {
         id: 648,
         name: "meloetta",
+      },
+      {
+        id: 648,
+        name: "meloetta-pirouette",
       },
       {
         id: 649,
@@ -28920,6 +31820,10 @@ export const pokedexes: {
         name: "venusaur",
       },
       {
+        id: 3,
+        name: "venusaur-mega",
+      },
+      {
         id: 4,
         name: "charmander",
       },
@@ -28932,6 +31836,14 @@ export const pokedexes: {
         name: "charizard",
       },
       {
+        id: 6,
+        name: "charizard-mega-x",
+      },
+      {
+        id: 6,
+        name: "charizard-mega-y",
+      },
+      {
         id: 7,
         name: "squirtle",
       },
@@ -28942,6 +31854,10 @@ export const pokedexes: {
       {
         id: 9,
         name: "blastoise",
+      },
+      {
+        id: 9,
+        name: "blastoise-mega",
       },
       {
         id: 10,
@@ -28968,6 +31884,10 @@ export const pokedexes: {
         name: "beedrill",
       },
       {
+        id: 15,
+        name: "beedrill-mega",
+      },
+      {
         id: 16,
         name: "pidgey",
       },
@@ -28978,6 +31898,10 @@ export const pokedexes: {
       {
         id: 18,
         name: "pidgeot",
+      },
+      {
+        id: 18,
+        name: "pidgeot-mega",
       },
       {
         id: 19,
@@ -29124,6 +32048,10 @@ export const pokedexes: {
         name: "slowbro",
       },
       {
+        id: 80,
+        name: "slowbro-mega",
+      },
+      {
         id: 83,
         name: "farfetch’d",
       },
@@ -29154,6 +32082,10 @@ export const pokedexes: {
       {
         id: 94,
         name: "gengar",
+      },
+      {
+        id: 94,
+        name: "gengar-mega",
       },
       {
         id: 95,
@@ -29214,6 +32146,10 @@ export const pokedexes: {
       {
         id: 115,
         name: "kangaskhan",
+      },
+      {
+        id: 115,
+        name: "kangaskhan-mega",
       },
       {
         id: 122,
@@ -29288,6 +32224,10 @@ export const pokedexes: {
         name: "aerodactyl",
       },
       {
+        id: 142,
+        name: "aerodactyl-mega",
+      },
+      {
         id: 143,
         name: "snorlax",
       },
@@ -29318,6 +32258,14 @@ export const pokedexes: {
       {
         id: 150,
         name: "mewtwo",
+      },
+      {
+        id: 150,
+        name: "mewtwo-mega-x",
+      },
+      {
+        id: 150,
+        name: "mewtwo-mega-y",
       },
       {
         id: 151,
@@ -29416,6 +32364,10 @@ export const pokedexes: {
         name: "ampharos",
       },
       {
+        id: 181,
+        name: "ampharos-mega",
+      },
+      {
         id: 185,
         name: "sudowoodo",
       },
@@ -29504,6 +32456,10 @@ export const pokedexes: {
         name: "steelix",
       },
       {
+        id: 208,
+        name: "steelix-mega",
+      },
+      {
         id: 209,
         name: "snubbull",
       },
@@ -29518,6 +32474,10 @@ export const pokedexes: {
       {
         id: 212,
         name: "scizor",
+      },
+      {
+        id: 212,
+        name: "scizor-mega",
       },
       {
         id: 213,
@@ -29566,6 +32526,10 @@ export const pokedexes: {
       {
         id: 229,
         name: "houndoom",
+      },
+      {
+        id: 229,
+        name: "houndoom-mega",
       },
       {
         id: 233,
@@ -29630,6 +32594,10 @@ export const pokedexes: {
       {
         id: 248,
         name: "tyranitar",
+      },
+      {
+        id: 248,
+        name: "tyranitar-mega",
       },
       {
         id: 249,
@@ -29744,6 +32712,14 @@ export const pokedexes: {
         name: "wormadam",
       },
       {
+        id: 413,
+        name: "wormadam-sandy",
+      },
+      {
+        id: 413,
+        name: "wormadam-trash",
+      },
+      {
         id: 414,
         name: "mothim",
       },
@@ -29776,6 +32752,10 @@ export const pokedexes: {
         name: "cherrim",
       },
       {
+        id: 421,
+        name: "cherrim-sunshine",
+      },
+      {
         id: 422,
         name: "shellos",
       },
@@ -29802,6 +32782,10 @@ export const pokedexes: {
       {
         id: 428,
         name: "lopunny",
+      },
+      {
+        id: 428,
+        name: "lopunny-mega",
       },
       {
         id: 429,
@@ -29868,6 +32852,10 @@ export const pokedexes: {
         name: "garchomp",
       },
       {
+        id: 445,
+        name: "garchomp-mega",
+      },
+      {
         id: 446,
         name: "munchlax",
       },
@@ -29878,6 +32866,10 @@ export const pokedexes: {
       {
         id: 448,
         name: "lucario",
+      },
+      {
+        id: 448,
+        name: "lucario-mega",
       },
       {
         id: 449,
@@ -29926,6 +32918,10 @@ export const pokedexes: {
       {
         id: 460,
         name: "abomasnow",
+      },
+      {
+        id: 460,
+        name: "abomasnow-mega",
       },
       {
         id: 461,
@@ -29980,6 +32976,26 @@ export const pokedexes: {
         name: "rotom",
       },
       {
+        id: 479,
+        name: "rotom-heat",
+      },
+      {
+        id: 479,
+        name: "rotom-wash",
+      },
+      {
+        id: 479,
+        name: "rotom-frost",
+      },
+      {
+        id: 479,
+        name: "rotom-fan",
+      },
+      {
+        id: 479,
+        name: "rotom-mow",
+      },
+      {
         id: 480,
         name: "uxie",
       },
@@ -30012,6 +33028,10 @@ export const pokedexes: {
         name: "giratina",
       },
       {
+        id: 487,
+        name: "giratina-origin",
+      },
+      {
         id: 488,
         name: "cresselia",
       },
@@ -30032,8 +33052,80 @@ export const pokedexes: {
         name: "shaymin",
       },
       {
+        id: 492,
+        name: "shaymin-sky",
+      },
+      {
         id: 493,
         name: "arceus",
+      },
+      {
+        id: 493,
+        name: "arceus-fighting",
+      },
+      {
+        id: 493,
+        name: "arceus-flying",
+      },
+      {
+        id: 493,
+        name: "arceus-poison",
+      },
+      {
+        id: 493,
+        name: "arceus-ground",
+      },
+      {
+        id: 493,
+        name: "arceus-rock",
+      },
+      {
+        id: 493,
+        name: "arceus-bug",
+      },
+      {
+        id: 493,
+        name: "arceus-ghost",
+      },
+      {
+        id: 493,
+        name: "arceus-steel",
+      },
+      {
+        id: 493,
+        name: "arceus-fire",
+      },
+      {
+        id: 493,
+        name: "arceus-water",
+      },
+      {
+        id: 493,
+        name: "arceus-grass",
+      },
+      {
+        id: 493,
+        name: "arceus-electric",
+      },
+      {
+        id: 493,
+        name: "arceus-psychic",
+      },
+      {
+        id: 493,
+        name: "arceus-ice",
+      },
+      {
+        id: 493,
+        name: "arceus-dragon",
+      },
+      {
+        id: 493,
+        name: "arceus-dark",
+      },
+      {
+        id: 493,
+        name: "arceus-fairy",
       },
       {
         id: 494,
@@ -30188,6 +33280,10 @@ export const pokedexes: {
         name: "audino",
       },
       {
+        id: 531,
+        name: "audino-mega",
+      },
+      {
         id: 532,
         name: "timburr",
       },
@@ -30264,6 +33360,10 @@ export const pokedexes: {
         name: "basculin",
       },
       {
+        id: 550,
+        name: "basculin-blue-striped",
+      },
+      {
         id: 551,
         name: "sandile",
       },
@@ -30282,6 +33382,10 @@ export const pokedexes: {
       {
         id: 555,
         name: "darmanitan",
+      },
+      {
+        id: 555,
+        name: "darmanitan-zen",
       },
       {
         id: 556,
@@ -30628,8 +33732,16 @@ export const pokedexes: {
         name: "tornadus",
       },
       {
+        id: 641,
+        name: "tornadus-therian",
+      },
+      {
         id: 642,
         name: "thundurus",
+      },
+      {
+        id: 642,
+        name: "thundurus-therian",
       },
       {
         id: 643,
@@ -30644,16 +33756,36 @@ export const pokedexes: {
         name: "landorus",
       },
       {
+        id: 645,
+        name: "landorus-therian",
+      },
+      {
         id: 646,
         name: "kyurem",
+      },
+      {
+        id: 646,
+        name: "kyurem-white",
+      },
+      {
+        id: 646,
+        name: "kyurem-black",
       },
       {
         id: 647,
         name: "keldeo",
       },
       {
+        id: 647,
+        name: "keldeo-resolute",
+      },
+      {
         id: 648,
         name: "meloetta",
+      },
+      {
+        id: 648,
+        name: "meloetta-pirouette",
       },
       {
         id: 649,
@@ -30716,16 +33848,16 @@ export const pokedexes: {
         name: "talonflame",
       },
       {
-        id: 664,
-        name: "scatterbug",
-      },
-      {
-        id: 665,
-        name: "spewpa",
+        id: 666,
+        name: "vivillon",
       },
       {
         id: 666,
-        name: "vivillon",
+        name: "vivillon-fancy",
+      },
+      {
+        id: 666,
+        name: "vivillon-pokeball",
       },
       {
         id: 667,
@@ -30776,6 +33908,10 @@ export const pokedexes: {
         name: "meowstic",
       },
       {
+        id: 678,
+        name: "meowstic-f",
+      },
+      {
         id: 679,
         name: "honedge",
       },
@@ -30786,6 +33922,10 @@ export const pokedexes: {
       {
         id: 681,
         name: "aegislash",
+      },
+      {
+        id: 681,
+        name: "aegislash-blade",
       },
       {
         id: 682,
@@ -30904,8 +34044,32 @@ export const pokedexes: {
         name: "pumpkaboo",
       },
       {
+        id: 710,
+        name: "pumpkaboo-small",
+      },
+      {
+        id: 710,
+        name: "pumpkaboo-large",
+      },
+      {
+        id: 710,
+        name: "pumpkaboo-super",
+      },
+      {
         id: 711,
         name: "gourgeist",
+      },
+      {
+        id: 711,
+        name: "gourgeist-small",
+      },
+      {
+        id: 711,
+        name: "gourgeist-large",
+      },
+      {
+        id: 711,
+        name: "gourgeist-super",
       },
       {
         id: 712,
@@ -30940,8 +34104,16 @@ export const pokedexes: {
         name: "diancie",
       },
       {
+        id: 719,
+        name: "diancie-mega",
+      },
+      {
         id: 720,
         name: "hoopa",
+      },
+      {
+        id: 720,
+        name: "hoopa-unbound",
       },
       {
         id: 721,
@@ -30965,6 +34137,10 @@ export const pokedexes: {
         name: "venusaur",
       },
       {
+        id: 3,
+        name: "venusaur-mega",
+      },
+      {
         id: 4,
         name: "charmander",
       },
@@ -30975,6 +34151,14 @@ export const pokedexes: {
       {
         id: 6,
         name: "charizard",
+      },
+      {
+        id: 6,
+        name: "charizard-mega-x",
+      },
+      {
+        id: 6,
+        name: "charizard-mega-y",
       },
       {
         id: 7,
@@ -30989,6 +34173,10 @@ export const pokedexes: {
         name: "blastoise",
       },
       {
+        id: 9,
+        name: "blastoise-mega",
+      },
+      {
         id: 13,
         name: "weedle",
       },
@@ -31001,6 +34189,10 @@ export const pokedexes: {
         name: "beedrill",
       },
       {
+        id: 15,
+        name: "beedrill-mega",
+      },
+      {
         id: 16,
         name: "pidgey",
       },
@@ -31011,6 +34203,10 @@ export const pokedexes: {
       {
         id: 18,
         name: "pidgeot",
+      },
+      {
+        id: 18,
+        name: "pidgeot-mega",
       },
       {
         id: 19,
@@ -31249,6 +34445,14 @@ export const pokedexes: {
         name: "mewtwo",
       },
       {
+        id: 150,
+        name: "mewtwo-mega-x",
+      },
+      {
+        id: 150,
+        name: "mewtwo-mega-y",
+      },
+      {
         id: 151,
         name: "mew",
       },
@@ -31287,6 +34491,10 @@ export const pokedexes: {
       {
         id: 181,
         name: "ampharos",
+      },
+      {
+        id: 181,
+        name: "ampharos-mega",
       },
       {
         id: 182,
@@ -31361,6 +34569,10 @@ export const pokedexes: {
         name: "steelix",
       },
       {
+        id: 208,
+        name: "steelix-mega",
+      },
+      {
         id: 211,
         name: "qwilfish",
       },
@@ -31371,6 +34583,10 @@ export const pokedexes: {
       {
         id: 214,
         name: "heracross",
+      },
+      {
+        id: 214,
+        name: "heracross-mega",
       },
       {
         id: 216,
@@ -31407,6 +34623,10 @@ export const pokedexes: {
       {
         id: 229,
         name: "houndoom",
+      },
+      {
+        id: 229,
+        name: "houndoom-mega",
       },
       {
         id: 231,
@@ -31457,6 +34677,10 @@ export const pokedexes: {
         name: "tyranitar",
       },
       {
+        id: 248,
+        name: "tyranitar-mega",
+      },
+      {
         id: 249,
         name: "lugia",
       },
@@ -31481,6 +34705,10 @@ export const pokedexes: {
         name: "sceptile",
       },
       {
+        id: 254,
+        name: "sceptile-mega",
+      },
+      {
         id: 255,
         name: "torchic",
       },
@@ -31493,6 +34721,10 @@ export const pokedexes: {
         name: "blaziken",
       },
       {
+        id: 257,
+        name: "blaziken-mega",
+      },
+      {
         id: 258,
         name: "mudkip",
       },
@@ -31503,6 +34735,10 @@ export const pokedexes: {
       {
         id: 260,
         name: "swampert",
+      },
+      {
+        id: 260,
+        name: "swampert-mega",
       },
       {
         id: 261,
@@ -31585,6 +34821,10 @@ export const pokedexes: {
         name: "gardevoir",
       },
       {
+        id: 282,
+        name: "gardevoir-mega",
+      },
+      {
         id: 285,
         name: "shroomish",
       },
@@ -31629,6 +34869,10 @@ export const pokedexes: {
         name: "mawile",
       },
       {
+        id: 303,
+        name: "mawile-mega",
+      },
+      {
         id: 304,
         name: "aron",
       },
@@ -31641,6 +34885,10 @@ export const pokedexes: {
         name: "aggron",
       },
       {
+        id: 306,
+        name: "aggron-mega",
+      },
+      {
         id: 307,
         name: "meditite",
       },
@@ -31649,12 +34897,20 @@ export const pokedexes: {
         name: "medicham",
       },
       {
+        id: 308,
+        name: "medicham-mega",
+      },
+      {
         id: 309,
         name: "electrike",
       },
       {
         id: 310,
         name: "manectric",
+      },
+      {
+        id: 310,
+        name: "manectric-mega",
       },
       {
         id: 311,
@@ -31689,6 +34945,10 @@ export const pokedexes: {
         name: "camerupt",
       },
       {
+        id: 323,
+        name: "camerupt-mega",
+      },
+      {
         id: 325,
         name: "spoink",
       },
@@ -31711,6 +34971,10 @@ export const pokedexes: {
       {
         id: 334,
         name: "altaria",
+      },
+      {
+        id: 334,
+        name: "altaria-mega",
       },
       {
         id: 335,
@@ -31773,6 +35037,10 @@ export const pokedexes: {
         name: "banette",
       },
       {
+        id: 354,
+        name: "banette-mega",
+      },
+      {
         id: 355,
         name: "duskull",
       },
@@ -31821,20 +35089,40 @@ export const pokedexes: {
         name: "latias",
       },
       {
+        id: 380,
+        name: "latias-mega",
+      },
+      {
         id: 381,
         name: "latios",
+      },
+      {
+        id: 381,
+        name: "latios-mega",
       },
       {
         id: 382,
         name: "kyogre",
       },
       {
+        id: 382,
+        name: "kyogre-primal",
+      },
+      {
         id: 383,
         name: "groudon",
       },
       {
+        id: 383,
+        name: "groudon-primal",
+      },
+      {
         id: 384,
         name: "rayquaza",
+      },
+      {
+        id: 384,
+        name: "rayquaza-mega",
       },
       {
         id: 385,
@@ -31843,6 +35131,18 @@ export const pokedexes: {
       {
         id: 386,
         name: "deoxys",
+      },
+      {
+        id: 386,
+        name: "deoxys-attack",
+      },
+      {
+        id: 386,
+        name: "deoxys-defense",
+      },
+      {
+        id: 386,
+        name: "deoxys-speed",
       },
       {
         id: 387,
@@ -31905,6 +35205,14 @@ export const pokedexes: {
         name: "wormadam",
       },
       {
+        id: 413,
+        name: "wormadam-sandy",
+      },
+      {
+        id: 413,
+        name: "wormadam-trash",
+      },
+      {
         id: 414,
         name: "mothim",
       },
@@ -31937,6 +35245,10 @@ export const pokedexes: {
         name: "cherrim",
       },
       {
+        id: 421,
+        name: "cherrim-sunshine",
+      },
+      {
         id: 422,
         name: "shellos",
       },
@@ -31955,6 +35267,10 @@ export const pokedexes: {
       {
         id: 428,
         name: "lopunny",
+      },
+      {
+        id: 428,
+        name: "lopunny-mega",
       },
       {
         id: 431,
@@ -32037,6 +35353,10 @@ export const pokedexes: {
         name: "abomasnow",
       },
       {
+        id: 460,
+        name: "abomasnow-mega",
+      },
+      {
         id: 463,
         name: "lickilicky",
       },
@@ -32057,12 +35377,36 @@ export const pokedexes: {
         name: "gallade",
       },
       {
+        id: 475,
+        name: "gallade-mega",
+      },
+      {
         id: 477,
         name: "dusknoir",
       },
       {
         id: 479,
         name: "rotom",
+      },
+      {
+        id: 479,
+        name: "rotom-heat",
+      },
+      {
+        id: 479,
+        name: "rotom-wash",
+      },
+      {
+        id: 479,
+        name: "rotom-frost",
+      },
+      {
+        id: 479,
+        name: "rotom-fan",
+      },
+      {
+        id: 479,
+        name: "rotom-mow",
       },
       {
         id: 480,
@@ -32097,6 +35441,10 @@ export const pokedexes: {
         name: "giratina",
       },
       {
+        id: 487,
+        name: "giratina-origin",
+      },
+      {
         id: 488,
         name: "cresselia",
       },
@@ -32117,8 +35465,80 @@ export const pokedexes: {
         name: "shaymin",
       },
       {
+        id: 492,
+        name: "shaymin-sky",
+      },
+      {
         id: 493,
         name: "arceus",
+      },
+      {
+        id: 493,
+        name: "arceus-fighting",
+      },
+      {
+        id: 493,
+        name: "arceus-flying",
+      },
+      {
+        id: 493,
+        name: "arceus-poison",
+      },
+      {
+        id: 493,
+        name: "arceus-ground",
+      },
+      {
+        id: 493,
+        name: "arceus-rock",
+      },
+      {
+        id: 493,
+        name: "arceus-bug",
+      },
+      {
+        id: 493,
+        name: "arceus-ghost",
+      },
+      {
+        id: 493,
+        name: "arceus-steel",
+      },
+      {
+        id: 493,
+        name: "arceus-fire",
+      },
+      {
+        id: 493,
+        name: "arceus-water",
+      },
+      {
+        id: 493,
+        name: "arceus-grass",
+      },
+      {
+        id: 493,
+        name: "arceus-electric",
+      },
+      {
+        id: 493,
+        name: "arceus-psychic",
+      },
+      {
+        id: 493,
+        name: "arceus-ice",
+      },
+      {
+        id: 493,
+        name: "arceus-dragon",
+      },
+      {
+        id: 493,
+        name: "arceus-dark",
+      },
+      {
+        id: 493,
+        name: "arceus-fairy",
       },
       {
         id: 494,
@@ -32213,6 +35633,10 @@ export const pokedexes: {
         name: "audino",
       },
       {
+        id: 531,
+        name: "audino-mega",
+      },
+      {
         id: 535,
         name: "tympole",
       },
@@ -32237,12 +35661,20 @@ export const pokedexes: {
         name: "basculin",
       },
       {
+        id: 550,
+        name: "basculin-blue-striped",
+      },
+      {
         id: 554,
         name: "darumaka",
       },
       {
         id: 555,
         name: "darmanitan",
+      },
+      {
+        id: 555,
+        name: "darmanitan-zen",
       },
       {
         id: 556,
@@ -32445,8 +35877,16 @@ export const pokedexes: {
         name: "tornadus",
       },
       {
+        id: 641,
+        name: "tornadus-therian",
+      },
+      {
         id: 642,
         name: "thundurus",
+      },
+      {
+        id: 642,
+        name: "thundurus-therian",
       },
       {
         id: 643,
@@ -32461,16 +35901,36 @@ export const pokedexes: {
         name: "landorus",
       },
       {
+        id: 645,
+        name: "landorus-therian",
+      },
+      {
         id: 646,
         name: "kyurem",
+      },
+      {
+        id: 646,
+        name: "kyurem-white",
+      },
+      {
+        id: 646,
+        name: "kyurem-black",
       },
       {
         id: 647,
         name: "keldeo",
       },
       {
+        id: 647,
+        name: "keldeo-resolute",
+      },
+      {
         id: 648,
         name: "meloetta",
+      },
+      {
+        id: 648,
+        name: "meloetta-pirouette",
       },
       {
         id: 649,
@@ -32513,6 +35973,10 @@ export const pokedexes: {
         name: "greninja",
       },
       {
+        id: 658,
+        name: "greninja-ash",
+      },
+      {
         id: 659,
         name: "bunnelby",
       },
@@ -32521,16 +35985,16 @@ export const pokedexes: {
         name: "diggersby",
       },
       {
-        id: 664,
-        name: "scatterbug",
-      },
-      {
-        id: 665,
-        name: "spewpa",
+        id: 666,
+        name: "vivillon",
       },
       {
         id: 666,
-        name: "vivillon",
+        name: "vivillon-fancy",
+      },
+      {
+        id: 666,
+        name: "vivillon-pokeball",
       },
       {
         id: 667,
@@ -32571,6 +36035,10 @@ export const pokedexes: {
       {
         id: 678,
         name: "meowstic",
+      },
+      {
+        id: 678,
+        name: "meowstic-f",
       },
       {
         id: 682,
@@ -32657,8 +36125,32 @@ export const pokedexes: {
         name: "pumpkaboo",
       },
       {
+        id: 710,
+        name: "pumpkaboo-small",
+      },
+      {
+        id: 710,
+        name: "pumpkaboo-large",
+      },
+      {
+        id: 710,
+        name: "pumpkaboo-super",
+      },
+      {
         id: 711,
         name: "gourgeist",
+      },
+      {
+        id: 711,
+        name: "gourgeist-small",
+      },
+      {
+        id: 711,
+        name: "gourgeist-large",
+      },
+      {
+        id: 711,
+        name: "gourgeist-super",
       },
       {
         id: 712,
@@ -32689,8 +36181,16 @@ export const pokedexes: {
         name: "diancie",
       },
       {
+        id: 719,
+        name: "diancie-mega",
+      },
+      {
         id: 720,
         name: "hoopa",
+      },
+      {
+        id: 720,
+        name: "hoopa-unbound",
       },
       {
         id: 721,
@@ -33138,6 +36638,10 @@ export const pokedexes: {
         name: "camerupt",
       },
       {
+        id: 323,
+        name: "camerupt-mega",
+      },
+      {
         id: 331,
         name: "cacnea",
       },
@@ -33184,6 +36688,18 @@ export const pokedexes: {
       {
         id: 386,
         name: "deoxys",
+      },
+      {
+        id: 386,
+        name: "deoxys-attack",
+      },
+      {
+        id: 386,
+        name: "deoxys-defense",
+      },
+      {
+        id: 386,
+        name: "deoxys-speed",
       },
       {
         id: 396,
@@ -33242,6 +36758,14 @@ export const pokedexes: {
         name: "wormadam",
       },
       {
+        id: 413,
+        name: "wormadam-sandy",
+      },
+      {
+        id: 413,
+        name: "wormadam-trash",
+      },
+      {
         id: 414,
         name: "mothim",
       },
@@ -33264,6 +36788,10 @@ export const pokedexes: {
       {
         id: 421,
         name: "cherrim",
+      },
+      {
+        id: 421,
+        name: "cherrim-sunshine",
       },
       {
         id: 422,
@@ -33354,8 +36882,80 @@ export const pokedexes: {
         name: "shaymin",
       },
       {
+        id: 492,
+        name: "shaymin-sky",
+      },
+      {
         id: 493,
         name: "arceus",
+      },
+      {
+        id: 493,
+        name: "arceus-fighting",
+      },
+      {
+        id: 493,
+        name: "arceus-flying",
+      },
+      {
+        id: 493,
+        name: "arceus-poison",
+      },
+      {
+        id: 493,
+        name: "arceus-ground",
+      },
+      {
+        id: 493,
+        name: "arceus-rock",
+      },
+      {
+        id: 493,
+        name: "arceus-bug",
+      },
+      {
+        id: 493,
+        name: "arceus-ghost",
+      },
+      {
+        id: 493,
+        name: "arceus-steel",
+      },
+      {
+        id: 493,
+        name: "arceus-fire",
+      },
+      {
+        id: 493,
+        name: "arceus-water",
+      },
+      {
+        id: 493,
+        name: "arceus-grass",
+      },
+      {
+        id: 493,
+        name: "arceus-electric",
+      },
+      {
+        id: 493,
+        name: "arceus-psychic",
+      },
+      {
+        id: 493,
+        name: "arceus-ice",
+      },
+      {
+        id: 493,
+        name: "arceus-dragon",
+      },
+      {
+        id: 493,
+        name: "arceus-dark",
+      },
+      {
+        id: 493,
+        name: "arceus-fairy",
       },
       {
         id: 494,
@@ -33534,6 +37134,10 @@ export const pokedexes: {
         name: "darmanitan",
       },
       {
+        id: 555,
+        name: "darmanitan-zen",
+      },
+      {
         id: 556,
         name: "maractus",
       },
@@ -33670,8 +37274,16 @@ export const pokedexes: {
         name: "keldeo",
       },
       {
+        id: 647,
+        name: "keldeo-resolute",
+      },
+      {
         id: 648,
         name: "meloetta",
+      },
+      {
+        id: 648,
+        name: "meloetta-pirouette",
       },
       {
         id: 649,
@@ -33687,7 +37299,11 @@ export const pokedexes: {
       },
       {
         id: 666,
-        name: "vivillon",
+        name: "vivillon-fancy",
+      },
+      {
+        id: 666,
+        name: "vivillon-pokeball",
       },
       {
         id: 672,
@@ -33704,6 +37320,10 @@ export const pokedexes: {
       {
         id: 678,
         name: "meowstic",
+      },
+      {
+        id: 678,
+        name: "meowstic-f",
       },
       {
         id: 682,
@@ -33726,8 +37346,32 @@ export const pokedexes: {
         name: "pumpkaboo",
       },
       {
+        id: 710,
+        name: "pumpkaboo-small",
+      },
+      {
+        id: 710,
+        name: "pumpkaboo-large",
+      },
+      {
+        id: 710,
+        name: "pumpkaboo-super",
+      },
+      {
         id: 711,
         name: "gourgeist",
+      },
+      {
+        id: 711,
+        name: "gourgeist-small",
+      },
+      {
+        id: 711,
+        name: "gourgeist-large",
+      },
+      {
+        id: 711,
+        name: "gourgeist-super",
       },
       {
         id: 712,
@@ -33742,8 +37386,16 @@ export const pokedexes: {
         name: "diancie",
       },
       {
+        id: 719,
+        name: "diancie-mega",
+      },
+      {
         id: 720,
         name: "hoopa",
+      },
+      {
+        id: 720,
+        name: "hoopa-unbound",
       },
       {
         id: 721,
@@ -34883,6 +38535,18 @@ export const pokedexes: {
         name: "castform",
       },
       {
+        id: 351,
+        name: "castform-sunny",
+      },
+      {
+        id: 351,
+        name: "castform-rainy",
+      },
+      {
+        id: 351,
+        name: "castform-snowy",
+      },
+      {
         id: 352,
         name: "kecleon",
       },
@@ -35019,6 +38683,18 @@ export const pokedexes: {
         name: "deoxys",
       },
       {
+        id: 386,
+        name: "deoxys-attack",
+      },
+      {
+        id: 386,
+        name: "deoxys-defense",
+      },
+      {
+        id: 386,
+        name: "deoxys-speed",
+      },
+      {
         id: 462,
         name: "magnezone",
       },
@@ -35091,6 +38767,26 @@ export const pokedexes: {
         name: "rotom",
       },
       {
+        id: 479,
+        name: "rotom-heat",
+      },
+      {
+        id: 479,
+        name: "rotom-wash",
+      },
+      {
+        id: 479,
+        name: "rotom-frost",
+      },
+      {
+        id: 479,
+        name: "rotom-fan",
+      },
+      {
+        id: 479,
+        name: "rotom-mow",
+      },
+      {
         id: 485,
         name: "heatran",
       },
@@ -35101,6 +38797,10 @@ export const pokedexes: {
       {
         id: 487,
         name: "giratina",
+      },
+      {
+        id: 487,
+        name: "giratina-origin",
       },
       {
         id: 488,
@@ -35119,8 +38819,80 @@ export const pokedexes: {
         name: "shaymin",
       },
       {
+        id: 492,
+        name: "shaymin-sky",
+      },
+      {
         id: 493,
         name: "arceus",
+      },
+      {
+        id: 493,
+        name: "arceus-fighting",
+      },
+      {
+        id: 493,
+        name: "arceus-flying",
+      },
+      {
+        id: 493,
+        name: "arceus-poison",
+      },
+      {
+        id: 493,
+        name: "arceus-ground",
+      },
+      {
+        id: 493,
+        name: "arceus-rock",
+      },
+      {
+        id: 493,
+        name: "arceus-bug",
+      },
+      {
+        id: 493,
+        name: "arceus-ghost",
+      },
+      {
+        id: 493,
+        name: "arceus-steel",
+      },
+      {
+        id: 493,
+        name: "arceus-fire",
+      },
+      {
+        id: 493,
+        name: "arceus-water",
+      },
+      {
+        id: 493,
+        name: "arceus-grass",
+      },
+      {
+        id: 493,
+        name: "arceus-electric",
+      },
+      {
+        id: 493,
+        name: "arceus-psychic",
+      },
+      {
+        id: 493,
+        name: "arceus-ice",
+      },
+      {
+        id: 493,
+        name: "arceus-dragon",
+      },
+      {
+        id: 493,
+        name: "arceus-dark",
+      },
+      {
+        id: 493,
+        name: "arceus-fairy",
       },
     ],
   },
@@ -35170,6 +38942,10 @@ export const pokedexes: {
       {
         id: 916,
         name: "oinkologne",
+      },
+      {
+        id: 916,
+        name: "oinkologne-f",
       },
       {
         id: 917,
@@ -35264,16 +39040,16 @@ export const pokedexes: {
         name: "kricketune",
       },
       {
-        id: 664,
-        name: "scatterbug",
-      },
-      {
-        id: 665,
-        name: "spewpa",
+        id: 666,
+        name: "vivillon",
       },
       {
         id: 666,
-        name: "vivillon",
+        name: "vivillon-fancy",
+      },
+      {
+        id: 666,
+        name: "vivillon-pokeball",
       },
       {
         id: 415,
@@ -35337,7 +39113,7 @@ export const pokedexes: {
       },
       {
         id: 194,
-        name: "wooper",
+        name: "wooper-paldea",
       },
       {
         id: 980,
@@ -35416,6 +39192,10 @@ export const pokedexes: {
         name: "maushold",
       },
       {
+        id: 925,
+        name: "maushold-four",
+      },
+      {
         id: 172,
         name: "pichu",
       },
@@ -35488,6 +39268,14 @@ export const pokedexes: {
         name: "lycanroc",
       },
       {
+        id: 745,
+        name: "lycanroc-midnight",
+      },
+      {
+        id: 745,
+        name: "lycanroc-dusk",
+      },
+      {
         id: 837,
         name: "rolycoly",
       },
@@ -35526,6 +39314,18 @@ export const pokedexes: {
       {
         id: 741,
         name: "oricorio",
+      },
+      {
+        id: 741,
+        name: "oricorio-pom-pom",
+      },
+      {
+        id: 741,
+        name: "oricorio-pa'u",
+      },
+      {
+        id: 741,
+        name: "oricorio-sensu",
       },
       {
         id: 179,
@@ -35578,6 +39378,18 @@ export const pokedexes: {
       {
         id: 931,
         name: "squawkabilly",
+      },
+      {
+        id: 931,
+        name: "squawkabilly-blue",
+      },
+      {
+        id: 931,
+        name: "squawkabilly-yellow",
+      },
+      {
+        id: 931,
+        name: "squawkabilly-white",
       },
       {
         id: 200,
@@ -35678,6 +39490,10 @@ export const pokedexes: {
       {
         id: 550,
         name: "basculin",
+      },
+      {
+        id: 550,
+        name: "basculin-blue-striped",
       },
       {
         id: 316,
@@ -35884,6 +39700,10 @@ export const pokedexes: {
         name: "dudunsparce",
       },
       {
+        id: 982,
+        name: "dudunsparce-three-segment",
+      },
+      {
         id: 585,
         name: "deerling",
       },
@@ -35922,6 +39742,10 @@ export const pokedexes: {
       {
         id: 849,
         name: "toxtricity",
+      },
+      {
+        id: 849,
+        name: "toxtricity-low-key",
       },
       {
         id: 702,
@@ -36017,7 +39841,15 @@ export const pokedexes: {
       },
       {
         id: 128,
-        name: "tauros",
+        name: "tauros-paldea-combat",
+      },
+      {
+        id: 128,
+        name: "tauros-paldea-blaze",
+      },
+      {
+        id: 128,
+        name: "tauros-paldea-aqua",
       },
       {
         id: 667,
@@ -36090,6 +39922,10 @@ export const pokedexes: {
       {
         id: 876,
         name: "indeedee",
+      },
+      {
+        id: 876,
+        name: "indeedee-f",
       },
       {
         id: 946,
@@ -36296,6 +40132,10 @@ export const pokedexes: {
         name: "palafin",
       },
       {
+        id: 964,
+        name: "palafin-hero",
+      },
+      {
         id: 965,
         name: "varoom",
       },
@@ -36368,6 +40208,26 @@ export const pokedexes: {
         name: "rotom",
       },
       {
+        id: 479,
+        name: "rotom-heat",
+      },
+      {
+        id: 479,
+        name: "rotom-wash",
+      },
+      {
+        id: 479,
+        name: "rotom-frost",
+      },
+      {
+        id: 479,
+        name: "rotom-fan",
+      },
+      {
+        id: 479,
+        name: "rotom-mow",
+      },
+      {
         id: 971,
         name: "greavard",
       },
@@ -36406,6 +40266,10 @@ export const pokedexes: {
       {
         id: 875,
         name: "eiscue",
+      },
+      {
+        id: 875,
+        name: "eiscue-noice",
       },
       {
         id: 871,
@@ -36628,6 +40492,14 @@ export const pokedexes: {
         name: "tatsugiri",
       },
       {
+        id: 978,
+        name: "tatsugiri-droopy",
+      },
+      {
+        id: 978,
+        name: "tatsugiri-stretchy",
+      },
+      {
         id: 984,
         name: "great tusk",
       },
@@ -36692,6 +40564,10 @@ export const pokedexes: {
         name: "gimmighoul",
       },
       {
+        id: 999,
+        name: "gimmighoul-roaming",
+      },
+      {
         id: 1000,
         name: "gholdengo",
       },
@@ -36734,47 +40610,63 @@ export const pokedexes: {
     pokemon: [
       {
         id: 26,
-        name: "raichu",
+        name: "raichu-alola",
       },
       {
         id: 52,
-        name: "meowth",
+        name: "meowth-alola",
+      },
+      {
+        id: 52,
+        name: "meowth-galar",
       },
       {
         id: 53,
-        name: "persian",
+        name: "persian-alola",
       },
       {
         id: 58,
-        name: "growlithe",
+        name: "growlithe-hisui",
       },
       {
         id: 59,
-        name: "arcanine",
+        name: "arcanine-hisui",
       },
       {
         id: 100,
-        name: "voltorb",
+        name: "voltorb-hisui",
       },
       {
         id: 101,
-        name: "electrode",
+        name: "electrode-hisui",
       },
       {
         id: 110,
-        name: "weezing",
+        name: "weezing-galar",
       },
       {
         id: 144,
         name: "articuno",
       },
       {
+        id: 144,
+        name: "articuno-galar",
+      },
+      {
         id: 145,
         name: "zapdos",
       },
       {
+        id: 145,
+        name: "zapdos-galar",
+      },
+      {
         id: 146,
         name: "moltres",
+      },
+      {
+        id: 146,
+        name: "moltres-galar",
       },
       {
         id: 150,
@@ -36786,11 +40678,11 @@ export const pokedexes: {
       },
       {
         id: 157,
-        name: "typhlosion",
+        name: "typhlosion-hisui",
       },
       {
         id: 215,
-        name: "sneasel",
+        name: "sneasel-hisui",
       },
       {
         id: 243,
@@ -36853,6 +40745,18 @@ export const pokedexes: {
         name: "deoxys",
       },
       {
+        id: 386,
+        name: "deoxys-attack",
+      },
+      {
+        id: 386,
+        name: "deoxys-defense",
+      },
+      {
+        id: 386,
+        name: "deoxys-speed",
+      },
+      {
         id: 480,
         name: "uxie",
       },
@@ -36869,8 +40773,16 @@ export const pokedexes: {
         name: "dialga",
       },
       {
+        id: 483,
+        name: "dialga-origin",
+      },
+      {
         id: 484,
         name: "palkia",
+      },
+      {
+        id: 484,
+        name: "palkia-origin",
       },
       {
         id: 485,
@@ -36883,6 +40795,10 @@ export const pokedexes: {
       {
         id: 487,
         name: "giratina",
+      },
+      {
+        id: 487,
+        name: "giratina-origin",
       },
       {
         id: 488,
@@ -36905,28 +40821,100 @@ export const pokedexes: {
         name: "shaymin",
       },
       {
+        id: 492,
+        name: "shaymin-sky",
+      },
+      {
         id: 493,
         name: "arceus",
       },
       {
+        id: 493,
+        name: "arceus-fighting",
+      },
+      {
+        id: 493,
+        name: "arceus-flying",
+      },
+      {
+        id: 493,
+        name: "arceus-poison",
+      },
+      {
+        id: 493,
+        name: "arceus-ground",
+      },
+      {
+        id: 493,
+        name: "arceus-rock",
+      },
+      {
+        id: 493,
+        name: "arceus-bug",
+      },
+      {
+        id: 493,
+        name: "arceus-ghost",
+      },
+      {
+        id: 493,
+        name: "arceus-steel",
+      },
+      {
+        id: 493,
+        name: "arceus-fire",
+      },
+      {
+        id: 493,
+        name: "arceus-water",
+      },
+      {
+        id: 493,
+        name: "arceus-grass",
+      },
+      {
+        id: 493,
+        name: "arceus-electric",
+      },
+      {
+        id: 493,
+        name: "arceus-psychic",
+      },
+      {
+        id: 493,
+        name: "arceus-ice",
+      },
+      {
+        id: 493,
+        name: "arceus-dragon",
+      },
+      {
+        id: 493,
+        name: "arceus-dark",
+      },
+      {
+        id: 493,
+        name: "arceus-fairy",
+      },
+      {
         id: 503,
-        name: "samurott",
+        name: "samurott-hisui",
       },
       {
         id: 549,
-        name: "lilligant",
+        name: "lilligant-hisui",
       },
       {
         id: 570,
-        name: "zorua",
+        name: "zorua-hisui",
       },
       {
         id: 571,
-        name: "zoroark",
+        name: "zoroark-hisui",
       },
       {
         id: 628,
-        name: "braviary",
+        name: "braviary-hisui",
       },
       {
         id: 638,
@@ -36945,8 +40933,16 @@ export const pokedexes: {
         name: "tornadus",
       },
       {
+        id: 641,
+        name: "tornadus-therian",
+      },
+      {
         id: 642,
         name: "thundurus",
+      },
+      {
+        id: 642,
+        name: "thundurus-therian",
       },
       {
         id: 643,
@@ -36961,28 +40957,48 @@ export const pokedexes: {
         name: "landorus",
       },
       {
+        id: 645,
+        name: "landorus-therian",
+      },
+      {
         id: 646,
         name: "kyurem",
+      },
+      {
+        id: 646,
+        name: "kyurem-white",
+      },
+      {
+        id: 646,
+        name: "kyurem-black",
       },
       {
         id: 647,
         name: "keldeo",
       },
       {
+        id: 647,
+        name: "keldeo-resolute",
+      },
+      {
         id: 648,
         name: "meloetta",
       },
       {
+        id: 648,
+        name: "meloetta-pirouette",
+      },
+      {
         id: 705,
-        name: "sliggoo",
+        name: "sliggoo-hisui",
       },
       {
         id: 706,
-        name: "goodra",
+        name: "goodra-hisui",
       },
       {
         id: 713,
-        name: "avalugg",
+        name: "avalugg-hisui",
       },
       {
         id: 719,
@@ -36993,12 +41009,16 @@ export const pokedexes: {
         name: "hoopa",
       },
       {
+        id: 720,
+        name: "hoopa-unbound",
+      },
+      {
         id: 721,
         name: "volcanion",
       },
       {
         id: 724,
-        name: "decidueye",
+        name: "decidueye-hisui",
       },
       {
         id: 789,
@@ -37021,8 +41041,20 @@ export const pokedexes: {
         name: "necrozma",
       },
       {
+        id: 800,
+        name: "necrozma-dusk-mane",
+      },
+      {
+        id: 800,
+        name: "necrozma-dawn-wings",
+      },
+      {
         id: 801,
         name: "magearna",
+      },
+      {
+        id: 801,
+        name: "magearna-original",
       },
       {
         id: 863,
@@ -37033,8 +41065,16 @@ export const pokedexes: {
         name: "zacian",
       },
       {
+        id: 888,
+        name: "zacian-crowned",
+      },
+      {
         id: 889,
         name: "zamazenta",
+      },
+      {
+        id: 889,
+        name: "zamazenta-crowned",
       },
       {
         id: 890,
@@ -37047,6 +41087,10 @@ export const pokedexes: {
       {
         id: 892,
         name: "urshifu",
+      },
+      {
+        id: 892,
+        name: "urshifu-rapid-strike",
       },
       {
         id: 893,
@@ -37073,6 +41117,14 @@ export const pokedexes: {
         name: "calyrex",
       },
       {
+        id: 898,
+        name: "calyrex-ice",
+      },
+      {
+        id: 898,
+        name: "calyrex-shadow",
+      },
+      {
         id: 899,
         name: "wyrdeer",
       },
@@ -37087,6 +41139,10 @@ export const pokedexes: {
       {
         id: 905,
         name: "enamorus",
+      },
+      {
+        id: 905,
+        name: "enamorus-therian",
       },
     ],
   },
@@ -37138,6 +41194,10 @@ export const pokedexes: {
         name: "oinkologne",
       },
       {
+        id: 916,
+        name: "oinkologne-f",
+      },
+      {
         id: 917,
         name: "tarountula",
       },
@@ -37174,6 +41234,10 @@ export const pokedexes: {
         name: "maushold",
       },
       {
+        id: 925,
+        name: "maushold-four",
+      },
+      {
         id: 926,
         name: "fidough",
       },
@@ -37196,6 +41260,18 @@ export const pokedexes: {
       {
         id: 931,
         name: "squawkabilly",
+      },
+      {
+        id: 931,
+        name: "squawkabilly-blue",
+      },
+      {
+        id: 931,
+        name: "squawkabilly-yellow",
+      },
+      {
+        id: 931,
+        name: "squawkabilly-white",
       },
       {
         id: 932,
@@ -37330,6 +41406,10 @@ export const pokedexes: {
         name: "palafin",
       },
       {
+        id: 964,
+        name: "palafin-hero",
+      },
+      {
         id: 965,
         name: "varoom",
       },
@@ -37386,6 +41466,14 @@ export const pokedexes: {
         name: "tatsugiri",
       },
       {
+        id: 978,
+        name: "tatsugiri-droopy",
+      },
+      {
+        id: 978,
+        name: "tatsugiri-stretchy",
+      },
+      {
         id: 979,
         name: "annihilape",
       },
@@ -37400,6 +41488,10 @@ export const pokedexes: {
       {
         id: 982,
         name: "dudunsparce",
+      },
+      {
+        id: 982,
+        name: "dudunsparce-three-segment",
       },
       {
         id: 983,
@@ -37468,6 +41560,10 @@ export const pokedexes: {
       {
         id: 999,
         name: "gimmighoul",
+      },
+      {
+        id: 999,
+        name: "gimmighoul-roaming",
       },
       {
         id: 1000,
@@ -37542,6 +41638,18 @@ export const pokedexes: {
         name: "ogerpon",
       },
       {
+        id: 1017,
+        name: "ogerpon-wellspring",
+      },
+      {
+        id: 1017,
+        name: "ogerpon-hearthflame",
+      },
+      {
+        id: 1017,
+        name: "ogerpon-cornerstone",
+      },
+      {
         id: 1018,
         name: "archaludon",
       },
@@ -37568,6 +41676,14 @@ export const pokedexes: {
       {
         id: 1024,
         name: "terapagos",
+      },
+      {
+        id: 1024,
+        name: "terapagos-terastal",
+      },
+      {
+        id: 1024,
+        name: "terapagos-stellar",
       },
       {
         id: 1025,
@@ -37787,6 +41903,10 @@ export const pokedexes: {
         name: "morpeko",
       },
       {
+        id: 877,
+        name: "morpeko-hangry",
+      },
+      {
         id: 446,
         name: "munchlax",
       },
@@ -37956,15 +42076,19 @@ export const pokedexes: {
       },
       {
         id: 550,
-        name: "basculin",
+        name: "basculin-white-striped",
       },
       {
         id: 902,
         name: "basculegion",
       },
       {
+        id: 902,
+        name: "basculegion-f",
+      },
+      {
         id: 901,
-        name: "ursaluna",
+        name: "ursaluna-bloodmoon",
       },
       {
         id: 1014,
@@ -37981,6 +42105,18 @@ export const pokedexes: {
       {
         id: 1017,
         name: "ogerpon",
+      },
+      {
+        id: 1017,
+        name: "ogerpon-wellspring",
+      },
+      {
+        id: 1017,
+        name: "ogerpon-hearthflame",
+      },
+      {
+        id: 1017,
+        name: "ogerpon-cornerstone",
       },
     ],
   },
@@ -38002,6 +42138,10 @@ export const pokedexes: {
       {
         id: 103,
         name: "exeggutor",
+      },
+      {
+        id: 103,
+        name: "exeggutor-alola",
       },
       {
         id: 111,
@@ -38141,31 +42281,31 @@ export const pokedexes: {
       },
       {
         id: 50,
-        name: "diglett",
+        name: "diglett-alola",
       },
       {
         id: 51,
-        name: "dugtrio",
+        name: "dugtrio-alola",
       },
       {
         id: 88,
-        name: "grimer",
+        name: "grimer-alola",
       },
       {
         id: 89,
-        name: "muk",
+        name: "muk-alola",
       },
       {
         id: 79,
-        name: "slowpoke",
+        name: "slowpoke-galar",
       },
       {
         id: 80,
-        name: "slowbro",
+        name: "slowbro-galar",
       },
       {
         id: 199,
-        name: "slowking",
+        name: "slowking-galar",
       },
       {
         id: 170,
@@ -38209,15 +42349,15 @@ export const pokedexes: {
       },
       {
         id: 74,
-        name: "geodude",
+        name: "geodude-alola",
       },
       {
         id: 75,
-        name: "graveler",
+        name: "graveler-alola",
       },
       {
         id: 76,
-        name: "golem",
+        name: "golem-alola",
       },
       {
         id: 529,
@@ -38234,6 +42374,10 @@ export const pokedexes: {
       {
         id: 678,
         name: "meowstic",
+      },
+      {
+        id: 678,
+        name: "meowstic-f",
       },
       {
         id: 774,
@@ -38337,7 +42481,7 @@ export const pokedexes: {
       },
       {
         id: 211,
-        name: "qwilfish",
+        name: "qwilfish-hisui",
       },
       {
         id: 904,
@@ -38365,19 +42509,19 @@ export const pokedexes: {
       },
       {
         id: 27,
-        name: "sandshrew",
+        name: "sandshrew-alola",
       },
       {
         id: 28,
-        name: "sandslash",
+        name: "sandslash-alola",
       },
       {
         id: 37,
-        name: "vulpix",
+        name: "vulpix-alola",
       },
       {
         id: 38,
-        name: "ninetales",
+        name: "ninetales-alola",
       },
       {
         id: 884,
@@ -38698,6 +42842,14 @@ export const pokedexes: {
       {
         id: 1024,
         name: "terapagos",
+      },
+      {
+        id: 1024,
+        name: "terapagos-terastal",
+      },
+      {
+        id: 1024,
+        name: "terapagos-stellar",
       },
       {
         id: 1009,
@@ -41852,6 +46004,10 @@ export const pokedexes: {
         name: "meganium",
       },
       {
+        id: 154,
+        name: "meganium-mega",
+      },
+      {
         id: 498,
         name: "tepig",
       },
@@ -41864,6 +46020,10 @@ export const pokedexes: {
         name: "emboar",
       },
       {
+        id: 500,
+        name: "emboar-mega",
+      },
+      {
         id: 158,
         name: "totodile",
       },
@@ -41874,6 +46034,10 @@ export const pokedexes: {
       {
         id: 160,
         name: "feraligatr",
+      },
+      {
+        id: 160,
+        name: "feraligatr-mega",
       },
       {
         id: 661,
@@ -41896,16 +46060,16 @@ export const pokedexes: {
         name: "diggersby",
       },
       {
-        id: 664,
-        name: "scatterbug",
-      },
-      {
-        id: 665,
-        name: "spewpa",
+        id: 666,
+        name: "vivillon",
       },
       {
         id: 666,
-        name: "vivillon",
+        name: "vivillon-fancy",
+      },
+      {
+        id: 666,
+        name: "vivillon-pokeball",
       },
       {
         id: 13,
@@ -41920,6 +46084,10 @@ export const pokedexes: {
         name: "beedrill",
       },
       {
+        id: 15,
+        name: "beedrill-mega",
+      },
+      {
         id: 16,
         name: "pidgey",
       },
@@ -41932,6 +46100,10 @@ export const pokedexes: {
         name: "pidgeot",
       },
       {
+        id: 18,
+        name: "pidgeot-mega",
+      },
+      {
         id: 179,
         name: "mareep",
       },
@@ -41942,6 +46114,10 @@ export const pokedexes: {
       {
         id: 181,
         name: "ampharos",
+      },
+      {
+        id: 181,
+        name: "ampharos-mega",
       },
       {
         id: 504,
@@ -41972,12 +46148,20 @@ export const pokedexes: {
         name: "gyarados",
       },
       {
+        id: 130,
+        name: "gyarados-mega",
+      },
+      {
         id: 688,
         name: "binacle",
       },
       {
         id: 689,
         name: "barbaracle",
+      },
+      {
+        id: 689,
+        name: "barbaracle-mega",
       },
       {
         id: 120,
@@ -41988,12 +46172,24 @@ export const pokedexes: {
         name: "starmie",
       },
       {
+        id: 121,
+        name: "starmie-mega",
+      },
+      {
         id: 669,
         name: "flabébé",
       },
       {
         id: 670,
         name: "floette",
+      },
+      {
+        id: 670,
+        name: "floette-eternal",
+      },
+      {
+        id: 670,
+        name: "floette-mega",
       },
       {
         id: 671,
@@ -42016,12 +46212,24 @@ export const pokedexes: {
         name: "meowstic",
       },
       {
+        id: 678,
+        name: "meowstic-f",
+      },
+      {
+        id: 678,
+        name: "meowstic-m-mega",
+      },
+      {
         id: 667,
         name: "litleo",
       },
       {
         id: 668,
         name: "pyroar",
+      },
+      {
+        id: 668,
+        name: "pyroar-mega",
       },
       {
         id: 674,
@@ -42056,6 +46264,18 @@ export const pokedexes: {
         name: "raichu",
       },
       {
+        id: 26,
+        name: "raichu-alola",
+      },
+      {
+        id: 26,
+        name: "raichu-mega-x",
+      },
+      {
+        id: 26,
+        name: "raichu-mega-y",
+      },
+      {
         id: 173,
         name: "cleffa",
       },
@@ -42066,6 +46286,10 @@ export const pokedexes: {
       {
         id: 36,
         name: "clefable",
+      },
+      {
+        id: 36,
+        name: "clefable-mega",
       },
       {
         id: 167,
@@ -42096,6 +46320,10 @@ export const pokedexes: {
         name: "alakazam",
       },
       {
+        id: 65,
+        name: "alakazam-mega",
+      },
+      {
         id: 92,
         name: "gastly",
       },
@@ -42106,6 +46334,10 @@ export const pokedexes: {
       {
         id: 94,
         name: "gengar",
+      },
+      {
+        id: 94,
+        name: "gengar-mega",
       },
       {
         id: 543,
@@ -42120,6 +46352,10 @@ export const pokedexes: {
         name: "scolipede",
       },
       {
+        id: 545,
+        name: "scolipede-mega",
+      },
+      {
         id: 679,
         name: "honedge",
       },
@@ -42132,6 +46368,10 @@ export const pokedexes: {
         name: "aegislash",
       },
       {
+        id: 681,
+        name: "aegislash-blade",
+      },
+      {
         id: 69,
         name: "bellsprout",
       },
@@ -42142,6 +46382,10 @@ export const pokedexes: {
       {
         id: 71,
         name: "victreebel",
+      },
+      {
+        id: 71,
+        name: "victreebel-mega",
       },
       {
         id: 511,
@@ -42176,12 +46420,20 @@ export const pokedexes: {
         name: "medicham",
       },
       {
+        id: 308,
+        name: "medicham-mega",
+      },
+      {
         id: 309,
         name: "electrike",
       },
       {
         id: 310,
         name: "manectric",
+      },
+      {
+        id: 310,
+        name: "manectric-mega",
       },
       {
         id: 280,
@@ -42196,8 +46448,16 @@ export const pokedexes: {
         name: "gardevoir",
       },
       {
+        id: 282,
+        name: "gardevoir-mega",
+      },
+      {
         id: 475,
         name: "gallade",
+      },
+      {
+        id: 475,
+        name: "gallade-mega",
       },
       {
         id: 228,
@@ -42208,6 +46468,10 @@ export const pokedexes: {
         name: "houndoom",
       },
       {
+        id: 229,
+        name: "houndoom-mega",
+      },
+      {
         id: 333,
         name: "swablu",
       },
@@ -42216,8 +46480,16 @@ export const pokedexes: {
         name: "altaria",
       },
       {
+        id: 334,
+        name: "altaria-mega",
+      },
+      {
         id: 531,
         name: "audino",
+      },
+      {
+        id: 531,
+        name: "audino-mega",
       },
       {
         id: 682,
@@ -42280,12 +46552,20 @@ export const pokedexes: {
         name: "lopunny",
       },
       {
+        id: 428,
+        name: "lopunny-mega",
+      },
+      {
         id: 353,
         name: "shuppet",
       },
       {
         id: 354,
         name: "banette",
+      },
+      {
+        id: 354,
+        name: "banette-mega",
       },
       {
         id: 582,
@@ -42308,6 +46588,10 @@ export const pokedexes: {
         name: "camerupt",
       },
       {
+        id: 323,
+        name: "camerupt-mega",
+      },
+      {
         id: 449,
         name: "hippopotas",
       },
@@ -42322,6 +46606,10 @@ export const pokedexes: {
       {
         id: 530,
         name: "excadrill",
+      },
+      {
+        id: 530,
+        name: "excadrill-mega",
       },
       {
         id: 551,
@@ -42360,6 +46648,14 @@ export const pokedexes: {
         name: "garchomp",
       },
       {
+        id: 445,
+        name: "garchomp-mega",
+      },
+      {
+        id: 445,
+        name: "garchomp-mega-z",
+      },
+      {
         id: 703,
         name: "carbink",
       },
@@ -42368,12 +46664,28 @@ export const pokedexes: {
         name: "sableye",
       },
       {
+        id: 302,
+        name: "sableye-mega",
+      },
+      {
         id: 303,
         name: "mawile",
       },
       {
+        id: 303,
+        name: "mawile-mega",
+      },
+      {
         id: 359,
         name: "absol",
+      },
+      {
+        id: 359,
+        name: "absol-mega",
+      },
+      {
+        id: 359,
+        name: "absol-mega-z",
       },
       {
         id: 447,
@@ -42384,16 +46696,40 @@ export const pokedexes: {
         name: "lucario",
       },
       {
+        id: 448,
+        name: "lucario-mega",
+      },
+      {
+        id: 448,
+        name: "lucario-mega-z",
+      },
+      {
         id: 79,
         name: "slowpoke",
+      },
+      {
+        id: 79,
+        name: "slowpoke-galar",
       },
       {
         id: 80,
         name: "slowbro",
       },
       {
+        id: 80,
+        name: "slowbro-mega",
+      },
+      {
+        id: 80,
+        name: "slowbro-galar",
+      },
+      {
         id: 199,
         name: "slowking",
+      },
+      {
+        id: 199,
+        name: "slowking-galar",
       },
       {
         id: 318,
@@ -42402,6 +46738,10 @@ export const pokedexes: {
       {
         id: 319,
         name: "sharpedo",
+      },
+      {
+        id: 319,
+        name: "sharpedo-mega",
       },
       {
         id: 602,
@@ -42416,6 +46756,10 @@ export const pokedexes: {
         name: "eelektross",
       },
       {
+        id: 604,
+        name: "eelektross-mega",
+      },
+      {
         id: 147,
         name: "dratini",
       },
@@ -42426,6 +46770,10 @@ export const pokedexes: {
       {
         id: 149,
         name: "dragonite",
+      },
+      {
+        id: 149,
+        name: "dragonite-mega",
       },
       {
         id: 1,
@@ -42440,6 +46788,10 @@ export const pokedexes: {
         name: "venusaur",
       },
       {
+        id: 3,
+        name: "venusaur-mega",
+      },
+      {
         id: 4,
         name: "charmander",
       },
@@ -42450,6 +46802,14 @@ export const pokedexes: {
       {
         id: 6,
         name: "charizard",
+      },
+      {
+        id: 6,
+        name: "charizard-mega-x",
+      },
+      {
+        id: 6,
+        name: "charizard-mega-y",
       },
       {
         id: 7,
@@ -42464,8 +46824,16 @@ export const pokedexes: {
         name: "blastoise",
       },
       {
+        id: 9,
+        name: "blastoise-mega",
+      },
+      {
         id: 618,
         name: "stunfisk",
+      },
+      {
+        id: 618,
+        name: "stunfisk-galar",
       },
       {
         id: 676,
@@ -42480,12 +46848,20 @@ export const pokedexes: {
         name: "malamar",
       },
       {
+        id: 687,
+        name: "malamar-mega",
+      },
+      {
         id: 690,
         name: "skrelp",
       },
       {
         id: 691,
         name: "dragalge",
+      },
+      {
+        id: 691,
+        name: "dragalge-mega",
       },
       {
         id: 692,
@@ -42504,8 +46880,16 @@ export const pokedexes: {
         name: "sliggoo",
       },
       {
+        id: 705,
+        name: "sliggoo-hisui",
+      },
+      {
         id: 706,
         name: "goodra",
+      },
+      {
+        id: 706,
+        name: "goodra-hisui",
       },
       {
         id: 225,
@@ -42520,8 +46904,16 @@ export const pokedexes: {
         name: "glalie",
       },
       {
+        id: 362,
+        name: "glalie-mega",
+      },
+      {
         id: 478,
         name: "froslass",
+      },
+      {
+        id: 478,
+        name: "froslass-mega",
       },
       {
         id: 459,
@@ -42532,12 +46924,20 @@ export const pokedexes: {
         name: "abomasnow",
       },
       {
+        id: 460,
+        name: "abomasnow-mega",
+      },
+      {
         id: 712,
         name: "bergmite",
       },
       {
         id: 713,
         name: "avalugg",
+      },
+      {
+        id: 713,
+        name: "avalugg-hisui",
       },
       {
         id: 123,
@@ -42548,12 +46948,24 @@ export const pokedexes: {
         name: "scizor",
       },
       {
+        id: 212,
+        name: "scizor-mega",
+      },
+      {
         id: 127,
         name: "pinsir",
       },
       {
+        id: 127,
+        name: "pinsir-mega",
+      },
+      {
         id: 214,
         name: "heracross",
+      },
+      {
+        id: 214,
+        name: "heracross-mega",
       },
       {
         id: 587,
@@ -42562,6 +46974,10 @@ export const pokedexes: {
       {
         id: 701,
         name: "hawlucha",
+      },
+      {
+        id: 701,
+        name: "hawlucha-mega",
       },
       {
         id: 708,
@@ -42578,6 +46994,10 @@ export const pokedexes: {
       {
         id: 560,
         name: "scrafty",
+      },
+      {
+        id: 560,
+        name: "scrafty-mega",
       },
       {
         id: 714,
@@ -42604,8 +47024,16 @@ export const pokedexes: {
         name: "chandelure",
       },
       {
+        id: 609,
+        name: "chandelure-mega",
+      },
+      {
         id: 142,
         name: "aerodactyl",
+      },
+      {
+        id: 142,
+        name: "aerodactyl-mega",
       },
       {
         id: 696,
@@ -42632,6 +47060,10 @@ export const pokedexes: {
         name: "steelix",
       },
       {
+        id: 208,
+        name: "steelix-mega",
+      },
+      {
         id: 304,
         name: "aron",
       },
@@ -42642,6 +47074,10 @@ export const pokedexes: {
       {
         id: 306,
         name: "aggron",
+      },
+      {
+        id: 306,
+        name: "aggron-mega",
       },
       {
         id: 694,
@@ -42656,8 +47092,32 @@ export const pokedexes: {
         name: "pumpkaboo",
       },
       {
+        id: 710,
+        name: "pumpkaboo-small",
+      },
+      {
+        id: 710,
+        name: "pumpkaboo-large",
+      },
+      {
+        id: 710,
+        name: "pumpkaboo-super",
+      },
+      {
         id: 711,
         name: "gourgeist",
+      },
+      {
+        id: 711,
+        name: "gourgeist-small",
+      },
+      {
+        id: 711,
+        name: "gourgeist-large",
+      },
+      {
+        id: 711,
+        name: "gourgeist-super",
       },
       {
         id: 246,
@@ -42672,6 +47132,10 @@ export const pokedexes: {
         name: "tyranitar",
       },
       {
+        id: 248,
+        name: "tyranitar-mega",
+      },
+      {
         id: 656,
         name: "froakie",
       },
@@ -42684,8 +47148,16 @@ export const pokedexes: {
         name: "greninja",
       },
       {
+        id: 658,
+        name: "greninja-mega",
+      },
+      {
         id: 870,
         name: "falinks",
+      },
+      {
+        id: 870,
+        name: "falinks-mega",
       },
       {
         id: 650,
@@ -42700,8 +47172,16 @@ export const pokedexes: {
         name: "chesnaught",
       },
       {
+        id: 652,
+        name: "chesnaught-mega",
+      },
+      {
         id: 227,
         name: "skarmory",
+      },
+      {
+        id: 227,
+        name: "skarmory-mega",
       },
       {
         id: 653,
@@ -42716,6 +47196,10 @@ export const pokedexes: {
         name: "delphox",
       },
       {
+        id: 655,
+        name: "delphox-mega",
+      },
+      {
         id: 371,
         name: "bagon",
       },
@@ -42728,12 +47212,24 @@ export const pokedexes: {
         name: "salamence",
       },
       {
+        id: 373,
+        name: "salamence-mega",
+      },
+      {
         id: 115,
         name: "kangaskhan",
       },
       {
+        id: 115,
+        name: "kangaskhan-mega",
+      },
+      {
         id: 780,
         name: "drampa",
+      },
+      {
+        id: 780,
+        name: "drampa-mega",
       },
       {
         id: 374,
@@ -42748,6 +47244,10 @@ export const pokedexes: {
         name: "metagross",
       },
       {
+        id: 376,
+        name: "metagross-mega",
+      },
+      {
         id: 716,
         name: "xerneas",
       },
@@ -42760,29 +47260,233 @@ export const pokedexes: {
         name: "zygarde",
       },
       {
+        id: 718,
+        name: "zygarde-10%",
+      },
+      {
+        id: 718,
+        name: "zygarde-complete",
+      },
+      {
+        id: 718,
+        name: "zygarde-mega",
+      },
+      {
         id: 719,
         name: "diancie",
+      },
+      {
+        id: 719,
+        name: "diancie-mega",
       },
       {
         id: 150,
         name: "mewtwo",
       },
+      {
+        id: 150,
+        name: "mewtwo-mega-x",
+      },
+      {
+        id: 150,
+        name: "mewtwo-mega-y",
+      },
     ],
   },
-  lumiose_hyperspace: {
-    name: "Hyperspace Lumiose",
+  hyperspace: {
+    name: "Hyperspace Pokédex",
     pokemon: [
       {
-        id: 26,
-        name: "raichu",
+        id: 56,
+        name: "mankey",
       },
       {
-        id: 358,
-        name: "chimecho",
+        id: 57,
+        name: "primeape",
       },
       {
-        id: 433,
-        name: "chingling",
+        id: 979,
+        name: "annihilape",
+      },
+      {
+        id: 52,
+        name: "meowth",
+      },
+      {
+        id: 52,
+        name: "meowth-alola",
+      },
+      {
+        id: 52,
+        name: "meowth-galar",
+      },
+      {
+        id: 53,
+        name: "persian",
+      },
+      {
+        id: 53,
+        name: "persian-alola",
+      },
+      {
+        id: 863,
+        name: "perrserker",
+      },
+      {
+        id: 83,
+        name: "farfetch’d",
+      },
+      {
+        id: 83,
+        name: "farfetch’d-galar",
+      },
+      {
+        id: 865,
+        name: "sirfetch’d",
+      },
+      {
+        id: 104,
+        name: "cubone",
+      },
+      {
+        id: 105,
+        name: "marowak",
+      },
+      {
+        id: 105,
+        name: "marowak-alola",
+      },
+      {
+        id: 137,
+        name: "porygon",
+      },
+      {
+        id: 233,
+        name: "porygon2",
+      },
+      {
+        id: 474,
+        name: "porygon-z",
+      },
+      {
+        id: 951,
+        name: "capsakid",
+      },
+      {
+        id: 952,
+        name: "scovillain",
+      },
+      {
+        id: 952,
+        name: "scovillain-mega",
+      },
+      {
+        id: 957,
+        name: "tinkatink",
+      },
+      {
+        id: 958,
+        name: "tinkatuff",
+      },
+      {
+        id: 959,
+        name: "tinkaton",
+      },
+      {
+        id: 967,
+        name: "cyclizar",
+      },
+      {
+        id: 969,
+        name: "glimmet",
+      },
+      {
+        id: 970,
+        name: "glimmora",
+      },
+      {
+        id: 970,
+        name: "glimmora-mega",
+      },
+      {
+        id: 479,
+        name: "rotom",
+      },
+      {
+        id: 479,
+        name: "rotom-heat",
+      },
+      {
+        id: 479,
+        name: "rotom-wash",
+      },
+      {
+        id: 479,
+        name: "rotom-frost",
+      },
+      {
+        id: 479,
+        name: "rotom-fan",
+      },
+      {
+        id: 479,
+        name: "rotom-mow",
+      },
+      {
+        id: 971,
+        name: "greavard",
+      },
+      {
+        id: 972,
+        name: "houndstone",
+      },
+      {
+        id: 769,
+        name: "sandygast",
+      },
+      {
+        id: 770,
+        name: "palossand",
+      },
+      {
+        id: 352,
+        name: "kecleon",
+      },
+      {
+        id: 973,
+        name: "flamigo",
+      },
+      {
+        id: 615,
+        name: "cryogonal",
+      },
+      {
+        id: 977,
+        name: "dondozo",
+      },
+      {
+        id: 978,
+        name: "tatsugiri",
+      },
+      {
+        id: 978,
+        name: "tatsugiri-droopy",
+      },
+      {
+        id: 978,
+        name: "tatsugiri-stretchy",
+      },
+      {
+        id: 978,
+        name: "tatsugiri-curly-mega",
+      },
+      {
+        id: 978,
+        name: "tatsugiri-droopy-mega",
+      },
+      {
+        id: 978,
+        name: "tatsugiri-stretchy-mega",
       },
       {
         id: 996,
@@ -42796,30 +47500,529 @@ export const pokedexes: {
         id: 998,
         name: "baxcalibur",
       },
-    ],
-  },
-  lza_transfer: {
-    name: "Transferable Pokémon",
-    pokemon: [
       {
-        id: 705,
-        name: "sliggoo",
+        id: 998,
+        name: "baxcalibur-mega",
       },
       {
-        id: 706,
-        name: "goodra",
+        id: 999,
+        name: "gimmighoul",
       },
       {
-        id: 713,
-        name: "avalugg",
+        id: 999,
+        name: "gimmighoul-roaming",
+      },
+      {
+        id: 1000,
+        name: "gholdengo",
+      },
+      {
+        id: 211,
+        name: "qwilfish",
+      },
+      {
+        id: 211,
+        name: "qwilfish-hisui",
+      },
+      {
+        id: 904,
+        name: "overqwil",
+      },
+      {
+        id: 252,
+        name: "treecko",
+      },
+      {
+        id: 253,
+        name: "grovyle",
+      },
+      {
+        id: 254,
+        name: "sceptile",
+      },
+      {
+        id: 254,
+        name: "sceptile-mega",
+      },
+      {
+        id: 255,
+        name: "torchic",
+      },
+      {
+        id: 256,
+        name: "combusken",
+      },
+      {
+        id: 257,
+        name: "blaziken",
+      },
+      {
+        id: 257,
+        name: "blaziken-mega",
+      },
+      {
+        id: 258,
+        name: "mudkip",
+      },
+      {
+        id: 259,
+        name: "marshtomp",
+      },
+      {
+        id: 260,
+        name: "swampert",
+      },
+      {
+        id: 260,
+        name: "swampert-mega",
+      },
+      {
+        id: 349,
+        name: "feebas",
+      },
+      {
+        id: 350,
+        name: "milotic",
+      },
+      {
+        id: 433,
+        name: "chingling",
+      },
+      {
+        id: 358,
+        name: "chimecho",
+      },
+      {
+        id: 358,
+        name: "chimecho-mega",
+      },
+      {
+        id: 876,
+        name: "indeedee",
+      },
+      {
+        id: 876,
+        name: "indeedee-f",
+      },
+      {
+        id: 509,
+        name: "purrloin",
+      },
+      {
+        id: 510,
+        name: "liepard",
+      },
+      {
+        id: 517,
+        name: "munna",
+      },
+      {
+        id: 518,
+        name: "musharna",
+      },
+      {
+        id: 538,
+        name: "throh",
+      },
+      {
+        id: 539,
+        name: "sawk",
+      },
+      {
+        id: 562,
+        name: "yamask",
+      },
+      {
+        id: 562,
+        name: "yamask-galar",
+      },
+      {
+        id: 563,
+        name: "cofagrigus",
+      },
+      {
+        id: 867,
+        name: "runerigus",
+      },
+      {
+        id: 767,
+        name: "wimpod",
+      },
+      {
+        id: 768,
+        name: "golisopod",
+      },
+      {
+        id: 768,
+        name: "golisopod-mega",
+      },
+      {
+        id: 827,
+        name: "nickit",
+      },
+      {
+        id: 828,
+        name: "thievul",
+      },
+      {
+        id: 852,
+        name: "clobbopus",
+      },
+      {
+        id: 853,
+        name: "grapploct",
+      },
+      {
+        id: 778,
+        name: "mimikyu",
+      },
+      {
+        id: 900,
+        name: "kleavor",
+      },
+      {
+        id: 877,
+        name: "morpeko",
+      },
+      {
+        id: 877,
+        name: "morpeko-hangry",
+      },
+      {
+        id: 622,
+        name: "golett",
+      },
+      {
+        id: 623,
+        name: "golurk",
+      },
+      {
+        id: 623,
+        name: "golurk-mega",
+      },
+      {
+        id: 821,
+        name: "rookidee",
+      },
+      {
+        id: 822,
+        name: "corvisquire",
+      },
+      {
+        id: 823,
+        name: "corviknight",
+      },
+      {
+        id: 174,
+        name: "igglybuff",
+      },
+      {
+        id: 39,
+        name: "jigglypuff",
+      },
+      {
+        id: 40,
+        name: "wigglytuff",
+      },
+      {
+        id: 926,
+        name: "fidough",
+      },
+      {
+        id: 927,
+        name: "dachsbun",
+      },
+      {
+        id: 396,
+        name: "starly",
+      },
+      {
+        id: 397,
+        name: "staravia",
+      },
+      {
+        id: 398,
+        name: "staraptor",
+      },
+      {
+        id: 398,
+        name: "staraptor-mega",
+      },
+      {
+        id: 325,
+        name: "spoink",
+      },
+      {
+        id: 326,
+        name: "grumpig",
+      },
+      {
+        id: 931,
+        name: "squawkabilly",
+      },
+      {
+        id: 931,
+        name: "squawkabilly-blue",
+      },
+      {
+        id: 931,
+        name: "squawkabilly-yellow",
+      },
+      {
+        id: 931,
+        name: "squawkabilly-white",
+      },
+      {
+        id: 739,
+        name: "crabrawler",
+      },
+      {
+        id: 740,
+        name: "crabominable",
+      },
+      {
+        id: 740,
+        name: "crabominable-mega",
+      },
+      {
+        id: 932,
+        name: "nacli",
+      },
+      {
+        id: 933,
+        name: "naclstack",
+      },
+      {
+        id: 934,
+        name: "garganacl",
+      },
+      {
+        id: 316,
+        name: "gulpin",
+      },
+      {
+        id: 317,
+        name: "swalot",
+      },
+      {
+        id: 41,
+        name: "zubat",
+      },
+      {
+        id: 42,
+        name: "golbat",
+      },
+      {
+        id: 169,
+        name: "crobat",
+      },
+      {
+        id: 935,
+        name: "charcadet",
+      },
+      {
+        id: 936,
+        name: "armarouge",
+      },
+      {
+        id: 937,
+        name: "ceruledge",
+      },
+      {
+        id: 942,
+        name: "maschiff",
+      },
+      {
+        id: 943,
+        name: "mabosstiff",
+      },
+      {
+        id: 848,
+        name: "toxel",
+      },
+      {
+        id: 849,
+        name: "toxtricity",
+      },
+      {
+        id: 849,
+        name: "toxtricity-low-key",
+      },
+      {
+        id: 944,
+        name: "shroodle",
+      },
+      {
+        id: 945,
+        name: "grafaiai",
+      },
+      {
+        id: 335,
+        name: "zangoose",
+      },
+      {
+        id: 336,
+        name: "seviper",
+      },
+      {
+        id: 439,
+        name: "mime jr.",
+      },
+      {
+        id: 122,
+        name: "mr. mime",
+      },
+      {
+        id: 122,
+        name: "mr. mime-galar",
+      },
+      {
+        id: 866,
+        name: "mr. rime",
+      },
+      {
+        id: 590,
+        name: "foongus",
+      },
+      {
+        id: 591,
+        name: "amoonguss",
+      },
+      {
+        id: 485,
+        name: "heatran",
+      },
+      {
+        id: 485,
+        name: "heatran-mega",
+      },
+      {
+        id: 721,
+        name: "volcanion",
+      },
+      {
+        id: 638,
+        name: "cobalion",
+      },
+      {
+        id: 639,
+        name: "terrakion",
+      },
+      {
+        id: 640,
+        name: "virizion",
+      },
+      {
+        id: 647,
+        name: "keldeo",
+      },
+      {
+        id: 647,
+        name: "keldeo-resolute",
+      },
+      {
+        id: 648,
+        name: "meloetta",
+      },
+      {
+        id: 648,
+        name: "meloetta-pirouette",
+      },
+      {
+        id: 649,
+        name: "genesect",
       },
       {
         id: 720,
         name: "hoopa",
       },
       {
-        id: 721,
-        name: "volcanion",
+        id: 720,
+        name: "hoopa-unbound",
+      },
+      {
+        id: 802,
+        name: "marshadow",
+      },
+      {
+        id: 808,
+        name: "meltan",
+      },
+      {
+        id: 809,
+        name: "melmetal",
+      },
+      {
+        id: 491,
+        name: "darkrai",
+      },
+      {
+        id: 491,
+        name: "darkrai-mega",
+      },
+      {
+        id: 380,
+        name: "latias",
+      },
+      {
+        id: 380,
+        name: "latias-mega",
+      },
+      {
+        id: 381,
+        name: "latios",
+      },
+      {
+        id: 381,
+        name: "latios-mega",
+      },
+      {
+        id: 382,
+        name: "kyogre",
+      },
+      {
+        id: 382,
+        name: "kyogre-primal",
+      },
+      {
+        id: 383,
+        name: "groudon",
+      },
+      {
+        id: 383,
+        name: "groudon-primal",
+      },
+      {
+        id: 384,
+        name: "rayquaza",
+      },
+      {
+        id: 384,
+        name: "rayquaza-mega",
+      },
+      {
+        id: 801,
+        name: "magearna",
+      },
+      {
+        id: 801,
+        name: "magearna-original",
+      },
+      {
+        id: 801,
+        name: "magearna-mega",
+      },
+      {
+        id: 801,
+        name: "magearna-original-mega",
+      },
+      {
+        id: 807,
+        name: "zeraora",
+      },
+      {
+        id: 807,
+        name: "zeraora-mega",
       },
     ],
   },
