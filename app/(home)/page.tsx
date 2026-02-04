@@ -1,6 +1,6 @@
 "use client";
 import { Text } from "@radix-ui/themes";
-import { GameTitles } from "../data/oldGameTitles";
+import { GameTitles } from "../data/gameTitles";
 import { TitleCard } from "../components/TitleCard";
 
 // This is the home page's page code. This uses the straight up default layout.tsx for it's layout and therefore doesn't have the button like
