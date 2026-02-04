@@ -157,7 +157,7 @@ export const GameTitles: IGameTitles = {
     tera: true,
   },
   lza: {
-    dex_slugs: ["lumiose", "lumiose_hyperspace", "lza_transfer"],
+    dex_slugs: ["lumiose", "hyperspace", "lza_transfer"],
     mega: true,
   },
   home: {
