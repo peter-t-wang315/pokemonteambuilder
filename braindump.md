@@ -1,7 +1,6 @@
 Functionality of website:
 
 - Ok I'm realizing now that this is like, borderline impossible to do with the pokeapi for determining wehat pokemon are in the game. For instance, Sword and Shield. There are pokemon in here from the regular regional dex, and then from the DLCs. But then you can't import every pokemon from home to this game, only a certain few... PokeAPI has no way of tracking that...
-
   - Like fricken Melmetal is transferable to this game but PokeAPI doesn't return that data.
 
 - First page lets you choose what game you’re playing so that you have the right pokedex to use
@@ -61,9 +60,111 @@ Underlying mechanics of how code will work:
 - THINGS TO WATCH OUT FOR
   - When trying to retrieve what pokemon are available in what games, XD and Colloseum have no ability to grab any pokedex. Those will have to be hard coded...
 
-# The algo that turned richi3f's pokedex into my current pokedex.
+# Algo to merge richi3f's pokedex with Showdowns dex
 
-```
+## This was necssary so we can grab the right sprites from the Showdown icon sheet
+
+### This was a serious pain. It took unironically 3 hours to get all right... But now we can simply piggyback off richi3f and Showdowns work! Whenever a new game comes out and they update their dexes, we can just pull both into the data folder, run this script, and now we have all the games populated as well as the icon sheet ready to go!
+
+````
+    // We're dealing with 2 sources of truth here... what a pain
+
+    // This one is the Showdown Pokedex as a list though instead of a map.
+    const allPokedex = Object.values(Pokedex);
+
+    // This is us going through richi3fs pokedexes to get our game dexes built. Shoutout richi3f
+    const x = Object.entries(richi3fsPokedexes).reduce(
+      (acc, [dexName, dex]) => {
+        return {
+          ...acc,
+          [dexName]: {
+            name: dex.name,
+            pokemon: Object.values(dex?.order).flatMap(
+              (pokemonIDAndFormNumList) =>
+                pokemonIDAndFormNumList
+                  .map((specificPokemonIDAndFormNum) => {
+                    const allPokedexID = allPokedex.findIndex(
+                      (p) => p.num === specificPokemonIDAndFormNum[0],
+                    );
+                    // Try because if something fails out, just skip this pokemon.
+                    try {
+                      // If we're encountering a new forme, we want to check if it's a real forme and not a cosmetic one.
+                      if (specificPokemonIDAndFormNum[1] > 0) {
+                        // If it's a real forme, Pokemon Showdown lists it in otherFormes. Meaning if we are on a mon, it has a forme, and Showdown
+                        // recognizes this mon as having a real forme(non-cosmetic), then we keep going.
+                        if (allPokedex[allPokedexID]?.otherFormes?.length > 0) {
+                          // Now if this specific forme we're on is a cosmetic forme, we skip it.
+                          // We can tell this because it's forme number is in the range of cosmetic formes. So just leave.
+                          // IE: Floette, Flabebe, Vivilon, etc.
+                          if (
+                            allPokedex[allPokedexID]?.cosmeticFormes &&
+                            allPokedex[allPokedexID]?.cosmeticFormes.includes(
+                              allPokedex[allPokedexID].formeOrder[
+                                specificPokemonIDAndFormNum[1]
+                              ],
+                            )
+                          )
+                            return undefined;
+                          // But if we reached a forme that Showdown recognizes as a real forme, and it's not in the range of cosmetic formes, then we keep it.
+                          return {
+                            id: specificPokemonIDAndFormNum[0],
+                            name: allPokedex[allPokedexID].formeOrder[
+                              specificPokemonIDAndFormNum[1]
+                            ].toLowerCase(),
+                          };
+                        }
+                        // If Showdown doesn't have real formes aside from cosmetic for this mon, we just leave.
+                        else return undefined;
+                      }
+                    } catch (e) {
+                      return undefined; // Skip this item
+                    }
+
+                    return {
+                      id: specificPokemonIDAndFormNum[0],
+                      name: allPokedex[allPokedexID].name.toLowerCase(),
+                    };
+                  })
+                  // This is honestly not super efficient. But I don't care anymore we're running this script once to load all the pokemon over so it's not like
+                  // this is happening everytime. Just once when a new game comes out.
+                  // But this basically removes all of the undefined's we had from cosmetic formes.
+                  .filter(() => true) // placeholder
+                  // This just ensures that no more dupes get through. Vivillon and Miniors were making it through so I have this so I don't have to manually
+                  // change the dex at all. It's just a copy of the dex and paste over when new mons come out.
+                  .reduce(
+                    (acc, item) => {
+                      if (!item) return acc;
+
+                      if (!acc.seen.has(item.name)) {
+                        acc.seen.add(item.name);
+                        acc.list.push(item);
+                      }
+
+                      return acc;
+                    },
+                    {
+                      seen: new Set<string>(),
+                      list: [] as { id: number; name: string }[],
+                    },
+                  ).list,
+            ),
+          },
+        };
+      },
+      {} as Record<
+        string,
+        { name: string; pokemon: { id: number; name: string }[] }
+      >,
+    );
+    ```
+
+
+
+# History of the ripoff algos
+## The algo that turned richi3f's pokedex into my current pokedex.
+
+````
+
     let lastNum = 0;
     const allPokedex = Object.values(Pokedex).filter((pokemon) => {
       if (pokemon.num > lastNum) {
@@ -92,4 +193,98 @@ Underlying mechanics of how code will work:
         { name: string; pokemon: { id: number; name: string }[] }
       >
     );
+
+```
+
+## This is algo 2 that turned richi3f's pokedex into the pokedex but with form variations. Then I realized I would need not only the form number but the full form name...
+
+```
+
+    let lastNum = 0;
+    const allPokedex = Object.values(Pokedex).filter((pokemon) => {
+      if (pokemon.num > lastNum) {
+        lastNum = pokemon.num;
+        return true;
+      }
+    });
+
+    const x = Object.entries(richi3fsPokedexes).reduce(
+      (acc, [dexName, dex]) => {
+        return {
+          ...acc,
+          [dexName]: {
+            name: dex.name,
+            pokemon: Object.values(dex?.order).flatMap(
+              (pokemonIDAndFormNumList) =>
+                pokemonIDAndFormNumList.map((specificPokemonIDAndFormNum) => ({
+                  id: specificPokemonIDAndFormNum[0],
+                  name: allPokedex[
+                    specificPokemonIDAndFormNum[0] - 1
+                  ].name.toLowerCase(),
+                  form: specificPokemonIDAndFormNum[1] || 0,
+                })),
+            ),
+          },
+        };
+      },
+      {} as Record<
+        string,
+        { name: string; pokemon: { id: number; name: string }[] }
+      >,
+    );
+
+```
+
+## When I thought I got the regionals down...
+
+```
+
+    const allPokedex = Object.values(Pokedex);
+
+    const x = Object.entries(richi3fsPokedexes).reduce(
+      (acc, [dexName, dex]) => {
+        return {
+          ...acc,
+          [dexName]: {
+            name: dex.name,
+            pokemon: Object.values(dex?.order).flatMap(
+              (pokemonIDAndFormNumList) =>
+                pokemonIDAndFormNumList.map((specificPokemonIDAndFormNum) => {
+                  const y = pokemonIDAndFormNumList;
+                  const allPokedexID = allPokedex.findIndex(
+                    (p) => p.num === specificPokemonIDAndFormNum[0],
+                  );
+                  try {
+                    if (specificPokemonIDAndFormNum[1] > 0) {
+                      return {
+                        id: specificPokemonIDAndFormNum[0],
+                        name: allPokedex[allPokedexID].formeOrder[
+                          specificPokemonIDAndFormNum[1]
+                        ].toLowerCase(),
+                      };
+                    }
+                  } catch (e) {
+                    return {
+                      id: specificPokemonIDAndFormNum[0],
+                      name: allPokedex[allPokedexID].name.toLowerCase(),
+                    };
+                  }
+
+                  return {
+                    id: specificPokemonIDAndFormNum[0],
+                    name: allPokedex[allPokedexID].name.toLowerCase(),
+                  };
+                }),
+            ),
+          },
+        };
+      },
+      {} as Record<
+        string,
+        { name: string; pokemon: { id: number; name: string }[] }
+      >,
+    );
+
+```
+
 ```

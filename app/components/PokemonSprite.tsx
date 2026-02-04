@@ -1,5 +1,6 @@
 "use client";
 import { Pokedex } from "../data/pokedex";
+import { PokemonAltSprite } from "../data/pokemonAltSprite";
 
 export function PokemonSprite({
   pokemonName,
@@ -13,12 +14,17 @@ export function PokemonSprite({
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .replace(/[\s.'’`:-]/g, "");
+  let spriteNumber = 0;
 
-  const pokedexNumber = Pokedex[cleanedPokemonName].num;
+  // Some mons are sliding through without an image like zygarde-10%. Try catch to prevent crash.
+  try {
+    spriteNumber =
+      PokemonAltSprite[cleanedPokemonName] || Pokedex[cleanedPokemonName].num;
+  } catch (e) {}
   const width = 40;
   const height = 30;
-  const left = (pokedexNumber % 12) * width;
-  const top = Math.floor(pokedexNumber / 12) * height;
+  const left = (spriteNumber % 12) * width;
+  const top = Math.floor(spriteNumber / 12) * height;
 
   return (
     <div
