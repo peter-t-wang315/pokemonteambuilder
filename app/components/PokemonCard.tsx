@@ -18,7 +18,9 @@ export function PokemonCard({
 
   return (
     <Card key={PokemonDetails.name} className="pokemon-card">
-      <Text>{formatName(PokemonDetails.name)}</Text>
+      <Text style={{ textAlign: "center" }}>
+        {formatName(PokemonDetails.name)}
+      </Text>
       <PokemonSprite pokemonName={PokemonDetails.name} scale={2} />
     </Card>
   );
