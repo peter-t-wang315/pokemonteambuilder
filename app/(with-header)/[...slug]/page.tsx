@@ -4,9 +4,10 @@ import { PokemonSprite } from "@/app/components/PokemonSprite";
 import { IGamePokedex } from "@/interfaces/IGamePokedex";
 import { GameTitles } from "@/app/data/gameTitles";
 import { pokedexes } from "@/app/data/gamePokedexes";
-import { Heading, Spinner, Text } from "@radix-ui/themes";
+import { Button, Heading, Spinner, Text } from "@radix-ui/themes";
 import { useParams, useRouter } from "next/navigation";
 import { PokemonCard } from "@/app/components/PokemonCard";
+import { PokemonTeamCard } from "@/app/components/PokemonTeamCard";
 
 export default function GamePage() {
   const router = useRouter();
@@ -17,6 +18,10 @@ export default function GamePage() {
   // const path = Array.isArray(slug) ? slug.join("/") : slug || "";
   const [gamePokedex, setGamePokedex] = useState<IGamePokedex[]>([]);
   const [dataLoaded, setDataLoaded] = useState(false);
+  const [pokemonTeam, setPokemonTeam] = useState<
+    { name: string; id: number }[]
+  >(Array(6).fill({ name: "", id: 0 }));
+  const [teamFull, setTeamFull] = useState(false);
 
   useEffect(() => {
     // Have to make sure the path is there because on first load, router.query takes a second to correctly
@@ -39,6 +44,32 @@ export default function GamePage() {
     setDataLoaded(true);
   }, [path]);
 
+  function onPokemonSelected(pokemon: { name: string; id: number }) {
+    // Find the first available team slot.
+    const emptySlotIndex = pokemonTeam.findIndex((mon) => mon.name === "");
+
+    // TODO: If team is full, show a message or something.
+    if (emptySlotIndex === -1) {
+      setTeamFull(true);
+      return;
+    }
+
+    setPokemonTeam((prevTeam) => {
+      const newTeam = [...prevTeam];
+      newTeam[emptySlotIndex] = pokemon;
+      return newTeam;
+    });
+  }
+
+  function onPokemonDeselected(pokemon: { name: string; id: number }) {
+    setPokemonTeam((prevTeam) => {
+      const newTeam = prevTeam.map((mon) =>
+        mon.name === pokemon.name ? { name: "", id: 0 } : mon,
+      );
+      return newTeam;
+    });
+  }
+
   // If we are just loading the information
   if (!GameTitles[path] || !dataLoaded) {
     return (
@@ -59,23 +90,75 @@ export default function GamePage() {
   }
 
   return (
-    <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 52 }}>
-      {gamePokedex.map((pokedex, i) => (
+    <div
+      style={{
+        flex: 1,
+        display: "flex",
+        flexDirection: "column",
+        gap: 52,
+        paddingTop: 20,
+        paddingBottom: 20,
+      }}
+    >
+      {/* Idk why this div is needed but it wraps the team so that it doesn't overflow weirdly */}
+      <div
+        style={{
+          maxWidth: 800,
+          margin: "0 auto",
+          width: "100%",
+          gap: 16,
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
         <div
-          style={{ display: "flex", flexDirection: "column", flex: 1 }}
-          key={i}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+          }}
         >
+          <Heading>Your Team</Heading>
+        </div>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+            gap: 16,
+          }}
+        >
+          {pokemonTeam.map((mon, i) => (
+            <PokemonTeamCard
+              key={"team-slot-" + i}
+              PokemonDetails={mon}
+              onClick={onPokemonDeselected}
+            />
+          ))}
+        </div>
+        <Button
+          variant="outline"
+          style={{ cursor: "pointer" }}
+          onClick={() => setPokemonTeam(Array(6).fill({ name: "", id: 0 }))}
+        >
+          Reset Team
+        </Button>
+      </div>
+
+      {gamePokedex.map((pokedex, i) => (
+        <div key={i} style={{ width: "100%" }}>
           <Heading>{pokedex.name}</Heading>
           <div
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
               gap: 16,
-              alignItems: "start",
             }}
           >
             {pokedex.pokemon.map((mon) => (
-              <PokemonCard PokemonDetails={mon} key={mon.name} />
+              <PokemonCard
+                key={mon.name}
+                PokemonDetails={mon}
+                onClick={onPokemonSelected}
+              />
             ))}
           </div>
         </div>

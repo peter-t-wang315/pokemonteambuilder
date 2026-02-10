@@ -1,9 +1,7 @@
-"use client";
-
+import { Card, Text } from "@radix-ui/themes";
 import { PokemonSprite } from "./PokemonSprite";
-import { Button, Card, Text } from "@radix-ui/themes";
 
-export function PokemonCard({
+export function PokemonTeamCard({
   PokemonDetails,
   onClick,
 }: {
@@ -21,12 +19,14 @@ export function PokemonCard({
   return (
     <Card
       key={PokemonDetails.name}
-      className="pokemon-card"
+      className="pokemon-team-card"
       onClick={() => onClick(PokemonDetails)}
     >
-      <Text style={{ textAlign: "center" }}>
-        {formatName(PokemonDetails.name)}
-      </Text>
+      {PokemonDetails.name !== "" && (
+        <Text style={{ textAlign: "center" }}>
+          {formatName(PokemonDetails.name)}
+        </Text>
+      )}
       <PokemonSprite pokemonName={PokemonDetails.name} scale={2} />
     </Card>
   );
