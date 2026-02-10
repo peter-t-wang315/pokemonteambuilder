@@ -17,9 +17,6 @@ export function PokemonTeamCard({
       .join(" ");
   }
 
-  PokemonDetails.name &&
-    console.log("POkemonDetails in PokemonTeamCard: ", PokemonDetails);
-
   return (
     <Card
       key={PokemonDetails.name}
