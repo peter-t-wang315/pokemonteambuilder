@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-import { PokemonSprite } from "@/app/components/PokemonSprite";
 import { IGamePokedex } from "@/interfaces/IGamePokedex";
 import { GameTitles } from "@/app/data/gameTitles";
 import { pokedexes } from "@/app/data/gamePokedexes";
@@ -8,6 +7,7 @@ import { Button, Heading, Spinner, Text } from "@radix-ui/themes";
 import { useParams, useRouter } from "next/navigation";
 import { PokemonCard } from "@/app/components/PokemonCard";
 import { PokemonTeamCard } from "@/app/components/PokemonTeamCard";
+import { Pokedex } from "@/app/data/pokedex";
 
 export default function GamePage() {
   const router = useRouter();
@@ -19,8 +19,8 @@ export default function GamePage() {
   const [gamePokedex, setGamePokedex] = useState<IGamePokedex[]>([]);
   const [dataLoaded, setDataLoaded] = useState(false);
   const [pokemonTeam, setPokemonTeam] = useState<
-    { name: string; id: number }[]
-  >(Array(6).fill({ name: "", id: 0 }));
+    { name: string; id: number; types: string[] }[]
+  >(Array(6).fill({ name: "", id: 0, types: [] }));
   const [teamFull, setTeamFull] = useState(false);
 
   useEffect(() => {
@@ -44,7 +44,11 @@ export default function GamePage() {
     setDataLoaded(true);
   }, [path]);
 
-  function onPokemonSelected(pokemon: { name: string; id: number }) {
+  function onPokemonSelected(pokemon: {
+    name: string;
+    id: number;
+    types: string[];
+  }) {
     // Find the first available team slot.
     const emptySlotIndex = pokemonTeam.findIndex((mon) => mon.name === "");
 
@@ -61,13 +65,37 @@ export default function GamePage() {
     });
   }
 
-  function onPokemonDeselected(pokemon: { name: string; id: number }) {
+  function onPokemonDeselected(pokemon: {
+    name: string;
+    id: number;
+    types: string[];
+  }) {
     setPokemonTeam((prevTeam) => {
       const newTeam = prevTeam.map((mon) =>
-        mon.name === pokemon.name ? { name: "", id: 0 } : mon,
+        mon.name === pokemon.name ? { name: "", id: 0, types: [] } : mon,
       );
       return newTeam;
     });
+  }
+
+  function getPokemonCardData(PokemonDetails: {
+    name: string;
+    id: number;
+  }): { name: string; id: number; types: string[] } | null {
+    const key = PokemonDetails.name
+      .toLowerCase()
+      .normalize("NFD") // decompose accented chars (é → e + ́)
+      .replace(/[\u0300-\u036f]/g, "") // strip accent marks
+      .replace(/[^a-z0-9]/g, "");
+    const entry = Pokedex[key];
+
+    if (!entry) return null;
+
+    return {
+      name: PokemonDetails.name,
+      id: PokemonDetails.id,
+      types: entry.types,
+    };
   }
 
   // If we are just loading the information
@@ -137,7 +165,9 @@ export default function GamePage() {
         <Button
           variant="outline"
           style={{ cursor: "pointer" }}
-          onClick={() => setPokemonTeam(Array(6).fill({ name: "", id: 0 }))}
+          onClick={() =>
+            setPokemonTeam(Array(6).fill({ name: "", id: 0, types: [] }))
+          }
         >
           Reset Team
         </Button>
@@ -153,13 +183,19 @@ export default function GamePage() {
               gap: 16,
             }}
           >
-            {pokedex.pokemon.map((mon) => (
-              <PokemonCard
-                key={mon.name}
-                PokemonDetails={mon}
-                onClick={onPokemonSelected}
-              />
-            ))}
+            {pokedex.pokemon.map((mon) => {
+              const cardData = getPokemonCardData(mon);
+
+              if (!cardData) return null;
+
+              return (
+                <PokemonCard
+                  key={cardData.name + cardData.id}
+                  PokemonDetails={cardData}
+                  onClick={onPokemonSelected}
+                />
+              );
+            })}
           </div>
         </div>
       ))}
