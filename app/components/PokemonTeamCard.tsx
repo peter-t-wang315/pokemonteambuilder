@@ -1,10 +1,8 @@
-"use client";
-
-import { GradientOrb } from "./GradientOrb";
+import { Card, Text } from "@radix-ui/themes";
 import { PokemonSprite } from "./PokemonSprite";
-import { Button, Card, Text } from "@radix-ui/themes";
+import { GradientOrb } from "./GradientOrb";
 
-export function PokemonCard({
+export function PokemonTeamCard({
   PokemonDetails,
   onClick,
 }: {
@@ -19,10 +17,13 @@ export function PokemonCard({
       .join(" ");
   }
 
+  PokemonDetails.name &&
+    console.log("POkemonDetails in PokemonTeamCard: ", PokemonDetails);
+
   return (
     <Card
       key={PokemonDetails.name}
-      className="pokemon-card"
+      className="pokemon-team-card"
       onClick={() => onClick(PokemonDetails)}
       style={{ position: "relative", overflow: "hidden" }}
     >
@@ -30,6 +31,7 @@ export function PokemonCard({
       <GradientOrb
         type1={PokemonDetails.types[0]}
         type2={PokemonDetails.types[1]}
+        blur={16}
       />
 
       {PokemonDetails.name !== "" && (
