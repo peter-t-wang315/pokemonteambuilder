@@ -1,5 +1,6 @@
 interface IGameTitles {
   [key: string]: {
+    gen: number;
     dex_slugs: string[];
     versions?: { slug: string; name: string }[];
     mega?: boolean;
@@ -10,6 +11,7 @@ interface IGameTitles {
 
 export const GameTitles: IGameTitles = {
   rby: {
+    gen: 1,
     dex_slugs: ["kanto"],
     versions: [
       { slug: "red", name: "Red" },
@@ -18,6 +20,7 @@ export const GameTitles: IGameTitles = {
     ],
   },
   gsc: {
+    gen: 2,
     dex_slugs: ["johto"],
     versions: [
       { slug: "gold", name: "Gold" },
@@ -26,6 +29,7 @@ export const GameTitles: IGameTitles = {
     ],
   },
   rse: {
+    gen: 3,
     dex_slugs: ["hoenn", "national_rse"],
     versions: [
       { slug: "ruby", name: "Ruby" },
@@ -34,9 +38,11 @@ export const GameTitles: IGameTitles = {
     ],
   },
   colo: {
+    gen: 3,
     dex_slugs: ["colo_gift", "colo_snag", "colo_transfer"],
   },
   frlg: {
+    gen: 3,
     dex_slugs: ["kanto", "national_frlg"],
     versions: [
       { slug: "firered", name: "FireRed" },
@@ -44,9 +50,11 @@ export const GameTitles: IGameTitles = {
     ],
   },
   xd: {
+    gen: 3,
     dex_slugs: ["xd_gift", "xd_snag", "xd_pokespot", "xd_transfer"],
   },
   dpp: {
+    gen: 4,
     dex_slugs: ["sinnoh", "sinnoh_pt", "national_dppt"],
     versions: [
       { slug: "diamond", name: "Diamond" },
@@ -55,6 +63,7 @@ export const GameTitles: IGameTitles = {
     ],
   },
   hgss: {
+    gen: 4,
     dex_slugs: ["johto_hgss", "national_hgss"],
     versions: [
       { slug: "heartgold", name: "HeartGold" },
@@ -62,6 +71,7 @@ export const GameTitles: IGameTitles = {
     ],
   },
   bw: {
+    gen: 5,
     dex_slugs: ["unova", "white_forest", "national_bw"],
     versions: [
       { slug: "black", name: "Black" },
@@ -69,6 +79,7 @@ export const GameTitles: IGameTitles = {
     ],
   },
   b2w2: {
+    gen: 5,
     dex_slugs: ["unova_b2w2", "national_b2w2"],
     versions: [
       { slug: "black2", name: "Black 2" },
@@ -76,6 +87,7 @@ export const GameTitles: IGameTitles = {
     ],
   },
   xy: {
+    gen: 6,
     dex_slugs: [
       "kalos_central",
       "kalos_coastal",
@@ -89,6 +101,7 @@ export const GameTitles: IGameTitles = {
     mega: true,
   },
   oras: {
+    gen: 6,
     dex_slugs: ["hoenn_oras", "national_oras"],
     versions: [
       { slug: "omega_ruby", name: "Omega Ruby" },
@@ -97,6 +110,7 @@ export const GameTitles: IGameTitles = {
     mega: true,
   },
   sm: {
+    gen: 7,
     dex_slugs: ["alola", "alola_scan", "national_sm"],
     versions: [
       { slug: "sun", name: "Sun" },
@@ -105,6 +119,7 @@ export const GameTitles: IGameTitles = {
     mega: true,
   },
   usum: {
+    gen: 7,
     dex_slugs: [
       "alola_usum",
       "alola_scan_usum",
@@ -118,6 +133,7 @@ export const GameTitles: IGameTitles = {
     mega: true,
   },
   lgpe: {
+    gen: 7,
     dex_slugs: ["kanto_lgpe"],
     versions: [
       { slug: "lets_go_pikachu", name: "Let's Go Pikachu!" },
@@ -126,6 +142,7 @@ export const GameTitles: IGameTitles = {
     mega: true,
   },
   swsh: {
+    gen: 8,
     dex_slugs: ["galar", "galar_armor", "galar_crown", "galar_other"],
     versions: [
       { slug: "sword", name: "Sword" },
@@ -134,6 +151,7 @@ export const GameTitles: IGameTitles = {
     gmax: true,
   },
   bdsp: {
+    gen: 8,
     dex_slugs: ["sinnoh", "national_bdsp"],
     versions: [
       { slug: "brilliant_diamond", name: "Brilliant Diamond" },
@@ -141,9 +159,11 @@ export const GameTitles: IGameTitles = {
     ],
   },
   arceus: {
+    gen: 8,
     dex_slugs: ["hisui"],
   },
   sv: {
+    gen: 9,
     dex_slugs: [
       "paldea",
       "paldea_kitakami",
@@ -157,10 +177,12 @@ export const GameTitles: IGameTitles = {
     tera: true,
   },
   lza: {
+    gen: 9,
     dex_slugs: ["lumiose", "hyperspace", "lza_transfer"],
     mega: true,
   },
   home: {
+    gen: 100,
     dex_slugs: [
       "kanto_home",
       "johto_home",
