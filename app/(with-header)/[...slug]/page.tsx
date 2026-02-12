@@ -2,12 +2,16 @@
 import { useEffect, useState } from "react";
 import { IGamePokedex } from "@/interfaces/IGamePokedex";
 import { GameTitles } from "@/app/data/gameTitles";
-import { pokedexes } from "@/app/data/gamePokedexes";
+import { pokedexes } from "@/app/data/pokedex/gamePokedexes";
 import { Button, Heading, Spinner, Text } from "@radix-ui/themes";
 import { useParams, useRouter } from "next/navigation";
 import { PokemonCard } from "@/app/components/PokemonCard";
 import { PokemonTeamCard } from "@/app/components/PokemonTeamCard";
-import { Pokedex } from "@/app/data/pokedex";
+import { Pokedex } from "@/app/data/pokedex/pokedex";
+import {
+  CalculateCoverages,
+  CalculateTeamDefensiveCoverage,
+} from "@/app/teamAdvising/typeCoverage";
 
 export default function GamePage() {
   const router = useRouter();
@@ -22,6 +26,13 @@ export default function GamePage() {
     { name: string; id: number; types: string[] }[]
   >(Array(6).fill({ name: "", id: 0, types: [] }));
   const [teamFull, setTeamFull] = useState(false);
+
+  useEffect(() => {
+    CalculateCoverages({
+      PokemonGame: path,
+      PokemonTeam: pokemonTeam,
+    });
+  }, [pokemonTeam]);
 
   useEffect(() => {
     // Have to make sure the path is there because on first load, router.query takes a second to correctly
