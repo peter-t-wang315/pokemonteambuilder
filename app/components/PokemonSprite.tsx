@@ -1,5 +1,5 @@
 "use client";
-import { Pokedex } from "../data/pokedex";
+import { Pokedex } from "../data/pokedex/pokedex";
 import { PokemonAltSprite } from "../data/pokemonAltSprite";
 
 export function PokemonSprite({
