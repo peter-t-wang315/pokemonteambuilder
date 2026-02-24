@@ -38,21 +38,26 @@ export function CalculateCoverages({
     const type1 = pokemon.types[0]?.toLowerCase();
     const type2 = pokemon.types[1]?.toLowerCase() || "";
 
-    coverage.immune = new Set([
-      ...(gameTypeChart[type1]?.immune ?? []),
-      ...(type2 ? (gameTypeChart[type2]?.immune ?? []) : []),
+    const t1 = gameTypeChart[type1];
+    const t2 = type2 ? gameTypeChart[type2] : null;
+
+    const weak1 = new Set(t1?.weak ?? []);
+    const weak2 = new Set(t2?.weak ?? []);
+    const resists1 = new Set(t1?.resists ?? []);
+    const resists2 = new Set(t2?.resists ?? []);
+
+    coverage.immune = new Set([...(t1?.immune ?? []), ...(t2?.immune ?? [])]);
+    coverage.weak = new Set([
+      ...[...weak1].filter((t) => !resists2.has(t) && !coverage.immune.has(t)),
+      ...[...weak2].filter((t) => !resists1.has(t) && !coverage.immune.has(t)),
     ]);
     coverage.resists = new Set([
-      ...(gameTypeChart[type1]?.resists ?? []),
-      ...(type2 ? (gameTypeChart[type2]?.resists ?? []) : []),
-    ]);
-    coverage.weak = new Set([
-      ...(gameTypeChart[type1]?.weak ?? []),
-      ...(type2 ? (gameTypeChart[type2]?.weak ?? []) : []),
+      ...[...resists1].filter((t) => !weak2.has(t) && !coverage.immune.has(t)),
+      ...[...resists2].filter((t) => !weak1.has(t) && !coverage.immune.has(t)),
     ]);
     coverage.weakens = new Set([
-      ...(gameTypeChart[type1]?.weakens ?? []),
-      ...(type2 ? (gameTypeChart[type2]?.weakens ?? []) : []),
+      ...(t1?.weakens ?? []),
+      ...(t2?.weakens ?? []),
     ]);
 
     acc.push(coverage); // Changed from acc.add()
@@ -60,7 +65,6 @@ export function CalculateCoverages({
   }, []); // Initialize with empty array
 
   // Second we calculate the teams overall defensive coverage.
-  debugger;
 }
 
 export function CalculateTeamOffensiveCoverage({
