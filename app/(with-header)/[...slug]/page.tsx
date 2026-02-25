@@ -9,9 +9,11 @@ import { PokemonCard } from "@/app/components/PokemonCard";
 import { PokemonTeamCard } from "@/app/components/PokemonTeamCard";
 import { Pokedex } from "@/app/data/pokedex/pokedex";
 import {
-  CalculateCoverages,
-  CalculateTeamDefensiveCoverage,
+  CalculateIndividualCoverages,
+  GetTypeChartByGeneration,
 } from "@/app/teamAdvising/typeCoverage";
+import { Type, ITypeChartEntry } from "@/app/data/typeChart";
+import { ITeamTypeChartEntry } from "@/interfaces/ITeamTypeChartEntry";
 
 export default function GamePage() {
   const router = useRouter();
@@ -26,12 +28,55 @@ export default function GamePage() {
     { name: string; id: number; types: string[] }[]
   >(Array(6).fill({ name: "", id: 0, types: [] }));
   const [teamFull, setTeamFull] = useState(false);
+  const [teamCoverage, setTeamCoverage] = useState<{
+    defensive: Record<string, number>;
+    offensive: Record<string, number>;
+  }>({
+    defensive: {},
+    offensive: {},
+  });
 
+  // This useEffect calculates type coverages when the team changes.
+  // 1) Determine the immunities, resistances, weaknesses, and weakens coverage of each mon.
+  // 2) Calculate what types are needed in the team to help cover both defensive and offensive options.
   useEffect(() => {
-    CalculateCoverages({
+    const individualCoverages = CalculateIndividualCoverages({
       PokemonGame: path,
       PokemonTeam: pokemonTeam,
     });
+
+    // First, we need to combine the coverage of the team
+    const teamCoverages = individualCoverages.reduce(
+      (acc, coverage) => {
+        coverage.immune.forEach((type: string) => {
+          acc.immune[type] = (acc?.immune[type] ?? 0) + 1;
+        });
+        coverage.resists.forEach((type: string) => {
+          acc.resists[type] = (acc?.resists[type] ?? 0) + 1;
+        });
+        coverage.weak.forEach((type: string) => {
+          acc.weak[type] = (acc?.weak[type] ?? 0) + 1;
+        });
+        coverage.weakens.forEach((type: string) => {
+          acc.weakens[type] = (acc?.weakens[type] ?? 0) + 1;
+        });
+        return acc;
+      },
+      { immune: {}, resists: {}, weak: {}, weakens: {} } as ITeamTypeChartEntry,
+    );
+    // const typeNeeds = individualCoverages.reduce(
+    //   (acc, coverage) => {
+    //     // Calculate what defensive types are needed first.
+    //     coverage.
+    //     // Calculate what offensive types are needed.
+    //     return acc;
+    //   },
+    //   {} as {
+    //     defensive: Record<string, number>;
+    //     offensive: Record<string, number>;
+    //   },
+    // );
+    // console.log("typeNeeds", typeNeeds);
   }, [pokemonTeam]);
 
   useEffect(() => {
@@ -108,6 +153,10 @@ export default function GamePage() {
       types: entry.types,
     };
   }
+
+  function calculateSelectablePokemonBorderColor(types: string[]) {}
+
+  function calculateTeamPokemonBorderColor(types: string[]) {}
 
   // If we are just loading the information
   if (!GameTitles[path] || !dataLoaded) {
@@ -202,7 +251,7 @@ export default function GamePage() {
               return (
                 <PokemonCard
                   key={cardData.name + cardData.id}
-                  PokemonDetails={cardData}
+                  pokemonDetails={cardData}
                   onClick={onPokemonSelected}
                 />
               );
