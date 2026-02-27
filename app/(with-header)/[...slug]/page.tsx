@@ -92,6 +92,8 @@ export default function GamePage() {
       }
     });
 
+    // Now store the team types covered data and just take pokemon types, add the values together and see how needed they are.
+
     console.log("Team Types Covered:", teamTypesCovered, typesCovered);
   }, [pokemonTeam]);
 
