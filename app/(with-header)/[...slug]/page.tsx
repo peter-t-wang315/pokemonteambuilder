@@ -12,7 +12,7 @@ import {
   CalculateIndividualCoverages,
   GetTypeChartByGeneration,
 } from "@/app/teamAdvising/typeCoverage";
-import { Type, ITypeChartEntry } from "@/app/data/typeChart";
+import { Type, ITypeChartEntry, TypeChart } from "@/app/data/typeChart";
 import { ITeamTypeChartEntry } from "@/interfaces/ITeamTypeChartEntry";
 
 export default function GamePage() {
@@ -28,13 +28,8 @@ export default function GamePage() {
     { name: string; id: number; types: string[] }[]
   >(Array(6).fill({ name: "", id: 0, types: [] }));
   const [teamFull, setTeamFull] = useState(false);
-  const [teamCoverage, setTeamCoverage] = useState<{
-    defensive: Record<string, number>;
-    offensive: Record<string, number>;
-  }>({
-    defensive: {},
-    offensive: {},
-  });
+  const [gameTypeChart, setGameTypeChart] = useState<TypeChart>({});
+  const [typesCovered, setTypesCovered] = useState<Record<string, number>>({});
 
   // This useEffect calculates type coverages when the team changes.
   // 1) Determine the immunities, resistances, weaknesses, and weakens coverage of each mon.
@@ -45,9 +40,6 @@ export default function GamePage() {
       PokemonTeam: pokemonTeam,
     });
 
-    // First make the objects we need to identify what types we are covering and need to cover.
-    // gameTypeChart holds all the types, if the mon covers a type, subtract from it's total, if it needs coverage, add to it.
-    const gameTypeChart = GetTypeChartByGeneration({ PokemonGame: path });
     const teamTypesCovered = Object.keys(gameTypeChart).reduce(
       (acc, type) => {
         acc[type] = 0;
@@ -55,9 +47,10 @@ export default function GamePage() {
       },
       {} as Record<string, number>,
     );
+
     // This is to track what types we've already covered so that we know what 0's in gameTypeChart are because we literally have no coverages for it
     // rather than we have a positive and negative coverage on it.
-    const typesCovered: Record<string, Set<string>> = {
+    const typesSeen: Record<string, Set<string>> = {
       offensive: new Set(),
       defensive: new Set(),
     };
@@ -66,35 +59,35 @@ export default function GamePage() {
     individualCoverages.forEach((coverage) => {
       coverage.immune.forEach((type: string) => {
         teamTypesCovered[type] -= 1;
-        typesCovered.defensive.add(type);
+        typesSeen.defensive.add(type);
       });
       coverage.resists.forEach((type: string) => {
         teamTypesCovered[type] -= 1;
-        typesCovered.defensive.add(type);
+        typesSeen.defensive.add(type);
       });
       coverage.weak.forEach((type: string) => {
         teamTypesCovered[type] += 1;
-        typesCovered.defensive.add(type);
+        typesSeen.defensive.add(type);
       });
       coverage.weakens.forEach((type: string) => {
         teamTypesCovered[type] -= 1;
-        typesCovered.offensive.add(type);
+        typesSeen.offensive.add(type);
       });
     });
     // If we have no counters for it defensively, we add 1. If we have no counters offensively, we add 1.
     // Needs to be done this way because it's possible we've seen the type on just defensive side, but need to account for the fact we offensively need to beat it.
     Object.keys(teamTypesCovered).forEach((type) => {
-      if (!typesCovered.defensive.has(type)) {
+      if (!typesSeen.defensive.has(type)) {
         teamTypesCovered[type] += 1;
       }
-      if (!typesCovered.offensive.has(type)) {
+      if (!typesSeen.offensive.has(type)) {
         teamTypesCovered[type] += 1;
       }
     });
 
     // Now store the team types covered data and just take pokemon types, add the values together and see how needed they are.
-
-    console.log("Team Types Covered:", teamTypesCovered, typesCovered);
+    setTypesCovered(teamTypesCovered);
+    console.log("Team Types Covered:", teamTypesCovered);
   }, [pokemonTeam]);
 
   useEffect(() => {
@@ -114,6 +107,20 @@ export default function GamePage() {
     const pokedexData = dexSlugs
       .map((slug) => pokedexes[slug])
       .filter((dex): dex is IGamePokedex => dex !== undefined);
+
+    // This is to help with team type advising.
+    // gameTypeChart holds all the types, if the mon covers a type, subtract from it's total, if it needs coverage, add to it.
+    const gameTypeChart = GetTypeChartByGeneration({ PokemonGame: path });
+    const teamTypesCovered = Object.keys(gameTypeChart).reduce(
+      (acc, type) => {
+        acc[type] = 0;
+        return acc;
+      },
+      {} as Record<string, number>,
+    );
+
+    setTypesCovered(teamTypesCovered);
+    setGameTypeChart(gameTypeChart);
     setGamePokedex(pokedexData);
     setDataLoaded(true);
   }, [path]);
@@ -172,9 +179,20 @@ export default function GamePage() {
     };
   }
 
-  function calculateSelectablePokemonBorderColor(types: string[]) {}
+  function calculateCoverageColor(types: string[]) {
+    const coverageVal = types.reduce(
+      (acc, type) => acc + (typesCovered[type] || 0),
+      0,
+    );
+    if (coverageVal < -3) return "#8B0000";
+    if (coverageVal === -2) return "#D32F2F";
+    if (coverageVal === -1) return "#E57373";
+    if (coverageVal === 1) return "#7BC67E";
+    if (coverageVal === 2) return "#3DA642";
+    if (coverageVal > 3) return "#1A7D1E";
 
-  function calculateTeamPokemonBorderColor(types: string[]) {}
+    return "#F5C842";
+  }
 
   // If we are just loading the information
   if (!GameTitles[path] || !dataLoaded) {
@@ -271,6 +289,7 @@ export default function GamePage() {
                   key={cardData.name + cardData.id}
                   pokemonDetails={cardData}
                   onClick={onPokemonSelected}
+                  borderColor={calculateCoverageColor(cardData.types)}
                 />
               );
             })}

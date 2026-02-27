@@ -26,7 +26,11 @@ export function PokemonCard({
       key={pokemonDetails.name}
       className="pokemon-card"
       onClick={() => onClick(pokemonDetails)}
-      style={{ position: "relative", overflow: "hidden" }}
+      style={{
+        position: "relative",
+        overflow: "hidden",
+        border: `2px solid ${borderColor || "#000"}`,
+      }}
     >
       {/* Gradient Orb Background */}
       <GradientOrb
