@@ -45,38 +45,54 @@ export default function GamePage() {
       PokemonTeam: pokemonTeam,
     });
 
-    // First, we need to combine the coverage of the team
-    const teamCoverages = individualCoverages.reduce(
-      (acc, coverage) => {
-        coverage.immune.forEach((type: string) => {
-          acc.immune[type] = (acc?.immune[type] ?? 0) + 1;
-        });
-        coverage.resists.forEach((type: string) => {
-          acc.resists[type] = (acc?.resists[type] ?? 0) + 1;
-        });
-        coverage.weak.forEach((type: string) => {
-          acc.weak[type] = (acc?.weak[type] ?? 0) + 1;
-        });
-        coverage.weakens.forEach((type: string) => {
-          acc.weakens[type] = (acc?.weakens[type] ?? 0) + 1;
-        });
+    // First make the objects we need to identify what types we are covering and need to cover.
+    // gameTypeChart holds all the types, if the mon covers a type, subtract from it's total, if it needs coverage, add to it.
+    const gameTypeChart = GetTypeChartByGeneration({ PokemonGame: path });
+    const teamTypesCovered = Object.keys(gameTypeChart).reduce(
+      (acc, type) => {
+        acc[type] = 0;
         return acc;
       },
-      { immune: {}, resists: {}, weak: {}, weakens: {} } as ITeamTypeChartEntry,
+      {} as Record<string, number>,
     );
-    // const typeNeeds = individualCoverages.reduce(
-    //   (acc, coverage) => {
-    //     // Calculate what defensive types are needed first.
-    //     coverage.
-    //     // Calculate what offensive types are needed.
-    //     return acc;
-    //   },
-    //   {} as {
-    //     defensive: Record<string, number>;
-    //     offensive: Record<string, number>;
-    //   },
-    // );
-    // console.log("typeNeeds", typeNeeds);
+    // This is to track what types we've already covered so that we know what 0's in gameTypeChart are because we literally have no coverages for it
+    // rather than we have a positive and negative coverage on it.
+    const typesCovered: Record<string, Set<string>> = {
+      offensive: new Set(),
+      defensive: new Set(),
+    };
+
+    // Build the data for the two objects we made before.
+    individualCoverages.forEach((coverage) => {
+      coverage.immune.forEach((type: string) => {
+        teamTypesCovered[type] -= 1;
+        typesCovered.defensive.add(type);
+      });
+      coverage.resists.forEach((type: string) => {
+        teamTypesCovered[type] -= 1;
+        typesCovered.defensive.add(type);
+      });
+      coverage.weak.forEach((type: string) => {
+        teamTypesCovered[type] += 1;
+        typesCovered.defensive.add(type);
+      });
+      coverage.weakens.forEach((type: string) => {
+        teamTypesCovered[type] -= 1;
+        typesCovered.offensive.add(type);
+      });
+    });
+    // If we have no counters for it defensively, we add 1. If we have no counters offensively, we add 1.
+    // Needs to be done this way because it's possible we've seen the type on just defensive side, but need to account for the fact we offensively need to beat it.
+    Object.keys(teamTypesCovered).forEach((type) => {
+      if (!typesCovered.defensive.has(type)) {
+        teamTypesCovered[type] += 1;
+      }
+      if (!typesCovered.offensive.has(type)) {
+        teamTypesCovered[type] += 1;
+      }
+    });
+
+    console.log("Team Types Covered:", teamTypesCovered, typesCovered);
   }, [pokemonTeam]);
 
   useEffect(() => {
