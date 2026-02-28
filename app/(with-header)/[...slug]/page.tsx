@@ -181,7 +181,7 @@ export default function GamePage() {
 
   function calculateCoverageColor(types: string[]) {
     const coverageVal = types.reduce(
-      (acc, type) => acc + (typesCovered[type] || 0),
+      (acc, type) => acc + (typesCovered[type.toLowerCase()] || 0),
       0,
     );
     if (coverageVal < -3) return "#8B0000";
