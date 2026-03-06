@@ -66,7 +66,19 @@ export default function GamePage() {
         typesSeen.defensive.add(type);
       });
       coverage.weak.forEach((type: string) => {
-        teamTypesCovered[type] += 1;
+        const typeChartEntry = gameTypeChart[type];
+        typeChartEntry.immune.forEach((type: string) => {
+          teamTypesCovered[type] -= 1;
+        });
+        typeChartEntry.resists.forEach((type: string) => {
+          teamTypesCovered[type] -= 1;
+        });
+        typeChartEntry.weak.forEach((type: string) => {
+          teamTypesCovered[type] += 1;
+        });
+        typeChartEntry.weakens.forEach((type: string) => {
+          teamTypesCovered[type] -= 1;
+        });
         typesSeen.defensive.add(type);
       });
       coverage.weakens.forEach((type: string) => {
@@ -74,16 +86,51 @@ export default function GamePage() {
         typesSeen.offensive.add(type);
       });
     });
+
+    // If we have no counters for it either defensively or offensively, we need to calculate what types would help to cover those gaps.
+    // Object.keys(teamTypesCovered).forEach((type) => {
+    //   if (!typesSeen.defensive.has(type)) {
+    //     const typeChartEntry = gameTypeChart[type];
+    //     typeChartEntry.immune.forEach((type: string) => {
+    //       teamTypesCovered[type] += 1;
+    //     });
+    //     typeChartEntry.resists.forEach((type: string) => {
+    //       teamTypesCovered[type] += 1;
+    //     });
+    //     typeChartEntry.weak.forEach((type: string) => {
+    //       teamTypesCovered[type] -= 1;
+    //     });
+    //     typeChartEntry.weakens.forEach((type: string) => {
+    //       teamTypesCovered[type] -= 1;
+    //     });
+    //   }
+    //   if (!typesSeen.offensive.has(type)) {
+    //     const typeChartEntry = gameTypeChart[type];
+    //     typeChartEntry.immune.forEach((type: string) => {
+    //       teamTypesCovered[type] -= 1;
+    //     });
+    //     typeChartEntry.resists.forEach((type: string) => {
+    //       teamTypesCovered[type] -= 1;
+    //     });
+    //     typeChartEntry.weak.forEach((type: string) => {
+    //       teamTypesCovered[type] += 1;
+    //     });
+    //     typeChartEntry.weakens.forEach((type: string) => {
+    //       teamTypesCovered[type] -= 1;
+    //     });
+    //   }
+    // });
+
     // If we have no counters for it defensively, we add 1. If we have no counters offensively, we add 1.
     // Needs to be done this way because it's possible we've seen the type on just defensive side, but need to account for the fact we offensively need to beat it.
-    Object.keys(teamTypesCovered).forEach((type) => {
-      if (!typesSeen.defensive.has(type)) {
-        teamTypesCovered[type] += 1;
-      }
-      if (!typesSeen.offensive.has(type)) {
-        teamTypesCovered[type] += 1;
-      }
-    });
+    // Object.keys(teamTypesCovered).forEach((type) => {
+    // if (!typesSeen.defensive.has(type)) {
+    //   teamTypesCovered[type] += 1;
+    // }
+    //   if (!typesSeen.offensive.has(type)) {
+    //     teamTypesCovered[type] += 1;
+    //   }
+    // });
 
     // Now store the team types covered data and just take pokemon types, add the values together and see how needed they are.
     setTypesCovered(teamTypesCovered);
