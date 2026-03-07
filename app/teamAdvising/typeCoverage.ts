@@ -23,6 +23,7 @@ export function CalculateIndividualCoverages({
         resists: new Set<string>(),
         weak: new Set<string>(),
         weakens: new Set<string>(),
+        resistedBy: new Set<string>(),
       };
       const type1 = pokemon.types[0]?.toLowerCase();
       const type2 = pokemon.types[1]?.toLowerCase() || "";
