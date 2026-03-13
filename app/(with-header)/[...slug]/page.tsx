@@ -34,6 +34,7 @@ export default function GamePage() {
     Record<string, number>
   >({});
   const [filterBest, setFilterBest] = useState(false);
+  const [filterBestThreshold, setFilterBestThreshold] = useState(0);
 
   useEffect(() => {
     const activePokemon = pokemonTeam.filter((mon) => mon.name !== "");
@@ -141,6 +142,18 @@ export default function GamePage() {
 
     setDefensiveTypesCovered(defensiveTypeScores);
     setOffensiveTypesCovered(offensiveTypeScores);
+
+    const allCombinedScores = Object.keys(defensiveTypeScores)
+      .map((type) => {
+        const def = defensiveTypeScores[type];
+        const off = offensiveTypeScores[type];
+        return Math.max(def, off) * 0.7 + Math.min(def, off) * 0.3;
+      })
+      .filter((score) => score > 0)
+      .sort((a, b) => b - a);
+
+    const topIndex = Math.max(0, Math.floor(allCombinedScores.length * 0.2));
+    setFilterBestThreshold(allCombinedScores[topIndex] ?? 0);
   }, [pokemonTeam, gameTypeChart]);
 
   useEffect(() => {
@@ -335,40 +348,45 @@ export default function GamePage() {
         </div>
       </div>
 
-      {gamePokedex.map((pokedex, i) => (
-        <div key={i} style={{ width: "100%" }}>
-          <Heading>{pokedex.name}</Heading>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
-              gap: 16,
-            }}
-          >
-            {pokedex.pokemon.map((mon) => {
-              const cardData = getPokemonCardData(mon);
-              const coverageScore = cardData
-                ? calculateCoverageScore(cardData.types)
-                : 0;
+      {gamePokedex.map((pokedex, i) => {
+        const filteredPokemon = pokedex.pokemon
+          .map((mon) => {
+            const cardData = getPokemonCardData(mon);
+            const coverageScore = cardData
+              ? calculateCoverageScore(cardData.types)
+              : 0;
+            return { cardData, coverageScore };
+          })
+          .filter(({ cardData, coverageScore }) => {
+            if (!cardData) return false;
+            if (filterBest && coverageScore < filterBestThreshold) return false;
+            return true;
+          });
 
-              if (filterBest && coverageScore < 4) {
-                return null;
-              }
+        if (filterBest && filteredPokemon.length === 0) return null;
 
-              if (!cardData) return null;
-
-              return (
+        return (
+          <div key={i} style={{ width: "100%" }}>
+            <Heading>{pokedex.name}</Heading>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
+                gap: 16,
+              }}
+            >
+              {filteredPokemon.map(({ cardData, coverageScore }) => (
                 <PokemonCard
-                  key={cardData.name + cardData.id}
-                  pokemonDetails={cardData}
+                  key={cardData!.name + cardData!.id}
+                  pokemonDetails={cardData!}
                   onClick={onPokemonSelected}
                   coverageScore={coverageScore}
                 />
-              );
-            })}
+              ))}
+            </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 }
