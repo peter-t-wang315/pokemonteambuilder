@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { PokemonSprite } from "@/app/components/PokemonSprite";
 import { IGamePokedex } from "@/interfaces/IGamePokedex";
 import { GameTitles } from "@/app/data/gameTitles";
-import { pokedexes } from "@/app/data/gamePokedexes";
+import { pokedexes } from "@/app/data/pokedex/gamePokedexes";
 import { Spinner } from "@radix-ui/themes";
 
 export default function GamePage() {
@@ -12,7 +12,7 @@ export default function GamePage() {
   const params = useParams();
 
   const slug = params?.slug;
-  const path = Array.isArray(slug) ? slug.join("/") : slug ?? "";
+  const path = Array.isArray(slug) ? slug.join("/") : (slug ?? "");
   // const path = Array.isArray(slug) ? slug.join("/") : slug || "";
   const [gamePokedex, setGamePokedex] = useState<IGamePokedex[]>([]);
 
