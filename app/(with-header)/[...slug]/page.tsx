@@ -369,10 +369,12 @@ export default function GamePage() {
           <div key={i} style={{ width: "100%" }}>
             <Heading>{pokedex.name}</Heading>
             <div
+              className="pokemon-grid"
               style={{
                 display: "grid",
-                gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
-                gap: 16,
+                gridTemplateColumns:
+                  "repeat(auto-fill, minmax(min(140px, 30%), 1fr))",
+                gap: 12,
               }}
             >
               {filteredPokemon.map(({ cardData, coverageScore }) => (

@@ -5,6 +5,7 @@ import "@radix-ui/themes/styles.css";
 import "./css/TitleCardCSS.css";
 import "./css/PokemonCard.css";
 import "./css/PokemonTeamCard.css";
+import "./css/SlugePage.css";
 import { Theme } from "@radix-ui/themes";
 
 const geistSans = Geist({

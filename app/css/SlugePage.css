@@ -1,0 +1,6 @@
+@media (max-width: 768px) {
+  .pokemon-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px !important;
+  }
+}
