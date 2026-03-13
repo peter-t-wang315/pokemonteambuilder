@@ -92,7 +92,10 @@ export function PokemonCard({
       />
 
       {pokemonDetails.name !== "" && (
-        <Text style={{ textAlign: "center", position: "relative", zIndex: 1 }}>
+        <Text
+          className="pokemon-name"
+          style={{ textAlign: "center", position: "relative", zIndex: 1 }}
+        >
           {formatName(pokemonDetails.name)}
         </Text>
       )}
