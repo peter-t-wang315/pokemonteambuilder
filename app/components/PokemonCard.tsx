@@ -1,6 +1,6 @@
 "use client";
 
-import { GradientOrb } from "./GradientOrb";
+import { PokeballTypeBackground } from "./PokeballTypeBackground";
 import { PokemonSprite } from "./PokemonSprite";
 import { Card, Text } from "@radix-ui/themes";
 
@@ -86,7 +86,7 @@ export function PokemonCard({
           </span>
         </div>
       )}
-      <GradientOrb
+      <PokeballTypeBackground
         type1={pokemonDetails.types[0]}
         type2={pokemonDetails.types[1]}
       />
