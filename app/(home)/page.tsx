@@ -12,7 +12,7 @@ export default function Home() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        padding: "50px",
+        padding: "clamp(16px, 4vw, 50px)",
       }}
     >
       <Text
@@ -23,6 +23,7 @@ export default function Home() {
           marginBottom: "20px",
           alignSelf: "center",
           textAlign: "center",
+          fontSize: "clamp(1.5rem, 5vw, 3rem)",
         }}
       >
         Welcome to the Pok&eacute;mon Easy Team Builder!
@@ -30,7 +31,8 @@ export default function Home() {
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+          gridTemplateColumns:
+            "repeat(auto-fill, minmax(min(250px, 45%), 1fr))",
           gap: 16,
           width: "100%",
           maxWidth: "900px",
