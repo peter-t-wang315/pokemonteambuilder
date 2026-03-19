@@ -1,6 +1,6 @@
 import { Card, Text } from "@radix-ui/themes";
 import { PokemonSprite } from "./PokemonSprite";
-import { GradientOrb } from "./GradientOrb";
+import { PokeballTypeBackground } from "./PokeballTypeBackground";
 
 export function PokemonTeamCard({
   PokemonDetails,
@@ -24,11 +24,9 @@ export function PokemonTeamCard({
       onClick={() => onClick(PokemonDetails)}
       style={{ position: "relative", overflow: "hidden" }}
     >
-      {/* Gradient Orb Background */}
-      <GradientOrb
+      <PokeballTypeBackground
         type1={PokemonDetails.types[0]}
         type2={PokemonDetails.types[1]}
-        blur={16}
       />
 
       {PokemonDetails.name !== "" && (
