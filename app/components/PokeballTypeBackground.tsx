@@ -1,5 +1,5 @@
 interface GradientOrbProps {
-  type1: string;
+  type1?: string;
   type2?: string | null;
   opacity?: number;
   size?: number;
@@ -27,7 +27,7 @@ export const typeColors: Record<string, string> = {
 };
 
 export function PokeballTypeBackground({
-  type1,
+  type1 = "",
   type2 = null,
   opacity = 0.85,
   size = 80,
@@ -74,7 +74,7 @@ export function PokeballTypeBackground({
           cy="50"
           r="46"
           fill={color1}
-          fillOpacity="0.55"
+          fillOpacity="0.65"
           clipPath={`url(#${id}-top)`}
         />
 
@@ -84,7 +84,7 @@ export function PokeballTypeBackground({
           cy="50"
           r="46"
           fill={color2}
-          fillOpacity="0.55"
+          fillOpacity="0.65"
           clipPath={`url(#${id}-bottom)`}
         />
 
@@ -106,7 +106,7 @@ export function PokeballTypeBackground({
           cx="50"
           cy="50"
           r="14"
-          fill="rgba(255,255,255,0.4)"
+          fill={type1 !== "" ? "#b3b3b3" : "#222"}
           stroke="#222"
           strokeWidth="8"
         />

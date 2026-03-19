@@ -32,6 +32,8 @@ export function PokemonSprite({
         width: width * scale,
         height: height * scale,
         overflow: "hidden",
+        marginTop: !pokemonName ? -15 : 0,
+        marginLeft: !pokemonName ? -5 : 0,
       }}
     >
       <span
