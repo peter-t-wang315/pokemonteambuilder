@@ -316,7 +316,8 @@ export default function GamePage() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+            gridTemplateColumns:
+              "repeat(auto-fill, minmax(min(200px, 30%), 1fr))",
             gap: 16,
           }}
         >
