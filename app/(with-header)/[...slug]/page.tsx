@@ -12,7 +12,8 @@ import {
   CalculateIndividualCoverages,
   GetTypeChartByGeneration,
 } from "@/app/teamAdvising/typeCoverage";
-import { TypeChart } from "@/app/data/typeChart";
+import { ITypeChartEntry, TypeChart } from "@/app/data/typeChart";
+import { TypeCoveragePanel } from "@/app/components/TypeCoveragePanel";
 
 export default function GamePage() {
   const router = useRouter();
@@ -35,6 +36,9 @@ export default function GamePage() {
   >({});
   const [filterBest, setFilterBest] = useState(false);
   const [filterBestThreshold, setFilterBestThreshold] = useState(0);
+  const [showCoveragePanel, setShowCoveragePanel] = useState(false);
+  const [individualCoverages, setIndividualCoverages] = useState<ITypeChartEntry[]>([]);
+  const [maxCoverageScore, setMaxCoverageScore] = useState(0);
 
   useEffect(() => {
     const activePokemon = pokemonTeam.filter((mon) => mon.name !== "");
@@ -45,6 +49,8 @@ export default function GamePage() {
       const neutral = Object.fromEntries(allTypes.map((t) => [t, 0]));
       setDefensiveTypesCovered({ ...neutral });
       setOffensiveTypesCovered({ ...neutral });
+      setIndividualCoverages([]);
+      setMaxCoverageScore(0);
       return;
     }
 
@@ -52,6 +58,7 @@ export default function GamePage() {
       PokemonGame: path,
       PokemonTeam: activePokemon,
     });
+    setIndividualCoverages(individualCoverages);
 
     // 1) Figure out what types our entire team is weak too and covers. Also track what types we've seen.
     // We're essentially just remaking what richi3f's analysis shows.
@@ -154,6 +161,7 @@ export default function GamePage() {
 
     const topIndex = Math.max(0, Math.floor(allCombinedScores.length * 0.2));
     setFilterBestThreshold(allCombinedScores[topIndex] ?? 0);
+    setMaxCoverageScore(allCombinedScores[0] ?? 0);
   }, [pokemonTeam, gameTypeChart]);
 
   useEffect(() => {
@@ -329,10 +337,10 @@ export default function GamePage() {
             />
           ))}
         </div>
-        <div style={{ display: "flex", width: "100%" }}>
+        <div style={{ display: "flex", width: "100%", gap: 8 }}>
           <Button
             variant="outline"
-            style={{ cursor: "pointer", width: "50%" }}
+            style={{ cursor: "pointer", flex: 1 }}
             onClick={() =>
               setPokemonTeam(Array(6).fill({ name: "", id: 0, types: [] }))
             }
@@ -340,13 +348,26 @@ export default function GamePage() {
             Reset Team
           </Button>
           <Button
-            variant="outline"
-            style={{ cursor: "pointer", width: "50%" }}
+            variant={filterBest ? "solid" : "outline"}
+            style={{ cursor: "pointer", flex: 1 }}
             onClick={() => setFilterBest((prev) => !prev)}
           >
-            Filter Best Options
+            {filterBest ? "Show All" : "Best Options"}
+          </Button>
+          <Button
+            variant={showCoveragePanel ? "solid" : "outline"}
+            style={{ cursor: "pointer", flex: 1 }}
+            onClick={() => setShowCoveragePanel((prev) => !prev)}
+          >
+            {showCoveragePanel ? "Hide Coverage" : "Show Coverage"}
           </Button>
         </div>
+        {showCoveragePanel && (
+          <TypeCoveragePanel
+            gameTypeChart={gameTypeChart}
+            individualCoverages={individualCoverages}
+          />
+        )}
       </div>
 
       {gamePokedex.map((pokedex, i) => {
@@ -384,6 +405,8 @@ export default function GamePage() {
                   pokemonDetails={cardData!}
                   onClick={onPokemonSelected}
                   coverageScore={coverageScore}
+                  maxCoverageScore={maxCoverageScore}
+                  showScore={individualCoverages.length > 0}
                 />
               ))}
             </div>

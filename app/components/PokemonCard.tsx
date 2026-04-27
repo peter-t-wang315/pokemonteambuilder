@@ -8,11 +8,22 @@ export function PokemonCard({
   pokemonDetails,
   onClick,
   coverageScore,
+  maxCoverageScore,
+  showScore,
 }: {
   pokemonDetails: { name: string; id: number; types: string[] };
   onClick: (pokemon: { name: string; id: number; types: string[] }) => void;
   coverageScore?: number;
+  maxCoverageScore?: number;
+  showScore?: boolean;
 }) {
+  // Normalize score to a 0–10 scale relative to the best option in the pool.
+  // Falls back to raw score if no max provided.
+  const normalizedScore =
+    coverageScore !== undefined && maxCoverageScore && maxCoverageScore > 0
+      ? (coverageScore / maxCoverageScore) * 10
+      : coverageScore;
+
   function getCoverageStyle(score?: number): {
     borderColor: string;
     boxShadow: string;
@@ -42,8 +53,8 @@ export function PokemonCard({
     return null;
   }
 
-  const { borderColor, boxShadow } = getCoverageStyle(coverageScore);
-  const badge = getCoverageBadge(coverageScore);
+  const { borderColor, boxShadow } = getCoverageStyle(normalizedScore);
+  const badge = getCoverageBadge(normalizedScore);
 
   function formatName(str: string) {
     return str
@@ -84,6 +95,26 @@ export function PokemonCard({
           >
             {badge.icon}
           </span>
+        </div>
+      )}
+      {showScore && coverageScore !== undefined && coverageScore !== 0 && (
+        <div
+          style={{
+            position: "absolute",
+            bottom: 4,
+            left: 4,
+            zIndex: 2,
+            fontSize: 10,
+            fontWeight: "bold",
+            color: "#fff",
+            background: "rgba(0,0,0,0.55)",
+            borderRadius: 4,
+            padding: "1px 5px",
+            lineHeight: 1.4,
+          }}
+        >
+          {coverageScore > 0 ? "+" : ""}
+          {coverageScore.toFixed(1)}
         </div>
       )}
       <PokeballTypeBackground

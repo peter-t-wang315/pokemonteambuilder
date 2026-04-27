@@ -57,6 +57,10 @@ export function CalculateIndividualCoverages({
         ...(t1?.weakens ?? []),
         ...(t2?.weakens ?? []),
       ]);
+      coverage.resistedBy = new Set([
+        ...(t1?.resistedBy ?? []),
+        ...(t2?.resistedBy ?? []),
+      ]);
 
       acc.push(coverage); // Changed from acc.add()
       return acc;
